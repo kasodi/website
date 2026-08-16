@@ -1,11 +1,487 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasodi</title>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="logo">Kasodi</div>
+
+    <nav>
+  <a href="#">Shop</a>
+  <a href="#">Collections</a>
+  <a href="#">New Finds</a>
+  <a href="#">Journal</a>
+  <a href="#">About</a>
+</nav>
+  </div>
+</header>
+
+<section class="hero">
+
+  <div class="hero-text">
+
+   <span class="badge">
+  KASODI · CURATED LIVING
+</span>
+
+<h1>
+  Curated Things<br />
+  for a Beautiful Home
+</h1>
+
+<p>
+  Beautiful, useful and unexpected finds for everyday living.
+  Thoughtfully selected for a home with character.
+</p>
+    <a href="#" class="button">
+      Explore Collection
+    </a>
+
+  </div>
+
+ <div class="hero-image">
+    <img
+        src="/images/kasodi-hero.png"
+        alt="KASODI curated home collection"
+    />
+</div>
+</section>
+<section class="categories">
+  <h2>Explore the Collection</h2>
+
+  <div class="cards">
+
+    <a class="card" href="#">
+      <img
+        src="/images/categories/category-tableware.png"
+        alt="Tableware"
+      />
+      <div class="card-info">
+        <h3>Tableware</h3>
+        <span>→</span>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <img
+        src="/images/categories/category-kitchen.png"
+        alt="Kitchen"
+      />
+      <div class="card-info">
+        <h3>Kitchen</h3>
+        <span>→</span>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <img
+        src="/images/categories/category-home-decor.png"
+        alt="Home Decor"
+      />
+      <div class="card-info">
+        <h3>Home Decor</h3>
+        <span>→</span>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <img
+        src="/images/categories/category-textiles-cozy.png"
+        alt="Textiles and Cozy"
+      />
+      <div class="card-info">
+        <h3>Textiles & Cozy</h3>
+        <span>→</span>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <img
+        src="/images/categories/category-bathroom.png"
+        alt="Bathroom"
+      />
+      <div class="card-info">
+        <h3>Bathroom</h3>
+        <span>→</span>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <img
+        src="/images/categories/category-candles-fragrance.png"
+        alt="Candles and Fragrance"
+      />
+      <div class="card-info">
+        <h3>Candles & Fragrance</h3>
+        <span>→</span>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <img
+        src="/images/categories/category-home-organization.png"
+        alt="Home Organization"
+      />
+      <div class="card-info">
+        <h3>Home Organization</h3>
+        <span>→</span>
+      </div>
+    </a>
+
+    <a class="card" href="#">
+      <img
+        src="/images/categories/category-interesting-finds.png"
+        alt="Interesting Finds"
+      />
+      <div class="card-info">
+        <h3>Interesting Finds</h3>
+        <span>→</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+<section class="kasodi-edit">
+
+  <div class="edit-heading">
+    <span>KASODI EDIT</span>
+    <h2>Selected Pieces We Love Right Now</h2>
+    <p>
+      Beautiful details for the home, thoughtfully chosen for everyday living.
+    </p>
+  </div>
+
+  <div class="product-grid">
+
+    <article class="product-card">
+      <div class="product-image">
+        <img
+          src="/images/categories/category-tableware.png"
+          alt="Green ceramic tableware"
+        />
+      </div>
+      <div class="product-info">
+        <p class="product-category">Tableware</p>
+        <h3>Artisan Green Tableware</h3>
+        <p class="product-price">From €29</p>
+        <a href="#">View Product →</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image">
+        <img
+          src="/images/categories/category-home-decor.png"
+          alt="Ceramic decorative vase"
+        />
+      </div>
+      <div class="product-info">
+        <p class="product-category">Home Decor</p>
+        <h3>Sculptural Ceramic Vase</h3>
+        <p class="product-price">From €39</p>
+        <a href="#">View Product →</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image">
+        <img
+          src="/images/categories/category-candles-fragrance.png"
+          alt="Candle and diffuser"
+        />
+      </div>
+      <div class="product-info">
+        <p class="product-category">Candles & Fragrance</p>
+        <h3>Warm Amber Candle</h3>
+        <p class="product-price">From €24</p>
+        <a href="#">View Product →</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <div class="product-image">
+        <img
+          src="/images/categories/category-textiles-cozy.png"
+          alt="Linen throw and cushion"
+        />
+      </div>
+      <div class="product-info">
+        <p class="product-category">Textiles & Cozy</p>
+        <h3>Soft Linen Throw</h3>
+        <p class="product-price">From €45</p>
+        <a href="#">View Product →</a>
+      </div>
+    </article>
+
+  </div>
+
+</section>
+<section class="shop-look">
+
+  <div class="shop-look-image">
+    <img
+      src="/images/kasodi-hero.png"
+      alt="KASODI curated table setting"
+    />
+  </div>
+
+  <div class="shop-look-content">
+
+    <span class="shop-look-label">SHOP THE LOOK</span>
+
+    <h2>Mediterranean Table</h2>
+
+    <p>
+      Natural textures, warm ceramics and relaxed details
+      for a table that feels effortless and inviting.
+    </p>
+
+    <div class="look-items">
+
+      <a href="#">
+        <span>01</span>
+        Green Ceramic Tableware
+      </a>
+
+      <a href="#">
+        <span>02</span>
+        Ribbed Green Glass
+      </a>
+
+      <a href="#">
+        <span>03</span>
+        Linen Table Textile
+      </a>
+
+      <a href="#">
+        <span>04</span>
+        Decorative Ceramic Pitcher
+      </a>
+
+    </div>
+
+    <a href="#" class="look-button">
+      Explore the Look →
+    </a>
+
+  </div>
+
+</section>
+<section class="new-finds">
+
+  <div class="new-finds-heading">
+    <span>NEW FINDS</span>
+
+    <div>
+      <h2>Fresh Finds for the Home</h2>
+      <p>
+        New pieces worth discovering — selected for beauty,
+        character and everyday living.
+      </p>
+    </div>
+
+    <a href="#">View All Finds →</a>
+  </div>
+
+  <div class="new-finds-grid">
+
+    <article class="new-find-card">
+      <img
+        src="/images/categories/category-tableware.png"
+        alt="Green ceramic tableware"
+      />
+
+      <p class="new-find-category">Tableware</p>
+      <h3>Green Ceramic Bowl Set</h3>
+      <p class="new-find-price">€29</p>
+
+      <a href="#">View Product →</a>
+    </article>
+
+    <article class="new-find-card">
+      <img
+        src="/images/categories/category-home-decor.png"
+        alt="Decorative ceramic objects"
+      />
+
+      <p class="new-find-category">Home Decor</p>
+      <h3>Textured Ceramic Vase</h3>
+      <p class="new-find-price">€39</p>
+
+      <a href="#">View Product →</a>
+    </article>
+
+    <article class="new-find-card">
+      <img
+        src="/images/categories/category-candles-fragrance.png"
+        alt="Amber candle"
+      />
+
+      <p class="new-find-category">Candles & Fragrance</p>
+      <h3>Amber Glass Candle</h3>
+      <p class="new-find-price">€24</p>
+
+      <a href="#">View Product →</a>
+    </article>
+
+    <article class="new-find-card">
+      <img
+        src="/images/categories/category-interesting-finds.png"
+        alt="Decorative home details"
+      />
+
+      <p class="new-find-category">Interesting Finds</p>
+      <h3>Decorative Scalloped Bowl</h3>
+      <p class="new-find-price">€32</p>
+
+      <a href="#">View Product →</a>
+    </article>
+
+  </div>
+
+</section>
+<section class="journal">
+
+  <div class="journal-heading">
+
+    <span>JOURNAL</span>
+
+    <div>
+      <h2>Ideas for a Beautiful Home</h2>
+
+      <p>
+        Inspiration, styling ideas and thoughtful details
+        for creating a home with warmth and character.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="journal-grid">
+
+    <article class="journal-card">
+
+      <img
+        src="/images/categories/category-tableware.png"
+        alt="Mediterranean table setting"
+      />
+
+      <p class="journal-category">TABLE & ENTERTAINING</p>
+
+      <h3>How to Create a Mediterranean Table</h3>
+
+      <p>
+        Natural textures, layered ceramics and simple details
+        for a relaxed and elegant table.
+      </p>
+
+      <a href="#">Read Story →</a>
+
+    </article>
+
+    <article class="journal-card">
+
+      <img
+        src="/images/categories/category-home-decor.png"
+        alt="Quiet luxury home decor"
+      />
+
+      <p class="journal-category">STYLE NOTES</p>
+
+      <h3>The Art of Quiet Luxury</h3>
+
+      <p>
+        Materials, textures and timeless objects that make
+        a home feel calm, considered and personal.
+      </p>
+
+      <a href="#">Read Story →</a>
+
+    </article>
+
+    <article class="journal-card">
+
+      <img
+        src="/images/categories/category-interesting-finds.png"
+        alt="Decorative details for the home"
+      />
+
+      <p class="journal-category">KASODI GUIDE</p>
+
+      <h3>Small Details That Change a Room</h3>
+
+      <p>
+        Beautiful objects and subtle accents that bring
+        warmth, character and personality to a space.
+      </p>
+
+      <a href="#">Read Story →</a>
+
+    </article>
+
+  </div>
+
+</section>
+<footer class="site-footer">
+
+  <div class="footer-main">
+
+    <div class="footer-brand">
+      <div class="footer-logo">KASODI</div>
+
+      <p>
+        Curated things for a beautiful home.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Explore</h3>
+
+      <a href="#">Shop</a>
+      <a href="#">Collections</a>
+      <a href="#">New Finds</a>
+      <a href="#">Journal</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>KASODI</h3>
+
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Affiliate Disclosure</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Follow</h3>
+
+      <a href="#">Instagram</a>
+      <a href="#">Pinterest</a>
+      <a href="#">Facebook</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <p>© 2026 KASODI</p>
+
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+</html>
