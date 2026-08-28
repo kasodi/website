@@ -1,0 +1,448 @@
+---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact KASODI | Home & Lifestyle Curation</title>
+
+    <meta
+      name="description"
+      content="Contact KASODI for collaborations, affiliate partnerships, brand enquiries and general questions."
+    />
+  </head>
+
+  <body>
+
+    <Header />
+
+
+    <main class="contact-page">
+
+      <section class="contact-hero">
+
+        <p class="contact-eyebrow">
+          CONTACT KASODI
+        </p>
+
+        <h1>
+          Let’s connect.
+        </h1>
+
+        <p class="contact-intro">
+          Questions, partnership enquiries or a beautiful home find you think
+          belongs on KASODI? We would love to hear from you.
+        </p>
+
+      </section>
+
+
+      <section class="contact-main">
+
+        <div class="contact-label">
+          GET IN TOUCH
+        </div>
+
+
+        <div class="contact-content">
+
+          <h2>
+            Partnerships, collaborations & general enquiries
+          </h2>
+
+          <p>
+            KASODI works with brands, retailers and affiliate partners whose
+            products fit our approach to thoughtful home and lifestyle curation.
+          </p>
+
+          <p>
+            We are particularly interested in tableware, ceramics, kitchen
+            accessories, home décor, textiles, bathroom pieces, organization,
+            candles, lighting and beautifully designed everyday objects.
+          </p>
+
+          <p>
+            For partnership opportunities, product suggestions, affiliate
+            enquiries or general questions, please contact us by email.
+          </p>
+
+
+          <div class="contact-email">
+
+            <span>Email</span>
+
+            <a href="mailto:kasodi.info@gmail.com">
+              kasodi.info@gmail.com
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="contact-partnerships">
+
+        <div class="contact-section-heading">
+          <p>WORK WITH KASODI</p>
+
+          <h2>
+            What we are interested in
+          </h2>
+        </div>
+
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <span>01</span>
+
+            <h3>Affiliate partnerships</h3>
+
+            <p>
+              We collaborate with retailers and brands whose products align
+              with the KASODI aesthetic and are relevant to our European
+              audience.
+            </p>
+          </div>
+
+
+          <div class="contact-card">
+            <span>02</span>
+
+            <h3>Product discovery</h3>
+
+            <p>
+              Brands and independent makers are welcome to introduce products
+              that combine thoughtful design, useful function and strong value.
+            </p>
+          </div>
+
+
+          <div class="contact-card">
+            <span>03</span>
+
+            <h3>Editorial collaborations</h3>
+
+            <p>
+              We are open to suitable editorial partnerships, curated
+              collections and content collaborations that fit naturally within
+              the KASODI point of view.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="contact-note">
+
+        <div class="contact-note-content">
+
+          <p class="contact-eyebrow">
+            A NOTE FOR BRANDS
+          </p>
+
+          <h2>
+            Every product featured on KASODI is selected with our audience in mind.
+          </h2>
+
+          <p>
+            Partnership opportunities do not guarantee editorial inclusion.
+            Products are considered based on their design, usefulness, quality,
+            value and overall fit with KASODI.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="contact-final">
+
+        <p class="contact-eyebrow">
+          KASODI
+        </p>
+
+        <h2>
+          Curated things for a beautiful home.
+        </h2>
+
+        <a
+          href="mailto:kasodi.info@gmail.com"
+          class="product-shop-button"
+        >
+          Email KASODI →
+        </a>
+
+      </section>
+
+    </main>
+
+
+   <Footer />
+  </body>
+</html>
+
+
+<style>
+
+  .contact-page {
+    background: #f8f5ef;
+    color: #29251f;
+  }
+
+
+  .contact-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 110px 40px 120px;
+    text-align: center;
+  }
+
+
+  .contact-eyebrow {
+    margin: 0 0 25px;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #917552;
+  }
+
+
+  .contact-hero h1 {
+    margin: 0 auto 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(52px, 7vw, 86px);
+    line-height: 1.05;
+  }
+
+
+  .contact-intro {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.75;
+    color: #5e574d;
+  }
+
+
+  .contact-main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    border-top: 1px solid rgba(41, 37, 31, 0.14);
+
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 80px;
+  }
+
+
+  .contact-label {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    color: #917552;
+  }
+
+
+  .contact-content {
+    max-width: 760px;
+  }
+
+
+  .contact-content h2,
+  .contact-note h2,
+  .contact-final h2 {
+    margin: 0 0 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 4vw, 55px);
+    line-height: 1.12;
+    font-weight: 400;
+  }
+
+
+  .contact-content p,
+  .contact-note p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: #5d564c;
+  }
+
+
+  .contact-email {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(41, 37, 31, 0.18);
+  }
+
+
+  .contact-email span {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #917552;
+  }
+
+
+  .contact-email a {
+    color: #29251f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+
+  .contact-email a:hover {
+    opacity: 0.65;
+  }
+
+
+  .contact-partnerships {
+    padding: 110px 40px;
+    background: #eee8dd;
+  }
+
+
+  .contact-section-heading {
+    max-width: 1180px;
+    margin: 0 auto 65px;
+  }
+
+
+  .contact-section-heading > p {
+    margin: 0 0 15px;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: #917552;
+  }
+
+
+  .contact-section-heading h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4vw, 56px);
+    font-weight: 400;
+  }
+
+
+  .contact-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+  }
+
+
+  .contact-card {
+    border-top: 1px solid rgba(41, 37, 31, 0.25);
+    padding-top: 25px;
+  }
+
+
+  .contact-card span {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: #917552;
+  }
+
+
+  .contact-card h3 {
+    margin: 25px 0 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+
+  .contact-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #625b51;
+  }
+
+
+  .contact-note {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 120px 40px;
+  }
+
+
+  .contact-note-content {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+
+  .contact-final {
+    padding: 115px 40px;
+    text-align: center;
+    background: #29251f;
+    color: #f8f5ef;
+  }
+
+
+  .contact-final h2 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .contact-final .product-shop-button {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+
+  @media (max-width: 900px) {
+
+    .contact-main {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+
+  @media (max-width: 600px) {
+
+    .contact-hero,
+    .contact-main,
+    .contact-partnerships,
+    .contact-note,
+    .contact-final {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+    .contact-hero {
+      padding-top: 70px;
+      padding-bottom: 80px;
+    }
+
+    .contact-email a {
+      font-size: 24px;
+    }
+
+  }
+
+</style>

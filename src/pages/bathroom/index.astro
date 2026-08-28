@@ -1,0 +1,455 @@
+---
+import "../../styles/global.css";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+
+const products = [
+  {
+    title: "Ava Nord Ceramic Bathroom Set",
+    category: "Bathroom Accessories",
+    image: "/images/bathroom/ava-nord-ceramic-bathroom-set-cream.png",
+    href: "/bathroom/ava-nord-ceramic-bathroom-set",
+  },
+  {
+    title: "Glass & Gold Cosmetic Organizer",
+    category: "Bathroom Organisation",
+    image: "/images/bathroom/harliangxy-glass-gold-cosmetic-organizer.png",
+    href: "/bathroom/harliangxy-glass-gold-cosmetic-organizer",
+  },
+  {
+    title: "Bamboo Laundry Hamper",
+    category: "Laundry & Organisation",
+    image: "/images/bathroom/songmics-bamboo-double-laundry-hamper.png",
+    href: "/bathroom/songmics-bamboo-double-laundry-hamper",
+  },
+  {
+    title: "Large Woven Rope Laundry Basket",
+    category: "Laundry & Storage",
+    image: "/images/bathroom/oiahomy-large-woven-rope-laundry-basket.png",
+    href: "/bathroom/oiahomy-large-woven-rope-laundry-basket",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Bathroom Finds | KASODI</title>
+
+    <meta
+      name="description"
+      content="Discover KASODI's curated bathroom edit — elegant accessories, thoughtful storage and beautiful everyday pieces for a calm and considered space."
+    />
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <Header />
+
+
+    <main>
+
+      <!-- BREADCRUMBS -->
+      <div class="breadcrumbs">
+        <a href="/">Home</a>
+        <span>·</span>
+        <span>Bathroom</span>
+      </div>
+
+
+      <!-- CATEGORY INTRO -->
+      <section class="category-intro">
+
+        <p class="eyebrow">KASODI · BATHROOM</p>
+
+        <h1>Beautiful Details<br />for Everyday Rituals</h1>
+
+        <p class="category-description">
+          Thoughtfully selected bathroom pieces that combine beauty,
+          function and a sense of calm. From elegant countertop
+          accessories to natural storage and laundry solutions,
+          each find is chosen to make everyday routines feel a little
+          more considered.
+        </p>
+
+      </section>
+
+
+      <!-- PRODUCTS -->
+      <section class="products-section">
+
+        <div class="section-heading">
+          <p class="eyebrow">CURATED FINDS</p>
+          <h2>Bathroom Edit</h2>
+        </div>
+
+        <div class="product-grid">
+
+          {products.map((product) => (
+            <a class="product-card" href={product.href}>
+
+              <div class="product-image">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="product-info">
+
+                <p class="product-category">
+                  {product.category}
+                </p>
+
+                <div class="product-title-row">
+                  <h3>{product.title}</h3>
+                  <span class="arrow">→</span>
+                </div>
+
+                <span class="discover">
+                  Discover
+                </span>
+
+              </div>
+
+            </a>
+          ))}
+
+        </div>
+
+      </section>
+
+
+      <!-- CATEGORY MESSAGE -->
+      <section class="editorial-section">
+
+        <div class="editorial-inner">
+
+          <p class="eyebrow">THE KASODI APPROACH</p>
+
+          <h2>
+            A calmer bathroom starts<br />
+            with thoughtful details.
+          </h2>
+
+          <p>
+            We look for pieces that feel beautiful enough to leave on
+            display and practical enough to use every day. Natural
+            textures, warm neutrals, elegant forms and useful storage
+            are at the heart of our bathroom edit.
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <Footer />
+
+  </body>
+</html>
+
+
+<style>
+
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f8f6f1;
+    color: #29251f;
+  }
+
+
+  /* HEADER */
+
+  .site-header {
+    height: 96px;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(41, 37, 31, 0.09);
+    background: #f8f6f1;
+  }
+
+  .logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 31px;
+    letter-spacing: 0.17em;
+    color: #29251f;
+    text-decoration: none;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+
+  .main-nav a {
+    color: #29251f;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 11px;
+  }
+
+
+  /* BREADCRUMBS */
+
+  .breadcrumbs {
+    width: min(1400px, 92%);
+    margin: 34px auto 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #887b6c;
+  }
+
+  .breadcrumbs a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+  /* INTRO */
+
+  .category-intro {
+    width: min(1400px, 92%);
+    padding: 95px 0 110px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    margin: 0 0 25px;
+    color: #9a7654;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+
+  .category-intro h1 {
+    max-width: 850px;
+    margin: 0 auto 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 82px);
+    font-weight: 400;
+    line-height: 1.03;
+    letter-spacing: -0.025em;
+  }
+
+  .category-description {
+    max-width: 690px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.8;
+    color: #62594f;
+  }
+
+
+  /* PRODUCTS */
+
+  .products-section {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+    padding-bottom: 130px;
+  }
+
+  .section-heading {
+    margin-bottom: 42px;
+  }
+
+  .section-heading .eyebrow {
+    margin-bottom: 13px;
+  }
+
+  .section-heading h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    font-weight: 400;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+  }
+
+  .product-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .product-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: #eee9df;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  .product-card:hover .product-image img {
+    transform: scale(1.025);
+  }
+
+  .product-info {
+    padding-top: 20px;
+  }
+
+  .product-category {
+    margin: 0 0 9px;
+
+    color: #9a7654;
+    font-size: 9px;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+  }
+
+  .product-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .product-title-row h3 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 400;
+  }
+
+  .arrow {
+    font-size: 20px;
+    transition: transform 0.25s ease;
+  }
+
+  .product-card:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  .discover {
+    display: inline-block;
+    margin-top: 14px;
+
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #29251f;
+    padding-bottom: 3px;
+  }
+
+
+  /* EDITORIAL */
+
+  .editorial-section {
+    background: #e9e2d6;
+    padding: 120px 5%;
+  }
+
+  .editorial-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .editorial-inner h2 {
+    margin: 0 0 30px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.08;
+    font-weight: 400;
+  }
+
+  .editorial-inner > p:last-child {
+    max-width: 620px;
+    margin: 0 auto;
+
+    color: #62594f;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+
+  /* RESPONSIVE */
+
+  @media (max-width: 1050px) {
+
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 24px;
+    }
+
+  }
+
+
+  @media (max-width: 760px) {
+
+    .site-header {
+      height: auto;
+      padding: 25px 5%;
+    }
+
+    .main-nav {
+      display: none;
+    }
+
+    .category-intro {
+      padding: 70px 0 80px;
+    }
+
+    .category-intro h1 {
+      font-size: 48px;
+    }
+
+    .products-section {
+      padding-bottom: 90px;
+    }
+
+    .product-grid {
+      grid-template-columns: 1fr;
+      gap: 55px;
+    }
+
+    .product-image {
+      aspect-ratio: 4 / 5;
+    }
+
+    .editorial-section {
+      padding: 85px 7%;
+    }
+
+  }
+
+</style>

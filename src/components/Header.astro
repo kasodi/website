@@ -1,0 +1,80 @@
+<header class="site-header">
+
+  <a class="logo" href="/">
+    KASODI
+  </a>
+
+  <nav class="main-nav">
+    <a href="/">Shop</a>
+    <a href="/#collections">Collections</a>
+    <a href="/new-finds">New Finds</a>
+    <a href="/#journal">Journal</a>
+    <a href="/about">About</a>
+  </nav>
+
+</header>
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
+
+  .site-header {
+    width: 100%;
+    height: 96px;
+    padding: 0 4%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(41, 37, 31, 0.09);
+    background: #f8f6f1;
+  }
+
+
+  .logo {
+    display: block;
+
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.20em;
+
+    color: #29251f;
+    text-decoration: none;
+  }
+
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+
+
+  .main-nav a {
+    color: #29251f;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 11px;
+  }
+
+
+  @media (max-width: 760px) {
+
+    .site-header {
+      height: auto;
+      padding: 25px 5%;
+    }
+
+
+    .main-nav {
+      display: none;
+    }
+
+  }
+
+</style>

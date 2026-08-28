@@ -1,0 +1,419 @@
+---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Interesting Finds | KASODI</title>
+
+    <meta
+      name="description"
+      content="Discover KASODI's Interesting Finds — distinctive, unexpected and beautifully designed objects chosen to bring character and personality to the home."
+    />
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <Header />
+
+
+    <main>
+
+      <!-- BREADCRUMBS -->
+      <div class="breadcrumbs">
+        <a href="/">Home</a>
+        <span>·</span>
+        <span>Interesting Finds</span>
+      </div>
+
+
+      <!-- CATEGORY INTRO -->
+      <section class="category-intro">
+
+        <p class="eyebrow">
+          KASODI · INTERESTING FINDS
+        </p>
+
+        <h1>
+          The Unexpected Things<br />
+          Worth Discovering
+        </h1>
+
+        <p class="category-description">
+          A collection for the pieces that refuse to fit neatly into
+          one category — unusual objects, clever ideas and distinctive
+          details chosen simply because they make a home more interesting.
+        </p>
+
+      </section>
+
+
+      <!-- EDITORIAL CATEGORIES -->
+      <section class="finds-section">
+
+        <div class="finds-grid">
+
+          <div class="finds-item">
+
+            <span>01</span>
+
+            <h2>
+              Unexpected Objects
+            </h2>
+
+            <p>
+              Decorative pieces and curious details that catch the eye
+              and give a room a little more personality.
+            </p>
+
+          </div>
+
+
+          <div class="finds-item">
+
+            <span>02</span>
+
+            <h2>
+              Clever Little Things
+            </h2>
+
+            <p>
+              Thoughtful objects that solve an everyday problem in a
+              way that feels useful, beautiful or simply more enjoyable.
+            </p>
+
+          </div>
+
+
+          <div class="finds-item">
+
+            <span>03</span>
+
+            <h2>
+              Worth a Second Look
+            </h2>
+
+            <p>
+              The pieces we discover unexpectedly — distinctive shapes,
+              materials and ideas that are too interesting to overlook.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- EDITORIAL -->
+      <section class="editorial-section">
+
+        <div class="editorial-inner">
+
+          <p class="eyebrow">
+            THE KASODI APPROACH
+          </p>
+
+          <h2>
+            Not everything beautiful<br />
+            needs a category.
+          </h2>
+
+          <p>
+            Some of the best finds are the ones you were not looking
+            for. This edit is where we collect unusual, useful and
+            characterful objects that make us stop, look again and
+            imagine them somewhere at home.
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <Footer />
+
+  </body>
+</html>
+
+
+<style>
+
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+
+  :global(body) {
+    margin: 0;
+    background: #f8f6f1;
+    color: #29251f;
+  }
+
+
+  /* HEADER */
+
+  .site-header {
+    height: 96px;
+    padding: 0 4%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(41, 37, 31, 0.09);
+    background: #f8f6f1;
+  }
+
+
+  .logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 31px;
+    letter-spacing: 0.17em;
+    color: #29251f;
+    text-decoration: none;
+  }
+
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+
+
+  .main-nav a {
+    color: #29251f;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 11px;
+  }
+
+
+  /* BREADCRUMBS */
+
+  .breadcrumbs {
+    width: min(1400px, 92%);
+    margin: 34px auto 0;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #887b6c;
+  }
+
+
+  .breadcrumbs a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+  /* INTRO */
+
+  .category-intro {
+    width: min(1400px, 92%);
+    padding: 95px 0 110px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .eyebrow {
+    margin: 0 0 25px;
+    color: #9a7654;
+
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+
+
+  .category-intro h1 {
+    max-width: 950px;
+    margin: 0 auto 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 82px);
+    font-weight: 400;
+    line-height: 1.03;
+    letter-spacing: -0.025em;
+  }
+
+
+  .category-description {
+    max-width: 700px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 1.8;
+    color: #62594f;
+  }
+
+
+  /* INTERESTING FINDS */
+
+  .finds-section {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+    padding: 0 0 130px;
+  }
+
+
+  .finds-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid rgba(41, 37, 31, 0.15);
+    border-bottom: 1px solid rgba(41, 37, 31, 0.15);
+  }
+
+
+  .finds-item {
+    padding: 50px 42px 55px;
+  }
+
+
+  .finds-item + .finds-item {
+    border-left: 1px solid rgba(41, 37, 31, 0.15);
+  }
+
+
+  .finds-item > span {
+    display: block;
+    margin-bottom: 38px;
+
+    color: #9a7654;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+  }
+
+
+  .finds-item h2 {
+    margin: 0 0 18px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 29px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+
+  .finds-item p {
+    max-width: 330px;
+    margin: 0;
+
+    color: #62594f;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+
+  /* EDITORIAL */
+
+  .editorial-section {
+    padding: 120px 5%;
+    background: #e9e2d6;
+  }
+
+
+  .editorial-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .editorial-inner h2 {
+    margin: 0 0 30px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.08;
+    font-weight: 400;
+  }
+
+
+  .editorial-inner > p:last-child {
+    max-width: 620px;
+    margin: 0 auto;
+
+    color: #62594f;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+
+  /* RESPONSIVE */
+
+  @media (max-width: 900px) {
+
+    .finds-grid {
+      grid-template-columns: 1fr;
+    }
+
+
+    .finds-item + .finds-item {
+      border-left: none;
+      border-top: 1px solid rgba(41, 37, 31, 0.15);
+    }
+
+  }
+
+
+  @media (max-width: 760px) {
+
+    .site-header {
+      height: auto;
+      padding: 25px 5%;
+    }
+
+
+    .main-nav {
+      display: none;
+    }
+
+
+    .category-intro {
+      padding: 70px 0 80px;
+    }
+
+
+    .category-intro h1 {
+      font-size: 48px;
+    }
+
+
+    .finds-section {
+      padding-bottom: 90px;
+    }
+
+
+    .finds-item {
+      padding: 40px 20px;
+    }
+
+
+    .editorial-section {
+      padding: 85px 7%;
+    }
+
+  }
+
+</style>

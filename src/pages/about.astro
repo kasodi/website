@@ -1,0 +1,435 @@
+---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About KASODI | Curated Finds for the Home</title>
+
+    <meta
+      name="description"
+      content="KASODI is an independent home and lifestyle curation platform focused on beautiful, useful and thoughtfully selected objects for everyday living."
+    />
+  </head>
+
+  <body>
+
+    <Header />
+
+
+    <main class="about-page">
+
+      <section class="about-hero">
+
+        <p class="about-eyebrow">
+          ABOUT KASODI
+        </p>
+
+        <h1>
+          Beautiful things for everyday living.
+        </h1>
+
+        <p class="about-intro">
+          KASODI is an independent home and lifestyle curation platform
+          dedicated to discovering objects that bring beauty, character
+          and usefulness to everyday spaces.
+        </p>
+
+      </section>
+
+
+      <section class="about-story">
+
+        <div class="about-story-label">
+          OUR POINT OF VIEW
+        </div>
+
+        <div class="about-story-content">
+
+          <h2>
+            A more considered way to discover things for the home.
+          </h2>
+
+          <p>
+            Finding something beautiful for the home should feel inspiring,
+            not overwhelming. Yet online shopping often means scrolling through
+            hundreds of similar products, comparing unclear descriptions and
+            trying to understand which pieces are actually worth considering.
+          </p>
+
+          <p>
+            KASODI was created to make that process simpler.
+          </p>
+
+          <p>
+            We search across brands, independent retailers and online
+            marketplaces to find pieces with distinctive design, useful
+            function and a sense of character. Our selections range from
+            tableware and ceramics to textiles, bathroom accessories,
+            organization, decorative objects and small details that can
+            change the feeling of a room.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="about-values">
+
+        <div class="about-section-heading">
+          <p>HOW WE CURATE</p>
+          <h2>What makes a KASODI find</h2>
+        </div>
+
+        <div class="about-values-grid">
+
+          <div class="about-value">
+            <span>01</span>
+            <h3>Design with character</h3>
+            <p>
+              We look for pieces that feel considered and distinctive rather
+              than simply following trends.
+            </p>
+          </div>
+
+          <div class="about-value">
+            <span>02</span>
+            <h3>Beauty with a purpose</h3>
+            <p>
+              A beautiful object is even better when it earns its place in
+              everyday life through useful function.
+            </p>
+          </div>
+
+          <div class="about-value">
+            <span>03</span>
+            <h3>Value at different price points</h3>
+            <p>
+              Good design does not belong to a single budget. We curate both
+              premium pieces and more accessible alternatives when they offer
+              strong design and value.
+            </p>
+          </div>
+
+          <div class="about-value">
+            <span>04</span>
+            <h3>A home that feels personal</h3>
+            <p>
+              We favour warm, timeless interiors built gradually from objects
+              that feel collected rather than copied from a showroom.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="about-selection">
+
+        <div class="about-selection-content">
+
+          <p class="about-eyebrow">
+            OUR SELECTION
+          </p>
+
+          <h2>
+            From quiet essentials to unexpected finds.
+          </h2>
+
+          <p>
+            KASODI currently focuses on tableware, ceramics, kitchen pieces,
+            home décor, textiles, bathroom accessories, candles, organization
+            and other small objects for creating a more welcoming home.
+          </p>
+
+          <p>
+            Some finds are understated and timeless. Others are colourful,
+            decorative or a little unexpected. What connects them is not one
+            strict interior style, but a preference for warmth, thoughtful
+            details, natural textures and objects with personality.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="about-editorial">
+
+        <div class="about-editorial-label">
+          INDEPENDENT CURATION
+        </div>
+
+        <div class="about-editorial-content">
+
+          <h2>
+            How KASODI works
+          </h2>
+
+          <p>
+            Products featured on KASODI are selected editorially based on
+            design, usefulness, materials, value and how well they fit the
+            KASODI point of view.
+          </p>
+
+          <p>
+            We may use affiliate links to selected retailers and marketplaces.
+            If a reader chooses to purchase through one of these links, KASODI
+            may receive a commission at no additional cost to the customer.
+          </p>
+
+          <p>
+            Affiliate relationships do not determine whether a product is
+            suitable for KASODI. Our aim is to build a useful and trusted
+            collection of objects worth discovering.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="about-final">
+
+        <p class="about-eyebrow">
+          KASODI
+        </p>
+
+        <h2>
+          Curated for a home that feels warm, elegant and personal.
+        </h2>
+
+        <a href="/#collections" class="product-shop-button">
+          Explore the Collection →
+        </a>
+
+      </section>
+
+    </main>
+
+
+   <Footer />
+
+  </body>
+</html>
+
+
+<style>
+
+  .about-page {
+    background: #f8f5ef;
+    color: #29251f;
+  }
+
+  .about-hero {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 110px 40px 120px;
+    text-align: center;
+  }
+
+  .about-eyebrow {
+    margin: 0 0 25px;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #917552;
+  }
+
+  .about-hero h1 {
+    max-width: 850px;
+    margin: 0 auto 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 1.05;
+  }
+
+  .about-intro {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 1.75;
+    color: #5e574d;
+  }
+
+
+  .about-story,
+  .about-editorial {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    border-top: 1px solid rgba(41, 37, 31, 0.14);
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 80px;
+  }
+
+  .about-story-label,
+  .about-editorial-label {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    color: #917552;
+  }
+
+  .about-story-content,
+  .about-editorial-content {
+    max-width: 760px;
+  }
+
+  .about-story h2,
+  .about-editorial h2,
+  .about-selection h2,
+  .about-final h2 {
+    margin: 0 0 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 4vw, 55px);
+    line-height: 1.12;
+    font-weight: 400;
+  }
+
+  .about-story p,
+  .about-editorial p,
+  .about-selection p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: #5d564c;
+  }
+
+
+  .about-values {
+    padding: 110px 40px;
+    background: #eee8dd;
+  }
+
+  .about-section-heading {
+    max-width: 1180px;
+    margin: 0 auto 65px;
+  }
+
+  .about-section-heading > p {
+    margin: 0 0 15px;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: #917552;
+  }
+
+  .about-section-heading h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4vw, 56px);
+    font-weight: 400;
+  }
+
+  .about-values-grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
+  }
+
+  .about-value {
+    border-top: 1px solid rgba(41, 37, 31, 0.25);
+    padding-top: 25px;
+  }
+
+  .about-value span {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: #917552;
+  }
+
+  .about-value h3 {
+    margin: 25px 0 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .about-value p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #625b51;
+  }
+
+
+  .about-selection {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 120px 40px;
+  }
+
+  .about-selection-content {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .about-final {
+    padding: 115px 40px;
+    text-align: center;
+    background: #29251f;
+    color: #f8f5ef;
+  }
+
+  .about-final h2 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-final .product-shop-button {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+
+  @media (max-width: 900px) {
+
+    .about-story,
+    .about-editorial {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+
+    .about-values-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+  }
+
+
+  @media (max-width: 600px) {
+
+    .about-hero,
+    .about-story,
+    .about-editorial,
+    .about-selection,
+    .about-values,
+    .about-final {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+    .about-values-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .about-hero {
+      padding-top: 70px;
+      padding-bottom: 80px;
+    }
+
+  }
+
+</style>
