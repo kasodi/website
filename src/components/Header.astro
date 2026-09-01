@@ -4,6 +4,15 @@
     KASODI
   </a>
 
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    MENU
+  </button>
+
   <nav class="main-nav">
     <a href="/">Shop</a>
     <a href="/#collections">Collections</a>
@@ -15,66 +24,202 @@
 </header>
 
 
+<nav class="mobile-menu" id="mobile-menu">
+
+  <a href="/">Shop</a>
+  <a href="/#collections">Collections</a>
+  <a href="/new-finds">New Finds</a>
+  <a href="/#journal">Journal</a>
+  <a href="/about">About</a>
+
+</nav>
+
+
+<script>
+  const menuButton = document.querySelector(".menu-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  if (menuButton && mobileMenu) {
+
+    menuButton.addEventListener("click", () => {
+
+      const isOpen = mobileMenu.classList.toggle("is-open");
+
+      menuButton.textContent = isOpen ? "CLOSE" : "MENU";
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+
+    });
+
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+
+      link.addEventListener("click", () => {
+
+        mobileMenu.classList.remove("is-open");
+
+        menuButton.textContent = "MENU";
+        menuButton.setAttribute("aria-expanded", "false");
+
+      });
+
+    });
+
+  }
+</script>
+
+
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
 
+
+/* =====================================================
+   DESKTOP HEADER
+===================================================== */
+
+.site-header {
+  width: 100%;
+  height: 96px;
+  padding: 0 4%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(41, 37, 31, 0.09);
+  background: #f8f6f1;
+}
+
+
+.logo {
+  display: block;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 0.20em;
+
+  color: #29251f;
+  text-decoration: none;
+}
+
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+
+.main-nav a {
+  color: #29251f;
+  text-decoration: none;
+
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   MOBILE MENU BUTTON
+===================================================== */
+
+.menu-toggle {
+  display: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+  background: transparent;
+  padding: 8px 0;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+
+  color: #29251f;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+.mobile-menu {
+  display: none;
+
+  width: 100%;
+  padding: 12px 6% 28px;
+
+  background: #f8f6f1;
+
+  border-bottom: 1px solid rgba(41, 37, 31, 0.09);
+}
+
+
+.mobile-menu a {
+  display: block;
+
+  padding: 14px 0;
+
+  color: #29251f;
+  text-decoration: none;
+
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+
+  border-bottom: 1px solid rgba(41, 37, 31, 0.08);
+}
+
+
+.mobile-menu a:last-child {
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 760px) {
+
   .site-header {
-    width: 100%;
     height: 96px;
-    padding: 0 4%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    border-bottom: 1px solid rgba(41, 37, 31, 0.09);
-    background: #f8f6f1;
+    padding: 0 6%;
   }
 
 
   .logo {
-    display: block;
-
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: 0.20em;
-
-    color: #29251f;
-    text-decoration: none;
+    font-size: 30px;
   }
 
 
   .main-nav {
-    display: flex;
-    align-items: center;
-    gap: 38px;
+    display: none;
   }
 
 
-  .main-nav a {
-    color: #29251f;
-    text-decoration: none;
-
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 11px;
+  .menu-toggle {
+    display: block;
   }
 
 
-  @media (max-width: 760px) {
-
-    .site-header {
-      height: auto;
-      padding: 25px 5%;
-    }
-
-
-    .main-nav {
-      display: none;
-    }
-
+  .mobile-menu.is-open {
+    display: block !important;
   }
+
+}
 
 </style>
