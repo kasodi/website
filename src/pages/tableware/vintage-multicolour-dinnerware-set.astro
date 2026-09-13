@@ -7,7 +7,7 @@ import Header from "../../components/Header.astro";
 <html lang="en">
   <head>
     <!-- Google Consent Mode -->
-    <script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -41,7 +41,7 @@ import Header from "../../components/Header.astro";
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-LT2BEMKHKC"
     ></script>
-    <script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
