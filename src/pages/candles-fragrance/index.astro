@@ -1,15 +1,36 @@
 ---
-import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import "../../styles/global.css";
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 
 const products = [
   {
-    title: "Botanical Vintage Pitcher",
-    brand: "Ethereal Eves",
-    category: "Serving & Decor",
-    image: "/images/kasodi-edit/kasodi-edit-floral-ceramic-pitcher.png",
-    href: "/kasodi-edit/botanical-vintage-pitcher",
+    title: "Sculptural Ivory Candles",
+    brand: "ALMA DE LLAMA",
+    category: "Candles",
+    image: "/images/kasodi-edit/kasodi-edit-sculptural-ivory-candles.png",
+    href: "/candles-fragrance/sculptural-ivory-candles",
+  },
+  {
+    title: "Lena Sculptural Flower Candle",
+    brand: "Serentique",
+    category: "Candles",
+    image: "/images/candles-fragrance/serentique-lena-sculptural-flower-candle.png",
+    href: "/candles-fragrance/lena-sculptural-flower-candle",
+  },
+  {
+    title: "Ribbed Sculptural Candle Set",
+    brand: "ALMA DE LLAMA",
+    category: "Candles",
+    image: "/images/candles-fragrance/alma-de-llama-ribbed-sculptural-candles.png",
+    href: "/candles-fragrance/ribbed-sculptural-candle-set",
+  },
+  {
+    title: "Walnut Candle Holder Set",
+    brand: "Sabai'ly",
+    category: "Candle Holders",
+    image: "/images/candles-fragrance/sabaily-walnut-candle-holder-set.png",
+    href: "/candles-fragrance/walnut-candle-holder-set",
   },
 ];
 ---
@@ -56,11 +77,11 @@ const products = [
       content="width=device-width, initial-scale=1.0"
     />
 
-    <title>Kitchen Finds | KASODI</title>
+    <title>Candles & Fragrance Finds | KASODI</title>
 
     <meta
       name="description"
-      content="Discover KASODI's curated kitchen edit — practical and decorative pieces selected for beauty, character and thoughtful everyday use."
+      content="Discover KASODI's curated candles and fragrance edit — sculptural forms, atmospheric details and pieces chosen to bring warmth and character to the home."
     />
   </head>
 
@@ -76,7 +97,7 @@ const products = [
       <div class="breadcrumbs">
         <a href="/">Home</a>
         <span>·</span>
-        <span>Kitchen</span>
+        <span>Candles & Fragrance</span>
       </div>
 
 
@@ -84,18 +105,18 @@ const products = [
       <section class="category-intro">
 
         <p class="eyebrow">
-          KASODI · KITCHEN
+          KASODI · CANDLES & FRAGRANCE
         </p>
 
         <h1>
-          Beautiful Tools for<br />
-          Everyday Cooking
+          Small Rituals,<br />
+          Softer Atmospheres
         </h1>
 
         <p class="category-description">
-          Useful pieces with character — from serving essentials and
-          decorative ceramics to thoughtful details chosen to make
-          everyday kitchen routines feel more considered.
+          Atmospheric details for the home — from sculptural candles
+          and decorative forms to pieces chosen to bring warmth,
+          softness and a sense of ritual to everyday spaces.
         </p>
 
       </section>
@@ -111,7 +132,7 @@ const products = [
           </p>
 
           <h2>
-            Kitchen Edit
+            Candles & Fragrance Edit
           </h2>
 
         </div>
@@ -187,15 +208,15 @@ const products = [
           </p>
 
           <h2>
-            Everyday function can<br />
-            still feel beautiful.
+            Atmosphere lives<br />
+            in the smallest details.
           </h2>
 
           <p>
-            We look for kitchen pieces that earn their place in the
-            room — useful objects with thoughtful proportions, tactile
-            materials and enough character to look beautiful even when
-            they are left on display.
+            We look for candles and home-fragrance pieces that add more
+            than scent — sculptural shapes, tactile finishes and quiet
+            decorative details that make a room feel warmer, softer
+            and more intentional.
           </p>
 
         </div>
@@ -291,12 +312,11 @@ const products = [
   /* INTRO */
 
   .category-intro {
-    width: min(1400px, 92%);
-    padding: 95px 0 110px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
+  width: min(1400px, 92%);
+  padding: 65px 0 70px;
+  margin: 0 auto;
+  text-align: center;
+}
 
   .eyebrow {
     margin: 0 0 25px;
@@ -384,7 +404,6 @@ const products = [
     width: 100%;
     height: 100%;
     display: block;
-
     object-fit: cover;
 
     transition: transform 0.6s ease;

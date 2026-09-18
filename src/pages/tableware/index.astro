@@ -1,16 +1,96 @@
 ---
-import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import "../../styles/global.css";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
 
 const products = [
+    {
+  title: "Alori Amber Champagne Glass",
+  brand: "Kave Home",
+  category: "Glassware",
+  image: "/images/tableware/kave-home-alori-amber-cava-glass.png",
+  href: "/tableware/alori-amber-champagne-glass",
+},
+{
+  title: "Talora Carved Glass Decanter",
+  brand: "Kave Home",
+  category: "Barware",
+  image: "/images/tableware/kave-home-talora-carved-glass-decanter.png",
+  href: "/tableware/talora-carved-glass-decanter",
+},
+
   {
-    title: "Sculptural Ivory Candles",
-    brand: "ALMA DE LLAMA",
-    category: "Candles",
-    image: "/images/kasodi-edit/kasodi-edit-sculptural-ivory-candles.png",
-    href: "/kasodi-edit/sculptural-ivory-candles",
+    title: "Blue Floral Dessert Plates",
+    brand: "fanquare",
+    category: "Tableware",
+    image: "/images/new-finds/fanquare-blue-floral-dessert-plates.png",
+    href: "/new-finds/fanquare-blue-floral-dessert-plates",
   },
+
+  {
+    title: "French Garden Fleurence Dinner Plate",
+    brand: "Villeroy & Boch",
+    category: "Tableware",
+    image: "/images/tableware/villeroy-boch-french-garden-fleurence-dinner-plate.png",
+    href: "/tableware/villeroy-boch-french-garden-fleurence-dinner-plate",
+  },
+
+  {
+    title: "Lady Diamond Wine Glasses",
+    brand: "Cristal D'Arques",
+    category: "Glassware",
+    image: "/images/tableware/cristal-darques-lady-diamond-wine-glasses.png",
+    href: "/tableware/cristal-darques-lady-diamond-wine-glasses",
+  },
+
+  {
+    title: "Vintage Gold Cake Serving Set",
+    brand: "XINCHEN Kitchen",
+    category: "Tableware",
+    image: "/images/tableware/vintage-gold-cake-serving-set.png",
+    href: "/tableware/vintage-gold-cake-serving-set",
+  },
+
+  {
+    title: "Vintage Green Champagne Glasses",
+    brand: "Joeyan",
+    category: "Glassware",
+    image: "/images/new-finds/joeyan-green-champagne-glasses.png",
+    href: "/new-finds/joeyan-green-champagne-glasses",
+  },
+
+  {
+    title: "Blue Floral Porcelain Tea Set",
+    brand: "fanquare",
+    category: "Tableware",
+    image: "/images/tableware/blue-floral-porcelain-tea-set.png",
+    href: "/tableware/blue-floral-porcelain-tea-set",
+  },
+
+  {
+    title: "Vintage Multicolour Dinnerware Set",
+    brand: "Moritz & Moritz",
+    category: "Tableware",
+    image: "/images/tableware/vintage-multicolour-dinnerware-set.png",
+    href: "/tableware/vintage-multicolour-dinnerware-set",
+  },
+
+  {
+    title: "Pink Floral Tea Cup & Saucer",
+    brand: "fanquare",
+    category: "Tableware",
+    image: "/images/tableware/pink-floral-tea-cup-saucer.png",
+    href: "/tableware/pink-floral-tea-cup-saucer",
+  },
+
+  {
+    title: "Boston Green Wine Glass",
+    brand: "Villeroy & Boch",
+    category: "Glassware",
+    image: "/images/kasodi-edit/kasodi-edit-villeroy-boch-boston-green-glass.png",
+    href: "/kasodi-edit/boston-green-wine-glass",
+  },
+
 ];
 ---
 
@@ -56,12 +136,58 @@ const products = [
       content="width=device-width, initial-scale=1.0"
     />
 
-    <title>Candles & Fragrance Finds | KASODI</title>
+    <title>Tableware Finds | KASODI</title>
 
     <meta
       name="description"
-      content="Discover KASODI's curated candles and fragrance edit — sculptural forms, atmospheric details and pieces chosen to bring warmth and character to the home."
+      content="Discover KASODI's curated tableware edit — distinctive glassware, decorative plates and beautiful pieces for tables with character."
     />
+    <!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="KASODI" />
+
+<meta
+  property="og:title"
+  content="Tableware Finds | KASODI"
+/>
+
+<meta
+  property="og:description"
+  content="Discover KASODI's curated tableware edit — distinctive glassware, decorative plates and beautiful pieces for tables with character."
+/>
+
+<meta
+  property="og:url"
+  content="https://kasodi.com/tableware/"
+/>
+
+<meta
+  property="og:image"
+  content="https://kasodi.com/images/tableware-facebook.png"
+/>
+
+<meta
+  property="og:image:alt"
+  content="Curated tableware styled in a warm Mediterranean KASODI setting"
+/>
+
+<!-- Twitter / Social -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<meta
+  name="twitter:title"
+  content="Tableware Finds | KASODI"
+/>
+
+<meta
+  name="twitter:description"
+  content="Discover KASODI's curated tableware edit — distinctive glassware, decorative plates and beautiful pieces for tables with character."
+/>
+
+<meta
+  name="twitter:image"
+  content="https://kasodi.com/images/tableware-facebook.png"
+/>
   </head>
 
   <body>
@@ -76,7 +202,7 @@ const products = [
       <div class="breadcrumbs">
         <a href="/">Home</a>
         <span>·</span>
-        <span>Candles & Fragrance</span>
+        <span>Tableware</span>
       </div>
 
 
@@ -84,18 +210,19 @@ const products = [
       <section class="category-intro">
 
         <p class="eyebrow">
-          KASODI · CANDLES & FRAGRANCE
+          KASODI · TABLEWARE
         </p>
 
         <h1>
-          Small Rituals,<br />
-          Softer Atmospheres
+          Details That Make<br />
+          the Table Feel Special
         </h1>
 
         <p class="category-description">
-          Atmospheric details for the home — from sculptural candles
-          and decorative forms to pieces chosen to bring warmth,
-          softness and a sense of ritual to everyday spaces.
+          Pieces for tables with character — from coloured glassware
+          and decorative plates to distinctive everyday finds selected
+          for beauty, quality and the way they make a table feel more
+          personal.
         </p>
 
       </section>
@@ -105,15 +232,13 @@ const products = [
       <section class="products-section">
 
         <div class="section-heading">
-
           <p class="eyebrow">
             CURATED FINDS
           </p>
 
           <h2>
-            Candles & Fragrance Edit
+            Tableware Edit
           </h2>
-
         </div>
 
 
@@ -187,15 +312,15 @@ const products = [
           </p>
 
           <h2>
-            Atmosphere lives<br />
-            in the smallest details.
+            A beautiful table begins<br />
+            with pieces worth noticing.
           </h2>
 
           <p>
-            We look for candles and home-fragrance pieces that add more
-            than scent — sculptural shapes, tactile finishes and quiet
-            decorative details that make a room feel warmer, softer
-            and more intentional.
+            We look for tableware that brings personality to everyday
+            meals — tactile glass, decorative ceramics, expressive
+            patterns and timeless forms that can be mixed, collected
+            and enjoyed for years.
           </p>
 
         </div>
@@ -291,11 +416,11 @@ const products = [
   /* INTRO */
 
   .category-intro {
-    width: min(1400px, 92%);
-    padding: 95px 0 110px;
-    margin: 0 auto;
-    text-align: center;
-  }
+  width: min(1400px, 92%);
+  padding: 65px 0 70px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
   .eyebrow {
@@ -384,6 +509,7 @@ const products = [
     width: 100%;
     height: 100%;
     display: block;
+
     object-fit: cover;
 
     transition: transform 0.6s ease;

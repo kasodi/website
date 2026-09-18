@@ -1,179 +1,89 @@
 ---
-import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import "../../styles/global.css";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
 
 const products = [
-
   {
-    title: "Blue Floral Dessert Plates",
-    brand: "fanquare",
-    category: "Tableware",
-    image: "/images/new-finds/fanquare-blue-floral-dessert-plates.png",
-    href: "/new-finds/fanquare-blue-floral-dessert-plates",
+    title: "Garel Green Marble Decorative Set",
+    brand: "Kave Home",
+    category: "Decorative Objects",
+    image: "/images/interesting-finds/kave-home-garel-green-marble-decorative-set.png",
+    href: "/interesting-finds/garel-green-marble-decorative-set",
   },
-
   {
-    title: "French Garden Fleurence Dinner Plate",
-    brand: "Villeroy & Boch",
-    category: "Tableware",
-    image: "/images/tableware/villeroy-boch-french-garden-fleurence-dinner-plate.png",
-    href: "/tableware/villeroy-boch-french-garden-fleurence-dinner-plate",
+    title: "Serela White Marble Bookends",
+    brand: "Kave Home",
+    category: "Decorative Objects",
+    image: "/images/interesting-finds/kave-home-serela-white-marble-bookends.png",
+    href: "/interesting-finds/serela-white-marble-bookends",
   },
-
-  {
-    title: "Lady Diamond Wine Glasses",
-    brand: "Cristal D'Arques",
-    category: "Glassware",
-    image: "/images/tableware/cristal-darques-lady-diamond-wine-glasses.png",
-    href: "/tableware/cristal-darques-lady-diamond-wine-glasses",
-  },
-
-  {
-    title: "Vintage Gold Cake Serving Set",
-    brand: "XINCHEN Kitchen",
-    category: "Tableware",
-    image: "/images/tableware/vintage-gold-cake-serving-set.png",
-    href: "/tableware/vintage-gold-cake-serving-set",
-  },
-
-  {
-    title: "Vintage Green Champagne Glasses",
-    brand: "Joeyan",
-    category: "Glassware",
-    image: "/images/new-finds/joeyan-green-champagne-glasses.png",
-    href: "/new-finds/joeyan-green-champagne-glasses",
-  },
-
-  {
-    title: "Blue Floral Porcelain Tea Set",
-    brand: "fanquare",
-    category: "Tableware",
-    image: "/images/tableware/blue-floral-porcelain-tea-set.png",
-    href: "/tableware/blue-floral-porcelain-tea-set",
-  },
-
-  {
-    title: "Vintage Multicolour Dinnerware Set",
-    brand: "Moritz & Moritz",
-    category: "Tableware",
-    image: "/images/tableware/vintage-multicolour-dinnerware-set.png",
-    href: "/tableware/vintage-multicolour-dinnerware-set",
-  },
-
-  {
-    title: "Pink Floral Tea Cup & Saucer",
-    brand: "fanquare",
-    category: "Tableware",
-    image: "/images/tableware/pink-floral-tea-cup-saucer.png",
-    href: "/tableware/pink-floral-tea-cup-saucer",
-  },
-
-  {
-    title: "Boston Green Wine Glass",
-    brand: "Villeroy & Boch",
-    category: "Glassware",
-    image: "/images/kasodi-edit/kasodi-edit-villeroy-boch-boston-green-glass.png",
-    href: "/kasodi-edit/boston-green-wine-glass",
-  },
-
 ];
 ---
 
 <html lang="en">
-  <head><!-- Google Consent Mode -->
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
+  <head>
+    <!-- Google Consent Mode -->
+   <script is:inline>
+      window.dataLayer = window.dataLayer || [];
 
-  gtag("consent", "default", {
-    ad_storage: "denied",
-    ad_user_data: "denied",
-    ad_personalization: "denied",
-    analytics_storage: "denied",
-    functionality_storage: "denied",
-    personalization_storage: "denied",
-    security_storage: "granted",
-    wait_for_update: 2000
-  });
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-  gtag("set", "ads_data_redaction", true);
-  gtag("set", "url_passthrough", true);
-</script>
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 2000
+      });
 
-<!-- Start cookieyes banner -->
-<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/e9c032e34948c08e8ad6b9973971db36/script.js"></script>
-<!-- End cookieyes banner -->
+      gtag("set", "ads_data_redaction", true);
+      gtag("set", "url_passthrough", true);
+    </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LT2BEMKHKC"></script>
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Start cookieyes banner -->
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://cdn-cookieyes.com/client_data/e9c032e34948c08e8ad6b9973971db36/script.js"
+    ></script>
+    <!-- End cookieyes banner -->
 
-  gtag('config', 'G-LT2BEMKHKC');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LT2BEMKHKC"
+    ></script>
+
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "G-LT2BEMKHKC");
+    </script>
+
     <meta charset="UTF-8" />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
 
-    <title>Tableware Finds | KASODI</title>
+    <title>Interesting Finds | KASODI</title>
 
     <meta
       name="description"
-      content="Discover KASODI's curated tableware edit — distinctive glassware, decorative plates and beautiful pieces for tables with character."
+      content="Discover KASODI's curated Interesting Finds edit — unusual objects, distinctive materials and characterful pieces chosen simply because they make a home more interesting."
     />
-    <!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="KASODI" />
-
-<meta
-  property="og:title"
-  content="Tableware Finds | KASODI"
-/>
-
-<meta
-  property="og:description"
-  content="Discover KASODI's curated tableware edit — distinctive glassware, decorative plates and beautiful pieces for tables with character."
-/>
-
-<meta
-  property="og:url"
-  content="https://kasodi.com/tableware/"
-/>
-
-<meta
-  property="og:image"
-  content="https://kasodi.com/images/tableware-facebook.png"
-/>
-
-<meta
-  property="og:image:alt"
-  content="Curated tableware styled in a warm Mediterranean KASODI setting"
-/>
-
-<!-- Twitter / Social -->
-<meta name="twitter:card" content="summary_large_image" />
-
-<meta
-  name="twitter:title"
-  content="Tableware Finds | KASODI"
-/>
-
-<meta
-  name="twitter:description"
-  content="Discover KASODI's curated tableware edit — distinctive glassware, decorative plates and beautiful pieces for tables with character."
-/>
-
-<meta
-  name="twitter:image"
-  content="https://kasodi.com/images/tableware-facebook.png"
-/>
   </head>
 
   <body>
@@ -187,8 +97,8 @@ const products = [
       <!-- BREADCRUMBS -->
       <div class="breadcrumbs">
         <a href="/">Home</a>
-        <span>·</span>
-        <span>Tableware</span>
+        <span>&middot;</span>
+        <span>Interesting Finds</span>
       </div>
 
 
@@ -196,19 +106,18 @@ const products = [
       <section class="category-intro">
 
         <p class="eyebrow">
-          KASODI · TABLEWARE
+          KASODI &middot; INTERESTING FINDS
         </p>
 
         <h1>
-          Details That Make<br />
-          the Table Feel Special
+          The Unexpected Things<br />
+          Worth Discovering
         </h1>
 
         <p class="category-description">
-          Pieces for tables with character — from coloured glassware
-          and decorative plates to distinctive everyday finds selected
-          for beauty, quality and the way they make a table feel more
-          personal.
+          A collection for the pieces that refuse to fit neatly into one category —
+          unusual objects, clever ideas and distinctive details chosen simply because
+          they make a home more interesting.
         </p>
 
       </section>
@@ -218,13 +127,15 @@ const products = [
       <section class="products-section">
 
         <div class="section-heading">
+
           <p class="eyebrow">
             CURATED FINDS
           </p>
 
           <h2>
-            Tableware Edit
+            Interesting Finds Edit
           </h2>
+
         </div>
 
 
@@ -262,7 +173,7 @@ const products = [
                   </h3>
 
                   <span class="arrow">
-                    →
+                    &rarr;
                   </span>
 
                 </div>
@@ -298,15 +209,14 @@ const products = [
           </p>
 
           <h2>
-            A beautiful table begins<br />
-            with pieces worth noticing.
+            Not everything beautiful<br />
+            needs a category.
           </h2>
 
           <p>
-            We look for tableware that brings personality to everyday
-            meals — tactile glass, decorative ceramics, expressive
-            patterns and timeless forms that can be mixed, collected
-            and enjoyed for years.
+            Some of the best finds are the ones you were not looking for.
+            This edit is where we collect unusual, useful and characterful
+            objects that make us stop, look again and imagine them somewhere at home.
           </p>
 
         </div>
@@ -403,7 +313,7 @@ const products = [
 
   .category-intro {
     width: min(1400px, 92%);
-    padding: 95px 0 110px;
+    padding: 65px 0 70px;
     margin: 0 auto;
     text-align: center;
   }
@@ -495,7 +405,6 @@ const products = [
     width: 100%;
     height: 100%;
     display: block;
-
     object-fit: cover;
 
     transition: transform 0.6s ease;
@@ -664,6 +573,5 @@ const products = [
       padding: 85px 7%;
     }
 
-  }
-
+  
 </style>

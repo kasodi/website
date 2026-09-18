@@ -1,39 +1,93 @@
 ---
-import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import "../../styles/global.css";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
 
 const products = [
   {
-    title: "Embroidered Garden Cushions",
-    brand: "Running Elephant",
-    category: "Cushions",
-    image: "/images/kasodi-edit/kasodi-edit-embroidered-green-cushions.png",
-    href: "/kasodi-edit/embroidered-garden-cushions",
-  },
-
-  {
-    title: "Cream Tassel Table Runner",
-    brand: "Artoid Mode",
-    category: "Table Linen",
-    image: "/images/textiles-cozy/cream-tassel-table-runner.png",
-    href: "/textiles-cozy/cream-tassel-table-runner",
-  },
-
-  {
-    title: "Vintage Botanical Duvet Cover Set",
-    brand: "Fashionbedding",
-    category: "Bedding",
-    image: "/images/new-finds/vintage-botanical-duvet-cover-set.png",
-    href: "/new-finds/vintage-botanical-duvet-cover-set",
-  },
-  {
-  title: "Vintage Beige Salon Rug",
-  brand: "PureCozy",
-  category: "Rugs",
-  image: "/images/textiles-cozy/vintage-beige-salon-rug.png",
-  href: "/textiles-cozy/vintage-beige-salon-rug",
+  title: "Lurea Sculptural Glass Centrepiece",
+  brand: "Kave Home",
+  category: "Decorative Objects",
+  image: "/images/home-decor/kave-home-lurea-sculptural-glass-centrepiece.png",
+  href: "/home-decor/lurea-sculptural-glass-centrepiece",
 },
+  {
+    title: "Vintage Butterfly Photo Frame",
+    brand: "LEYI DECOR",
+    category: "Decorative Objects",
+    image: "/images/new-finds/vintage-butterfly-photo-frame.png",
+    href: "/new-finds/vintage-butterfly-photo-frame",
+  },
+  {
+    title: "Botanical Vintage Pitcher",
+    brand: "Ethereal Eves",
+    category: "Home Decor",
+    image: "/images/kasodi-edit/kasodi-edit-floral-ceramic-pitcher.png",
+    href: "/kasodi-edit/botanical-vintage-pitcher",
+  },
+  {
+    title: "Vintage Botanical Jewelry Box",
+    brand: "Tila Home",
+    category: "Decorative Objects",
+    image: "/images/new-finds/vintage-botanical-jewelry-box.png",
+    href: "/new-finds/vintage-botanical-jewelry-box",
+  },
+  {
+  title: "Drava Burgundy Ceramic Table Lamp",
+  brand: "Kave Home",
+  category: "Lighting",
+  image: "/images/home-decor/kave-home-drava-burgundy-ceramic-table-lamp.png",
+  href: "/home-decor/drava-burgundy-ceramic-table-lamp",
+},
+{
+  title: "Artino Vintage Outdoor Rug",
+  brand: "Alfombra.es",
+  category: "Rugs",
+  image: "/images/home-decor/alfombra-artino-vintage-outdoor-rug.png",
+  href: "/home-decor/artino-vintage-outdoor-rug",
+},
+{
+  title: "Alura Teak Wood Floor Mirror",
+  brand: "Kave Home",
+  category: "Mirrors",
+  image: "/images/home-decor/kave-home-alura-teak-wood-floor-mirror.png",
+  href: "/home-decor/alura-teak-wood-floor-mirror",
+},
+  {
+    title: "White Twisted Ceramic Vase",
+    brand: "Rundago",
+    category: "Home Decor",
+    image: "/images/home-decor/white-twisted-ceramic-vase.png",
+    href: "/home-decor/white-twisted-ceramic-vase",
+  },
+  {
+  title: "Torino Vintage Medallion Rug",
+  brand: "Alfombra.es",
+  category: "Rugs",
+  image: "/images/home-decor/alfombra-torino-vintage-medallion-rug.png",
+  href: "/home-decor/torino-vintage-medallion-rug",
+},
+  {
+    title: "Blue Floral Ceramic Pitcher",
+    brand: "Temu Find",
+    category: "Home Decor",
+    image: "/images/home-decor/blue-floral-ceramic-pitcher.png",
+    href: "/home-decor/blue-floral-ceramic-pitcher",
+  },
+  {
+  title: "Tokko Sculptural Round Rug",
+  brand: "Alfombra.es",
+  category: "Rugs",
+  image: "/images/home-decor/alfombra-tokko-sculptural-round-rug.png",
+  href: "/home-decor/tokko-sculptural-round-rug",
+},
+  {
+    title: "Vintage Textured Ceramic Vase",
+    brand: "YUMIPLUS",
+    category: "Home Decor",
+    image: "/images/home-decor/vintage-textured-ceramic-vase.png",
+    href: "/home-decor/vintage-textured-ceramic-vase",
+  },
 ];
 ---
 
@@ -79,11 +133,11 @@ const products = [
       content="width=device-width, initial-scale=1.0"
     />
 
-    <title>Textiles & Cozy Finds | KASODI</title>
+    <title>Home Decor Finds | KASODI</title>
 
     <meta
       name="description"
-      content="Discover KASODI's curated textiles edit — cushions, bedding and characterful pieces chosen to bring warmth, softness and comfort to the home."
+      content="Discover KASODI's curated home decor edit — vintage-inspired details, decorative objects and characterful pieces for a more personal home."
     />
   </head>
 
@@ -99,7 +153,7 @@ const products = [
       <div class="breadcrumbs">
         <a href="/">Home</a>
         <span>·</span>
-        <span>Textiles & Cozy</span>
+        <span>Home Decor</span>
       </div>
 
 
@@ -107,18 +161,18 @@ const products = [
       <section class="category-intro">
 
         <p class="eyebrow">
-          KASODI · TEXTILES & COZY
+          KASODI · HOME DECOR
         </p>
 
         <h1>
-          Soft Layers for<br />
-          a Warmer Home
+          Objects That Make<br />
+          a Home Feel Collected
         </h1>
 
         <p class="category-description">
-          Textiles that bring warmth, softness and character into everyday
-          spaces — from expressive cushions and patterned bedding to pieces
-          chosen for the way they make a room feel more layered and inviting.
+          Decorative pieces with character — from vintage-inspired details
+          and sculptural accents to objects that make shelves, tables and
+          quiet corners feel more layered, personal and lived in.
         </p>
 
       </section>
@@ -134,7 +188,7 @@ const products = [
           </p>
 
           <h2>
-            Textiles & Cozy Edit
+            Home Decor Edit
           </h2>
 
         </div>
@@ -210,15 +264,15 @@ const products = [
           </p>
 
           <h2>
-            Comfort is in<br />
-            the layers.
+            The most memorable rooms<br />
+            are built one detail at a time.
           </h2>
 
           <p>
-            We look for textiles that do more than soften a room —
-            tactile fabrics, expressive embroidery, thoughtful patterns
-            and inviting layers that bring warmth, personality and an
-            effortless sense of comfort to everyday spaces.
+            We look for decorative objects that bring something personal
+            to a room — unusual shapes, tactile surfaces, vintage references
+            and small details that make a space feel collected rather than
+            simply decorated.
           </p>
 
         </div>
@@ -407,6 +461,7 @@ const products = [
     width: 100%;
     height: 100%;
     display: block;
+
     object-fit: cover;
 
     transition: transform 0.6s ease;

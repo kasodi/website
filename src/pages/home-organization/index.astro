@@ -1,50 +1,29 @@
 ---
 import "../../styles/global.css";
-import Footer from "../../components/Footer.astro";
-import Header from "../../components/Header.astro";
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 
 const products = [
   {
-    title: "Ava Nord Ceramic Bathroom Set",
-    category: "Bathroom Accessories",
-    image: "/images/bathroom/ava-nord-ceramic-bathroom-set-cream.png",
-    href: "/bathroom/ava-nord-ceramic-bathroom-set",
+    title: "Textured Oval Organizer Tray",
+    brand: "Blissilk",
+    category: "Trays & Organizers",
+    image: "/images/home-organization/blissilk-textured-oval-organizer-tray.png",
+    href: "/home-organization/textured-oval-organizer-tray",
   },
   {
-    title: "Glass & Gold Cosmetic Organizer",
-    category: "Bathroom Organisation",
-    image: "/images/bathroom/harliangxy-glass-gold-cosmetic-organizer.png",
-    href: "/bathroom/harliangxy-glass-gold-cosmetic-organizer",
-  },
-    {
-    title: "Amber Glass Apothecary Jars",
-    category: "Bathroom Storage",
-    image: "/images/bathroom/kuishi-amber-glass-apothecary-jars.png",
-    href: "/bathroom/amber-glass-apothecary-jars",
-  },
-    {
-    title: "Amber Glass Soap Dish",
-    category: "Bathroom Accessories",
-    image: "/images/bathroom/kuishi-amber-glass-soap-dish.png",
-    href: "/bathroom/amber-glass-soap-dish",
+    title: "Woven Rattan Organizer Tray",
+    brand: "wocpvm",
+    category: "Trays & Organizers",
+    image: "/images/home-organization/wocpvm-woven-rattan-organizer-tray.png",
+    href: "/home-organization/woven-rattan-organizer-tray",
   },
   {
-    title: "Bamboo Laundry Hamper",
-    category: "Laundry & Organisation",
-    image: "/images/bathroom/songmics-bamboo-double-laundry-hamper.png",
-    href: "/bathroom/songmics-bamboo-double-laundry-hamper",
-  },
-  {
-    title: "Large Woven Rope Laundry Basket",
-    category: "Laundry & Storage",
-    image: "/images/bathroom/oiahomy-large-woven-rope-laundry-basket.png",
-    href: "/bathroom/oiahomy-large-woven-rope-laundry-basket",
-  },
-  {
-    title: "Nordic Crescent Woven Bathroom Basket",
-    category: "Bathroom Storage",
-    image: "/images/bathroom/nordic-crescent-woven-bathroom-basket.png",
-    href: "/bathroom/nordic-crescent-woven-bathroom-basket",
+    title: "Savannah Woven Storage Basket",
+    brand: "YAADU",
+    category: "Storage Baskets",
+    image: "/images/home-organization/yaadu-savannah-woven-storage-basket.png",
+    href: "/home-organization/savannah-woven-storage-basket",
   },
 ];
 ---
@@ -85,17 +64,18 @@ const products = [
 
   gtag('config', 'G-LT2BEMKHKC');
 </script>
+
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
 
-    <title>Bathroom Finds | KASODI</title>
+    <title>Home Organization Finds | KASODI</title>
 
     <meta
       name="description"
-      content="Discover KASODI's curated bathroom edit — elegant accessories, thoughtful storage and beautiful everyday pieces for a calm and considered space."
+      content="Discover KASODI's curated home organization edit — decorative trays, woven baskets and thoughtful storage pieces chosen to bring beautiful order to everyday spaces."
     />
   </head>
 
@@ -111,23 +91,26 @@ const products = [
       <div class="breadcrumbs">
         <a href="/">Home</a>
         <span>·</span>
-        <span>Bathroom</span>
+        <span>Home Organization</span>
       </div>
 
 
       <!-- CATEGORY INTRO -->
       <section class="category-intro">
 
-        <p class="eyebrow">KASODI · BATHROOM</p>
+        <p class="eyebrow">
+          KASODI · HOME ORGANIZATION
+        </p>
 
-        <h1>Beautiful Details<br />for Everyday Rituals</h1>
+        <h1>
+        Beautiful Order
+        for Everyday Living
+       </h1>
 
         <p class="category-description">
-          Thoughtfully selected bathroom pieces that combine beauty,
-          function and a sense of calm. From elegant countertop
-          accessories to natural storage and laundry solutions,
-          each find is chosen to make everyday routines feel a little
-          more considered.
+          Thoughtful storage and organization pieces chosen to bring a sense
+          of calm to everyday spaces — practical enough to make life easier
+          and beautiful enough to become part of the room.
         </p>
 
       </section>
@@ -137,22 +120,37 @@ const products = [
       <section class="products-section">
 
         <div class="section-heading">
-          <p class="eyebrow">CURATED FINDS</p>
-          <h2>Bathroom Edit</h2>
+
+          <p class="eyebrow">
+            CURATED FINDS
+          </p>
+
+          <h2>
+            Home Organization Edit
+          </h2>
+
         </div>
+
 
         <div class="product-grid">
 
           {products.map((product) => (
-            <a class="product-card" href={product.href}>
+
+            <a
+              class="product-card"
+              href={product.href}
+            >
 
               <div class="product-image">
+
                 <img
                   src={product.image}
-                  alt={product.title}
+                  alt={`${product.title} by ${product.brand}`}
                   loading="lazy"
                 />
+
               </div>
+
 
               <div class="product-info">
 
@@ -160,10 +158,24 @@ const products = [
                   {product.category}
                 </p>
 
+
                 <div class="product-title-row">
-                  <h3>{product.title}</h3>
-                  <span class="arrow">→</span>
+
+                  <h3>
+                    {product.title}
+                  </h3>
+
+                  <span class="arrow">
+                    →
+                  </span>
+
                 </div>
+
+
+                <p class="product-brand">
+                  {product.brand}
+                </p>
+
 
                 <span class="discover">
                   Discover
@@ -172,6 +184,7 @@ const products = [
               </div>
 
             </a>
+
           ))}
 
         </div>
@@ -179,23 +192,25 @@ const products = [
       </section>
 
 
-      <!-- CATEGORY MESSAGE -->
+      <!-- EDITORIAL -->
       <section class="editorial-section">
 
         <div class="editorial-inner">
 
-          <p class="eyebrow">THE KASODI APPROACH</p>
+          <p class="eyebrow">
+            THE KASODI APPROACH
+          </p>
 
           <h2>
-            A calmer bathroom starts<br />
-            with thoughtful details.
+            Organization can be<br />
+            part of the room.
           </h2>
 
           <p>
-            We look for pieces that feel beautiful enough to leave on
-            display and practical enough to use every day. Natural
-            textures, warm neutrals, elegant forms and useful storage
-            are at the heart of our bathroom edit.
+            We look for storage pieces that deserve to stay in view —
+            tactile baskets, sculptural trays and thoughtful organizers
+            selected for their materials, proportions and ability to bring
+            a quieter sense of order to everyday spaces.
           </p>
 
         </div>
@@ -217,6 +232,7 @@ const products = [
     box-sizing: border-box;
   }
 
+
   :global(body) {
     margin: 0;
     background: #f8f6f1;
@@ -229,12 +245,15 @@ const products = [
   .site-header {
     height: 96px;
     padding: 0 4%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     border-bottom: 1px solid rgba(41, 37, 31, 0.09);
     background: #f8f6f1;
   }
+
 
   .logo {
     font-family: Georgia, "Times New Roman", serif;
@@ -244,11 +263,13 @@ const products = [
     text-decoration: none;
   }
 
+
   .main-nav {
     display: flex;
     align-items: center;
     gap: 38px;
   }
+
 
   .main-nav a {
     color: #29251f;
@@ -264,6 +285,7 @@ const products = [
   .breadcrumbs {
     width: min(1400px, 92%);
     margin: 34px auto 0;
+
     display: flex;
     gap: 10px;
     align-items: center;
@@ -273,6 +295,7 @@ const products = [
     text-transform: uppercase;
     color: #887b6c;
   }
+
 
   .breadcrumbs a {
     color: inherit;
@@ -288,16 +311,20 @@ const products = [
   margin: 0 auto;
   text-align: center;
 }
+
+
   .eyebrow {
     margin: 0 0 25px;
     color: #9a7654;
+
     font-size: 10px;
     letter-spacing: 0.28em;
     text-transform: uppercase;
   }
 
+
   .category-intro h1 {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto 35px;
 
     font-family: Georgia, "Times New Roman", serif;
@@ -306,6 +333,7 @@ const products = [
     line-height: 1.03;
     letter-spacing: -0.025em;
   }
+
 
   .category-description {
     max-width: 690px;
@@ -325,20 +353,25 @@ const products = [
     padding-bottom: 130px;
   }
 
+
   .section-heading {
     margin-bottom: 42px;
   }
+
 
   .section-heading .eyebrow {
     margin-bottom: 13px;
   }
 
+
   .section-heading h2 {
     margin: 0;
+
     font-family: Georgia, "Times New Roman", serif;
     font-size: 42px;
     font-weight: 400;
   }
+
 
   .product-grid {
     display: grid;
@@ -346,11 +379,13 @@ const products = [
     gap: 26px;
   }
 
+
   .product-card {
     display: block;
     color: inherit;
     text-decoration: none;
   }
+
 
   .product-image {
     width: 100%;
@@ -359,21 +394,26 @@ const products = [
     background: #eee9df;
   }
 
+
   .product-image img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
+
     transition: transform 0.6s ease;
   }
+
 
   .product-card:hover .product-image img {
     transform: scale(1.025);
   }
 
+
   .product-info {
     padding-top: 20px;
   }
+
 
   .product-category {
     margin: 0 0 9px;
@@ -384,12 +424,14 @@ const products = [
     text-transform: uppercase;
   }
 
+
   .product-title-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 15px;
   }
+
 
   .product-title-row h3 {
     margin: 0;
@@ -400,39 +442,55 @@ const products = [
     font-weight: 400;
   }
 
+
   .arrow {
+    flex-shrink: 0;
     font-size: 20px;
     transition: transform 0.25s ease;
   }
+
 
   .product-card:hover .arrow {
     transform: translateX(4px);
   }
 
+
+  .product-brand {
+    margin: 8px 0 0;
+
+    color: #6e655b;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+
   .discover {
     display: inline-block;
     margin-top: 14px;
+    padding-bottom: 3px;
 
     font-size: 10px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
+
     border-bottom: 1px solid #29251f;
-    padding-bottom: 3px;
   }
 
 
   /* EDITORIAL */
 
   .editorial-section {
-    background: #e9e2d6;
     padding: 120px 5%;
+    background: #e9e2d6;
   }
+
 
   .editorial-inner {
     max-width: 760px;
     margin: 0 auto;
     text-align: center;
   }
+
 
   .editorial-inner h2 {
     margin: 0 0 30px;
@@ -442,6 +500,7 @@ const products = [
     line-height: 1.08;
     font-weight: 400;
   }
+
 
   .editorial-inner > p:last-child {
     max-width: 620px;
@@ -472,30 +531,37 @@ const products = [
       padding: 25px 5%;
     }
 
+
     .main-nav {
       display: none;
     }
+
 
     .category-intro {
       padding: 70px 0 80px;
     }
 
+
     .category-intro h1 {
       font-size: 48px;
     }
 
+
     .products-section {
       padding-bottom: 90px;
     }
+
 
     .product-grid {
       grid-template-columns: 1fr;
       gap: 55px;
     }
 
+
     .product-image {
       aspect-ratio: 4 / 5;
     }
+
 
     .editorial-section {
       padding: 85px 7%;
