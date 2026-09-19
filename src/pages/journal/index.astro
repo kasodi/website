@@ -1,0 +1,409 @@
+---
+import "../../styles/global.css";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+
+const articles = [
+  {
+    category: "KASODI GUIDE",
+    title: "The Art of a Beautifully Styled Kitchen",
+    description:
+      "How to turn everyday kitchen essentials into part of the interior.",
+    image: "/images/journal/the-art-of-a-beautifully-styled-kitchen-hero.png",
+    href: "/journal/the-art-of-a-beautifully-styled-kitchen",
+  },
+  {
+    category: "TABLE & ENTERTAINING",
+    title: "How to Create a Mediterranean Table",
+    description:
+      "Natural textures, layered ceramics and simple details for a relaxed and elegant table.",
+    image: "/images/categories/category-tableware.png",
+    href: "/journal/how-to-create-a-mediterranean-table",
+  },
+  {
+    category: "STYLE NOTES",
+    title: "The Art of Quiet Luxury",
+    description:
+      "Materials, textures and timeless objects that make a home feel calm, considered and personal.",
+    image: "/images/journal/the-art-of-quiet-luxury-card.png",
+    href: "/journal/the-art-of-quiet-luxury",
+  },
+  {
+    category: "KASODI GUIDE",
+    title: "Small Details That Change a Room",
+    description:
+      "Beautiful objects and subtle accents that bring warmth, character and personality to a space.",
+    image: "/images/categories/category-interesting-finds.png",
+    href: "/journal/small-details-that-change-a-room",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Journal | KASODI</title>
+
+    <meta
+      name="description"
+      content="KASODI Journal — interior inspiration, styling ideas and thoughtful details for creating a beautiful home."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="journal-page">
+
+      <div class="journal-breadcrumb">
+        <a href="/">HOME</a>
+        <span>&middot;</span>
+        <span>JOURNAL</span>
+      </div>
+
+      <section class="journal-hero">
+        <p>THE KASODI JOURNAL</p>
+
+        <h1>Ideas for a<br />Beautiful Home</h1>
+
+        <div class="journal-hero-text">
+          <p>
+            Inspiration, styling ideas and thoughtful details for creating
+            a home with warmth, character and a sense of individuality.
+          </p>
+        </div>
+      </section>
+
+      <section class="journal-articles">
+
+        <div class="journal-section-heading">
+          <p>JOURNAL</p>
+          <h2>Latest Stories</h2>
+        </div>
+
+        <div class="journal-page-grid">
+          {articles.map((article) => (
+            <article class="journal-page-card">
+
+              <a href={article.href} class="journal-page-image">
+                <img
+                  src={article.image}
+                  alt={article.title}
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="journal-page-info">
+                <p class="journal-page-category">{article.category}</p>
+
+                <h3>
+                  <a href={article.href}>{article.title}</a>
+                </h3>
+
+                <p class="journal-page-description">
+                  {article.description}
+                </p>
+
+                <a href={article.href} class="journal-page-link">
+                  Read Story &rarr;
+                </a>
+              </div>
+
+            </article>
+          ))}
+        </div>
+
+      </section>
+
+      <section class="journal-final">
+        <p>THE KASODI APPROACH</p>
+
+        <h2>
+          A beautiful home is built<br />
+          in the details.
+        </h2>
+
+        <div class="journal-final-text">
+          Discover ideas, objects and everyday rituals chosen to make
+          home feel warmer, more personal and beautifully lived in.
+        </div>
+      </section>
+
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .journal-page {
+    background: #f8f6f1;
+  }
+
+  .journal-breadcrumb {
+    width: min(1400px, 90%);
+    margin: 0 auto;
+    padding-top: 42px;
+
+    display: flex;
+    gap: 10px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--brown);
+  }
+
+  .journal-breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .journal-hero {
+    width: min(1200px, 88%);
+    margin: 0 auto;
+    padding: 105px 0 120px;
+    text-align: center;
+  }
+
+  .journal-hero > p {
+    margin: 0 0 26px;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--brown);
+  }
+
+  .journal-hero h1 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(64px, 7vw, 108px);
+    line-height: 0.9;
+    font-weight: 500;
+    color: var(--dark);
+  }
+
+  .journal-hero-text {
+    max-width: 620px;
+    margin: 38px auto 0;
+  }
+
+  .journal-hero-text p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--light-brown);
+  }
+
+  .journal-articles {
+    width: min(1400px, 90%);
+    margin: 0 auto;
+    padding-bottom: 130px;
+  }
+
+  .journal-section-heading {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 40px;
+    align-items: end;
+
+    padding-bottom: 34px;
+    margin-bottom: 46px;
+
+    border-bottom: 1px solid rgba(70, 55, 40, 0.18);
+  }
+
+  .journal-section-heading p {
+    margin: 0;
+    padding-bottom: 7px;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--brown);
+  }
+
+  .journal-section-heading h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--dark);
+  }
+
+  .journal-page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 42px;
+    row-gap: 85px;
+  }
+
+  .journal-page-card {
+    min-width: 0;
+  }
+
+  .journal-page-image {
+    display: block;
+    overflow: hidden;
+    background: #ebe5db;
+  }
+
+  .journal-page-image img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+  }
+
+  .journal-page-card:hover .journal-page-image img {
+    transform: scale(1.025);
+  }
+
+  .journal-page-info {
+    padding-top: 25px;
+  }
+
+  .journal-page-category {
+    margin: 0 0 14px;
+
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--brown);
+  }
+
+  .journal-page-info h3 {
+    margin: 0 0 15px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 37px;
+    line-height: 1.08;
+    font-weight: 500;
+  }
+
+  .journal-page-info h3 a {
+    color: var(--dark);
+    text-decoration: none;
+  }
+
+  .journal-page-description {
+    max-width: 560px;
+    margin: 0 0 22px;
+
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--light-brown);
+  }
+
+  .journal-page-link {
+    display: inline-block;
+
+    padding-bottom: 5px;
+
+    font-size: 14px;
+    color: var(--dark);
+    text-decoration: none;
+
+    border-bottom: 1px solid var(--dark);
+  }
+
+  .journal-page-link:hover {
+    opacity: 0.65;
+  }
+
+  .journal-final {
+    padding: 115px 30px 125px;
+
+    text-align: center;
+    background: #ebe3d7;
+  }
+
+  .journal-final > p {
+    margin: 0 0 27px;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--brown);
+  }
+
+  .journal-final h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(48px, 5vw, 76px);
+    line-height: 0.98;
+    font-weight: 500;
+    color: var(--dark);
+  }
+
+  .journal-final-text {
+    max-width: 650px;
+    margin: 32px auto 0;
+
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--light-brown);
+  }
+
+  @media (max-width: 900px) {
+    .journal-hero {
+      padding: 75px 0 85px;
+    }
+
+    .journal-section-heading {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .journal-page-grid {
+      grid-template-columns: 1fr;
+      row-gap: 65px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .journal-breadcrumb {
+      padding-top: 25px;
+    }
+
+    .journal-hero {
+      width: 90%;
+      padding: 65px 0 75px;
+    }
+
+    .journal-hero h1 {
+      font-size: 54px;
+    }
+
+    .journal-hero-text p {
+      font-size: 16px;
+    }
+
+    .journal-articles {
+      width: 90%;
+      padding-bottom: 90px;
+    }
+
+    .journal-section-heading h2 {
+      font-size: 40px;
+    }
+
+    .journal-page-info h3 {
+      font-size: 32px;
+    }
+
+    .journal-final {
+      padding: 85px 24px 95px;
+    }
+  }
+</style>
