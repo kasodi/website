@@ -1,0 +1,93 @@
+---
+import WorldLanding from '../../components/WorldLanding.astro';
+
+const groups = [
+  {
+    id: 'bedding-textiles',
+    name: 'Bedding & Textiles',
+    image: '/images/new-finds/vintage-botanical-duvet-cover-set.png',
+    description:
+      'Bedding, cushions and soft layers chosen to make the bedroom feel personal, calm and collected.',
+    products: [
+      {
+        name: 'Vintage Botanical Duvet Cover Set',
+        brand: 'Fashionbedding',
+        category: 'Bedding',
+        image: '/images/new-finds/vintage-botanical-duvet-cover-set.png',
+        href: '/new-finds/vintage-botanical-duvet-cover-set',
+      },
+      {
+        name: 'Embroidered Garden Cushions',
+        brand: 'Running Elephant',
+        category: 'Textiles',
+        image: '/images/kasodi-edit/kasodi-edit-embroidered-green-cushions.png',
+        href: '/kasodi-edit/embroidered-garden-cushions',
+      },
+      {
+        name: 'Ovelin Burgundy Velvet Cushion Cover',
+        brand: 'Kave Home',
+        category: 'Textiles',
+        image: '/images/textiles-cozy/kave-home-ovelin-burgundy-velvet-cushion-cover.png',
+        href: '/textiles-cozy/ovelin-burgundy-velvet-cushion-cover',
+      },
+    ],
+  },
+
+  {
+    id: 'bedside',
+    name: 'Bedside',
+    image: '/images/categories/category-candles-fragrance.png',
+    description:
+      'Small details for the bedside: soft light, candles and beautiful objects that make everyday rituals feel considered.',
+    products: [
+      {
+        name: 'Drava Burgundy Ceramic Table Lamp',
+        brand: 'Kave Home',
+        category: 'Lighting',
+        image: '/images/home-decor/kave-home-drava-burgundy-ceramic-table-lamp.png',
+        href: '/home-decor/drava-burgundy-ceramic-table-lamp',
+      },
+      {
+        name: 'Sculptural Ivory Candles',
+        brand: 'ALMA DE LLAMA',
+        category: 'Candles',
+        image: '/images/kasodi-edit/kasodi-edit-sculptural-ivory-candles.png',
+        href: '/candles-fragrance/sculptural-ivory-candles',
+      },
+         ],
+  },
+
+ {
+  id: 'bedroom-details',
+  name: 'Bedroom Details',
+  image: '/images/categories/category-textiles-cozy.png',
+  description:
+    'Considered decorative and functional details that bring warmth, character and personality to the bedroom.',
+  products: [
+    {
+      name: 'Vintage Botanical Jewelry Box',
+      brand: 'Tila Home',
+      category: 'Bedroom Detail',
+      image: '/images/new-finds/vintage-botanical-jewelry-box.png',
+      href: '/new-finds/vintage-botanical-jewelry-box',
+    },
+  ],
+},
+];
+
+const journal = {
+  title: 'The Art of Quiet Luxury',
+  text:
+    'Materials, textures and timeless objects that make a home feel calm, considered and personal.',
+  image: '/images/journal/the-art-of-quiet-luxury-hero.png',
+  href: '/journal/the-art-of-quiet-luxury',
+};
+---
+
+<WorldLanding
+  title="Bedroom"
+  intro="Quiet comfort, beautiful textiles and considered details for a bedroom that feels personal."
+  hero="/images/new-finds/vintage-botanical-duvet-cover-set.png"
+  {groups}
+  {journal}
+/>

@@ -1,0 +1,156 @@
+---
+import WorldLanding from '../../components/WorldLanding.astro';
+
+const groups = [
+  {
+    id: 'candles-fragrance',
+    name: 'Candles & Fragrance',
+    image: '/images/categories/category-candles-fragrance.png',
+    description:
+      'Candles, fragrance and atmospheric details chosen to bring warmth, softness and character to everyday spaces.',
+    products: [
+      {
+        name: 'Sculptural Ivory Candles',
+        brand: 'ALMA DE LLAMA',
+        category: 'Candles',
+        image: '/images/candles-fragrance/sculptural-ivory-candles.png',
+        href: '/candles-fragrance/sculptural-ivory-candles'
+      },
+      {
+        name: 'Ribbed Sculptural Candle Set',
+        brand: 'ALMA DE LLAMA',
+        category: 'Candles',
+        image: '/images/candles-fragrance/ribbed-sculptural-candle-set.png',
+        href: '/candles-fragrance/ribbed-sculptural-candle-set'
+      },
+      {
+        name: 'Lena Sculptural Flower Candle',
+        brand: 'Serentique',
+        category: 'Candles',
+        image: '/images/candles-fragrance/lena-sculptural-flower-candle.png',
+        href: '/candles-fragrance/lena-sculptural-flower-candle'
+      },
+      {
+        name: 'Walnut Candle Holder Set',
+        brand: "Sabai'ly",
+        category: 'Candles',
+        image: '/images/candles-fragrance/walnut-candle-holder-set.png',
+        href: '/candles-fragrance/walnut-candle-holder-set'
+      }
+    ]
+  },
+
+  {
+    id: 'beautiful-things',
+    name: 'Beautiful Things',
+    image: '/images/home-decor/kave-home-lurea-sculptural-glass-centrepiece.png',
+    description:
+      'Expressive objects and decorative finds selected simply because they bring beauty, character and delight to a home.',
+    products: [
+      {
+        name: 'Garel Green Marble Decorative Set',
+        brand: 'Kave Home',
+        category: 'Decorative Objects',
+        image: '/images/interesting-finds/kave-home-garel-green-marble-decorative-set.png',
+        href: '/interesting-finds/garel-green-marble-decorative-set'
+      },
+      {
+        name: 'Serela White Marble Bookends',
+        brand: 'Kave Home',
+        category: 'Decorative Objects',
+        image: '/images/interesting-finds/kave-home-serela-white-marble-bookends.png',
+        href: '/interesting-finds/serela-white-marble-bookends'
+      },
+      {
+        name: 'Lurea Sculptural Glass Centrepiece',
+        brand: 'Kave Home',
+        category: 'Decorative Objects',
+        image: '/images/home-decor/kave-home-lurea-sculptural-glass-centrepiece.png',
+        href: '/home-decor/lurea-sculptural-glass-centrepiece'
+      },
+      {
+        name: 'Vintage Butterfly Photo Frame',
+        brand: 'LEVI DECOR',
+        category: 'Decorative Objects',
+        image: '/images/new-finds/vintage-butterfly-photo-frame.png',
+        href: '/new-finds/vintage-butterfly-photo-frame'
+      },
+      {
+        name: 'Vintage Botanical Jewelry Box',
+        brand: 'Tila Home',
+        category: 'Decorative Objects',
+        image: '/images/new-finds/vintage-botanical-jewelry-box.png',
+        href: '/new-finds/vintage-botanical-jewelry-box'
+      }
+    ]
+  },
+
+  {
+    id: 'gifts',
+    name: 'Gifts',
+    image: '/images/kasodi-edit/kasodi-edit-villeroy-boch-boston-green-glass.png',
+    description:
+      'Thoughtful objects chosen for giving — distinctive pieces with beauty, usefulness and a little sense of occasion.',
+    products: [
+      {
+        name: 'Boston Green Wine Glass',
+        brand: 'Villeroy & Boch',
+        category: 'Glassware',
+        image: '/images/kasodi-edit/kasodi-edit-villeroy-boch-boston-green-glass.png',
+        href: '/kasodi-edit/boston-green-wine-glass'
+      },
+      {
+        name: 'Botanical Vintage Pitcher',
+        brand: 'Ethereal Eves',
+        category: 'Serveware',
+        image: '/images/kasodi-edit/kasodi-edit-floral-ceramic-pitcher.png',
+        href: '/kasodi-edit/botanical-vintage-pitcher'
+      },
+      {
+        name: 'Vintage Gold Cake Serving Set',
+        brand: 'KASODI Find',
+        category: 'Serveware',
+        image: '/images/tableware/vintage-gold-cake-serving-set.png',
+        href: '/tableware/vintage-gold-cake-serving-set'
+      },
+      {
+        name: 'Blue Floral Porcelain Tea Set',
+        brand: 'KASODI Find',
+        category: 'Tableware',
+        image: '/images/tableware/blue-floral-porcelain-tea-set.png',
+        href: '/tableware/blue-floral-porcelain-tea-set'
+      },
+      {
+        name: 'Lena Sculptural Flower Candle',
+        brand: 'Serentique',
+        category: 'Candles',
+        image: '/images/candles-fragrance/lena-sculptural-flower-candle.png',
+        href: '/candles-fragrance/lena-sculptural-flower-candle'
+      },
+      {
+        name: 'Walnut Candle Holder Set',
+        brand: "Sabai'ly",
+        category: 'Candles',
+        image: '/images/candles-fragrance/walnut-candle-holder-set.png',
+        href: '/candles-fragrance/walnut-candle-holder-set'
+      }
+    ]
+  }
+];
+
+const journal = {
+  title: 'The Art of Quiet Luxury',
+  text:
+    'Materials, textures and timeless objects that make a home feel calm, considered and personal.',
+  image: '/images/journal/the-art-of-quiet-luxury-hero.png',
+  href: '/journal/the-art-of-quiet-luxury'
+};
+---
+
+<WorldLanding
+  title='Lifestyle'
+  intro='Beautiful objects, atmosphere and thoughtful finds for the rituals of everyday living.'
+  hero='/images/categories/category-candles-fragrance.png'
+  {groups}
+  {journal}
+/>

@@ -1,0 +1,137 @@
+---
+import WorldLanding from '../../components/WorldLanding.astro';
+
+const groups = [
+  {
+    id: 'decor',
+    name: 'Decor',
+    image: '/images/categories/category-home-decor.png',
+    description:
+      'Decorative objects, rugs and lighting chosen to bring warmth, texture and character to a room.',
+    products: [
+      {
+        name: 'Vintage Textured Ceramic Vase',
+        brand: 'KASODI Find',
+        category: 'Decor',
+        image: '/images/home-decor/vintage-textured-ceramic-vase.png',
+        href: '/home-decor/vintage-textured-ceramic-vase'
+      },
+      {
+        name: 'White Twisted Ceramic Vase',
+        brand: 'KASODI Find',
+        category: 'Decor',
+        image: '/images/home-decor/white-twisted-ceramic-vase.png',
+        href: '/home-decor/white-twisted-ceramic-vase'
+      },
+      {
+        name: 'Lurea Sculptural Glass Centrepiece',
+        brand: 'Kave Home',
+        category: 'Decor',
+        image: '/images/home-decor/kave-home-lurea-sculptural-glass-centrepiece.png',
+        href: '/home-decor/lurea-sculptural-glass-centrepiece'
+      },
+      {
+        name: 'Drava Burgundy Ceramic Table Lamp',
+        brand: 'Kave Home',
+        category: 'Lighting',
+        image: '/images/home-decor/kave-home-drava-burgundy-ceramic-table-lamp.png',
+        href: '/home-decor/drava-burgundy-ceramic-table-lamp'
+      },
+      {
+        name: 'Tokko Sculptural Round Rug',
+        brand: 'Kave Home',
+        category: 'Rugs',
+        image: '/images/home-decor/alfombra-tokko-sculptural-round-rug.png',
+        href: '/home-decor/tokko-sculptural-round-rug'
+      },
+      {
+        name: 'Artino Vintage Outdoor Rug',
+        brand: 'KASODI Find',
+        category: 'Rugs',
+        image: '/images/home-decor/alfombra-artino-vintage-outdoor-rug.png',
+        href: '/home-decor/artino-vintage-outdoor-rug'
+      },
+      {
+        name: 'Torino Vintage Medallion Rug',
+        brand: 'KASODI Find',
+        category: 'Rugs',
+        image: '/images/home-decor/alfombra-torino-vintage-medallion-rug.png',
+        href: '/home-decor/torino-vintage-medallion-rug'
+      }
+    ]
+  },
+
+  {
+    id: 'furniture',
+    name: 'Furniture',
+    image: '/images/home-decor/kave-home-alura-teak-wood-floor-mirror.png',
+    description:
+      'Distinctive furniture and larger furnishing pieces selected for their materials, character and lasting presence.',
+    products: [
+      {
+        name: 'Alura Teak Wood Floor Mirror',
+        brand: 'Kave Home',
+        category: 'Furniture & Decor',
+        image: '/images/home-decor/kave-home-alura-teak-wood-floor-mirror.png',
+        href: '/home-decor/alura-teak-wood-floor-mirror'
+      }
+    ]
+  },
+
+  {
+    id: 'organization',
+    name: 'Organization',
+    image: '/images/categories/category-home-organization.png',
+    description:
+      'Useful storage and organizing pieces chosen to keep everyday spaces calm, practical and considered.',
+    products: [
+      {
+        name: 'Mareno Glass Storage Jar',
+        brand: 'INNA Glas',
+        category: 'Organization',
+        image: '/images/home-organization/inna-glas-mareno-glass-storage-jar.png',
+        href: '/home-organization/mareno-glass-storage-jar'
+      },
+      {
+        name: 'Textured Oval Organizer Tray',
+        brand: 'Blissilk',
+        category: 'Organization',
+        image: '/images/home-organization/blissilk-textured-oval-organizer-tray.png',
+        href: '/home-organization/textured-oval-organizer-tray'
+      },
+      {
+        name: 'Woven Rattan Organizer Tray',
+        brand: 'KASODI Find',
+        category: 'Organization',
+        image: '/images/home-organization/wocpvm-woven-rattan-organizer-tray.png',
+        href: '/home-organization/woven-rattan-organizer-tray'
+      }
+    ]
+  },
+
+  {
+    id: 'bathroom-details',
+    name: 'Bathroom Details',
+    image: '/images/categories/category-bathroom.png',
+    description:
+      'Beautiful and useful bathroom pieces selected to make everyday routines feel more considered.',
+    products: []
+  }
+];
+
+const journal = {
+  title: 'Small Details That Change a Room',
+  text:
+    'Thoughtful objects, texture and small details that bring warmth, character and personality to a space.',
+  image: '/images/categories/category-home-decor.png',
+  href: '/journal/small-details-that-change-a-room'
+};
+---
+
+<WorldLanding
+  title='Home'
+  intro='Thoughtful objects, warm textures and considered details for a home that feels personal.'
+  hero='/images/categories/category-home-decor.png'
+  {groups}
+  {journal}
+/>

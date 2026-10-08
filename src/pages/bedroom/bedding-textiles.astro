@@ -1,0 +1,240 @@
+---
+import "../../styles/global.css";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+const products = [
+  {
+    name: "Vintage Botanical Duvet Cover Set",
+    brand: "Fashionbedding",
+    category: "Bedding",
+    image: "/images/new-finds/vintage-botanical-duvet-cover-set.png",
+    href: "/new-finds/vintage-botanical-duvet-cover-set",
+  },
+  {
+    name: "Embroidered Garden Cushions",
+    brand: "Running Elephant",
+    category: "Textiles",
+    image: "/images/kasodi-edit/kasodi-edit-embroidered-green-cushions.png",
+    href: "/kasodi-edit/embroidered-garden-cushions",
+  },
+  {
+    name: "Ovelin Burgundy Velvet Cushion Cover",
+    brand: "Kave Home",
+    category: "Textiles",
+    image: "/images/textiles-cozy/kave-home-ovelin-burgundy-velvet-cushion-cover.png",
+    href: "/textiles-cozy/ovelin-burgundy-velvet-cushion-cover",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <title>Bedding & Textiles | KASODI</title>
+    <meta
+      name="description"
+      content="Explore KASODI's curated selection of bedding, cushions and beautiful textiles for a warm and considered bedroom."
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <section class="collection-hero">
+        <a href="/bedroom" class="eyebrow">BEDROOM</a>
+
+        <div class="collection-heading">
+          <h1>Bedding & Textiles</h1>
+
+          <p>
+            Bedding, cushions and soft layers chosen to make the bedroom
+            feel personal, calm and collected.
+          </p>
+        </div>
+      </section>
+
+      <section class="collection-products">
+        <div class="product-grid">
+          {products.map((product) => (
+            <a class="product-card" href={product.href}>
+              <div class="product-image">
+                <img
+                  src={product.image}
+                  alt={`${product.name} selected by KASODI`}
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="product-info">
+                <span>{product.category}</span>
+                <h2>{product.name}</h2>
+                <p>{product.brand}</p>
+                <strong>Discover &rarr;</strong>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .collection-hero {
+    width: min(1240px, 84%);
+    margin: 0 auto;
+    padding: 110px 0 70px;
+  }
+
+  .eyebrow {
+  display: inline-block;
+  margin: 0 0 38px;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #a86f3d;
+  text-decoration: none;
+}
+
+.eyebrow:hover {
+  opacity: 0.65;
+}
+
+  .collection-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: end;
+  }
+
+  .collection-heading h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 76px);
+    font-weight: 400;
+    line-height: 1;
+    color: #2f2922;
+  }
+
+  .collection-heading p {
+    max-width: 540px;
+    margin: 0 0 4px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #93602f;
+  }
+
+  .collection-products {
+    width: min(1240px, 84%);
+    margin: 0 auto;
+    padding: 0 0 130px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+  }
+
+  .product-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .product-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: #eee9df;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  .product-card:hover .product-image img {
+    transform: scale(1.025);
+  }
+
+  .product-info {
+    padding-top: 22px;
+  }
+
+  .product-info span {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #a86f3d;
+  }
+
+  .product-info h2 {
+    margin: 0 0 13px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 400;
+    color: #2f2922;
+  }
+
+  .product-info p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #93602f;
+  }
+
+  .product-info strong {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #2f2922;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #2f2922;
+  }
+
+  @media (max-width: 1050px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 760px) {
+    .collection-hero {
+      width: 90%;
+      padding: 70px 0 50px;
+    }
+
+    .collection-heading {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .collection-heading h1 {
+      font-size: 48px;
+    }
+
+    .collection-heading p {
+      font-size: 16px;
+    }
+
+    .collection-products {
+      width: 90%;
+      padding-bottom: 90px;
+    }
+
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
