@@ -1,0 +1,692 @@
+---
+
+import "../../../styles/global.css";
+
+import Header from "../../../components/Header.astro";
+
+import Footer from "../../../components/Footer.astro";
+
+
+
+const product = {
+
+  title: "Granite Beige 2-Seater Sofa",
+
+  brand: "Kave Home",
+
+  image: "/images/furniture/kave-home-granite-beige-2-seater-sofa.png",
+
+  affiliateUrl:
+
+    "https://kavehome.com/es/en/p/granite-2-seater-sofa-in-beige-chenille-with-solid-ash-wood-legs-with-natural-finish-155cm-fsc-100?utm_affcid=11111111&utm_medium=affiliate&utm_source=kasodi&utm_affaid=kasodi&utm_affcid=11111111",
+
+};
+
+
+
+const pageTitle = `${product.title} | KASODI`;
+
+
+
+const pageDescription =
+
+  "Discover the Granite Beige 2-Seater Sofa by Kave Home. Rounded Scandinavian-inspired design, textured beige chenille and FSC-certified solid ash wood, selected by KASODI.";
+
+
+
+const canonicalUrl =
+
+  "https://kasodi.com/home/furniture/granite-beige-2-seater-sofa/";
+
+
+
+const socialImage = `https://kasodi.com${product.image}`;
+
+---
+
+
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+    <!-- Google Consent Mode -->
+
+    <script is:inline>
+
+      window.dataLayer = window.dataLayer || [];
+
+
+
+      function gtag() {
+
+        window.dataLayer.push(arguments);
+
+      }
+
+
+
+      gtag("consent", "default", {
+
+        ad_storage: "denied",
+
+        ad_user_data: "denied",
+
+        ad_personalization: "denied",
+
+        analytics_storage: "denied",
+
+        functionality_storage: "denied",
+
+        personalization_storage: "denied",
+
+        security_storage: "granted",
+
+        wait_for_update: 2000
+
+      });
+
+
+
+      gtag("set", "ads_data_redaction", true);
+
+      gtag("set", "url_passthrough", true);
+
+    </script>
+
+
+
+    <!-- CookieYes -->
+
+    <script
+
+      id="cookieyes"
+
+      type="text/javascript"
+
+      src="https://cdn-cookieyes.com/client_data/e9c032e34948c08e8ad6b9973971db36/script.js"
+
+    ></script>
+
+
+
+    <!-- Google Analytics -->
+
+    <script
+
+      async
+
+      src="https://www.googletagmanager.com/gtag/js?id=G-LT2BEMKHKC"
+
+    ></script>
+
+
+
+    <script is:inline>
+
+      window.dataLayer = window.dataLayer || [];
+
+
+
+      function gtag() {
+
+        window.dataLayer.push(arguments);
+
+      }
+
+
+
+      gtag("js", new Date());
+
+      gtag("config", "G-LT2BEMKHKC");
+
+    </script>
+
+
+
+    <title>{pageTitle}</title>
+
+
+
+    <meta
+
+      name="description"
+
+      content={pageDescription}
+
+    />
+
+
+
+    <link rel="canonical" href={canonicalUrl} />
+
+
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="product" />
+
+    <meta property="og:title" content={pageTitle} />
+
+    <meta
+
+      property="og:description"
+
+      content={pageDescription}
+
+    />
+
+    <meta property="og:url" content={canonicalUrl} />
+
+    <meta property="og:image" content={socialImage} />
+
+
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content={pageTitle} />
+
+    <meta
+
+      name="twitter:description"
+
+      content={pageDescription}
+
+    />
+
+    <meta name="twitter:image" content={socialImage} />
+
+  </head>
+
+
+
+  <body>
+
+    <Header />
+
+
+
+    <main class="product-detail-page">
+
+
+
+      <!-- BREADCRUMBS -->
+
+      <div class="product-breadcrumb">
+
+        <a href="/">Home</a>
+
+        <span>·</span>
+
+        <a href="/home">Home Collection</a>
+
+        <span>·</span>
+
+        <a href="/home/furniture">Furniture</a>
+
+        <span>·</span>
+
+        <span>Granite Beige 2-Seater Sofa</span>
+
+      </div>
+
+
+
+      <!-- PRODUCT HERO -->
+
+      <section class="product-detail-hero granite-armchair-hero">
+
+
+
+        <div class="product-detail-image">
+
+  <img
+
+    src={product.image}
+
+    alt="Granite Beige 2-Seater Sofa by Kave Home with beige chenille upholstery and natural ash wood frame"
+
+    style="width: 100%; display: block;"
+
+    />
+
+</div>
+
+
+
+        <div class="product-detail-content">
+
+
+
+          <p class="product-detail-eyebrow">
+
+            HOME · FURNITURE
+
+          </p>
+
+
+
+          <h1>Granite Beige 2-Seater Sofa</h1>
+
+
+
+          <p class="product-detail-brand">
+
+            Kave Home
+
+          </p>
+
+
+
+          <p class="product-detail-intro">
+            A sculptural two-seater sofa combining generous rounded forms,
+            soft beige chenille and the warmth of a solid ash wood frame.
+            Its welcoming silhouette brings understated character to a
+            thoughtfully curated living space.
+          </p>
+
+          <p class="product-detail-intro">
+            Inspired by Scandinavian design of the 1970s, Granite balances
+            a distinctive retro spirit with contemporary comfort.
+          </p>
+
+          <div class="product-detail-divider"></div>
+
+          <!-- PRODUCT DETAILS -->
+          <div class="product-detail-meta">
+            <div><span>Material</span><strong>Beige chenille · Solid ash wood</strong></div>
+            <div><span>Dimensions</span><strong>155 × 82 × 67 cm</strong></div>
+            <div><span>Colour</span><strong>Beige · Natural ash</strong></div>
+            <div><span>Upholstery</span><strong>75% Polyester · 25% Recycled polyester</strong></div>
+            <div><span>Seat</span><strong>2-seater · Medium firmness · 43 cm height</strong></div>
+            <div><span>Design</span><strong>Scandinavian-inspired · Sculptural</strong></div>
+            <div><span>Certification</span><strong>FSC 100% · OEKO-TEX Standard 100</strong></div>
+            <div><span>Use</span><strong>Indoor</strong></div>
+          </div>
+
+<!-- AFFILIATE BUTTON -->
+
+          <div class="affiliate-action">
+
+
+
+            <a
+
+              href={product.affiliateUrl}
+
+              target="_blank"
+
+              rel="nofollow sponsored noopener noreferrer"
+
+              class="product-shop-button"
+
+            >
+
+              Find It Here →
+
+            </a>
+
+
+
+            <p class="affiliate-note">
+
+              Affiliate link · KASODI may earn a commission
+
+              at no extra cost to you.
+
+            </p>
+
+
+
+          </div>
+
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- WHY WE LOVE IT -->
+
+      <section class="why-we-love">
+
+
+
+        <div class="why-we-love-label">
+
+          KASODI NOTE
+
+        </div>
+
+
+
+        <div class="why-we-love-content">
+
+
+
+          <h2>Why we love it</h2>
+
+
+
+          <p>
+            Granite brings quiet confidence to a room. Its generous curves,
+            textured beige upholstery and exposed natural ash wood create
+            an inviting balance between softness and structure.
+          </p>
+          <p>
+            We love its versatility: the warm neutral shade pairs beautifully
+            with linen, travertine, woven rugs and expressive ceramics.
+            The rounded form has presence without overwhelming the room.
+          </p>
+          <p>
+            Beyond its sculptural appearance, the sofa offers medium-firm
+            cushioning with 32 kg/m³ foam, upholstery tested to more than
+            75,000 Martindale cycles and FSC 100% certified wood.
+          </p>
+        </div>
+
+      </section>
+
+
+
+      <!-- CARE -->
+
+      <section class="product-care">
+
+
+
+        <p class="product-detail-eyebrow">
+
+          CARE
+
+        </p>
+
+
+
+        <h2>Designed for lasting comfort</h2>
+
+
+
+        <p>
+          Clean with a damp cloth and a mild cleaning product, then dry
+          immediately. Avoid abrasive cleaners, solvents and bleach.
+          Keep away from direct heat sources and prolonged direct sunlight.
+        </p>
+        <p>
+          Designed for indoor use. The upholstery is not water-repellent
+          or stain-resistant, and the seat and armrest covers are not removable.
+        </p>
+
+      </section>
+
+
+
+      <!-- STYLING IDEAS -->
+
+      <section class="styling-ideas">
+
+
+
+        <div class="styling-heading">
+
+          <p>KASODI STYLING</p>
+
+          <h2>Style it with</h2>
+
+        </div>
+
+
+
+        <div class="styling-grid">
+
+
+
+          <div class="styling-card">
+
+            <span>01</span>
+
+
+
+            <h3>Natural Textures</h3>
+
+
+
+            <p>
+
+              Pair the beige chenille with an understated
+
+              wool or jute rug. Natural fibres soften the
+
+              sculptural silhouette and bring an inviting,
+
+              layered quality to the room.
+
+            </p>
+
+          </div>
+
+
+
+          <div class="styling-card">
+
+            <span>02</span>
+
+
+
+            <h3>Warm Wood</h3>
+
+
+
+            <p>
+
+              A low oak side table or a beautifully shaped
+
+              wooden accent echoes the natural ash frame
+
+              and creates a cohesive, quietly elegant
+
+              material palette.
+
+            </p>
+
+          </div>
+
+
+
+          <div class="styling-card">
+
+            <span>03</span>
+
+
+
+            <h3>Sculptural Ceramics</h3>
+
+
+
+            <p>
+
+              Complement the generous rounded form with
+
+              handcrafted ceramics in cream, sand or
+
+              muted olive tones. A single expressive vase
+
+              can complete the setting.
+
+            </p>
+
+          </div>
+
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- CONTINUE EXPLORING -->
+
+      <section class="continue-exploring">
+
+
+
+        <div class="continue-exploring-heading">
+
+          <p>FURNITURE</p>
+
+          <h2>Continue Exploring</h2>
+
+        </div>
+
+
+
+        <div class="continue-exploring-grid">
+
+
+
+          <a href="/home/furniture" class="continue-card">
+
+            <div class="continue-card-info">
+
+              <span>HOME</span>
+
+              <h3>Explore Furniture</h3>
+
+              <p>
+
+                Thoughtfully selected pieces for beautiful living.
+
+              </p>
+
+              <strong>Discover →</strong>
+
+            </div>
+
+          </a>
+
+
+
+          <a href="/home/decor" class="continue-card">
+
+            <div class="continue-card-info">
+
+              <span>HOME</span>
+
+              <h3>Discover Home Decor</h3>
+
+              <p>
+
+                Beautiful objects with texture and character.
+
+              </p>
+
+              <strong>Discover →</strong>
+
+            </div>
+
+          </a>
+
+
+
+          <a href="/home" class="continue-card">
+
+            <div class="continue-card-info">
+
+              <span>KASODI</span>
+
+              <h3>Explore the Home Collection</h3>
+
+              <p>
+
+                Furniture, decor and considered everyday details.
+
+              </p>
+
+              <strong>Discover →</strong>
+
+            </div>
+
+          </a>
+
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- FINAL CTA -->
+
+      <section class="product-final-cta">
+
+
+
+        <p class="product-detail-eyebrow">
+
+          KAVE HOME · GRANITE COLLECTION
+
+        </p>
+
+
+
+        <h2>
+
+          Sculptural softness, natural warmth and timeless character.
+
+        </h2>
+
+
+
+        <a
+
+          href={product.affiliateUrl}
+
+          target="_blank"
+
+          rel="nofollow sponsored noopener noreferrer"
+
+          class="product-shop-button"
+
+        >
+
+          Find It Here →
+
+        </a>
+
+
+
+        <p class="affiliate-note affiliate-note-light">
+
+          Affiliate link · KASODI may earn a commission
+
+          at no extra cost to you.
+
+        </p>
+
+
+
+      </section>
+
+
+
+    </main>
+
+
+
+    <Footer />
+
+  </body>
+
+</html>

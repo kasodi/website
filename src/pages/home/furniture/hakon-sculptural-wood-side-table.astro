@@ -1,0 +1,587 @@
+
+---
+import '../../../styles/global.css';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+const product = {
+  name: 'Hakon Sculptural Wood Side Table',
+  brand: 'Kave Home',
+  image: '/images/furniture/kave-home-hakon-sculptural-wood-side-table.png',
+  url: 'https://kavehome.com/es/en/p/hakon-solid-rain-tree-wood-side-table-with-carved-interior-30-x-30-cm?utm_affcid=11111111&utm_medium=affiliate&utm_source=kasodi&utm_affaid=kasodi&utm_affcid=11111111',
+};
+
+const details = [
+  ['Material', 'Solid rain tree wood'],
+  ['Dimensions', '30 × 30 × 46 cm'],
+  ['Colour', 'Natural wood'],
+  ['Design', 'Sculptural · Hand-carved look'],
+  ['Weight', '9 kg'],
+  ['Top thickness', '7 cm'],
+  ['Origin', 'Indonesia'],
+  ['Use', 'Indoor · Covered outdoor'],
+];
+
+const styling = [
+  {
+    number: '01',
+    title: 'Soft, Sculptural Seating',
+    description: 'Place Hakon beside a generously curved armchair or a softly upholstered sofa. The contrast between solid wood and tactile fabric creates a beautifully balanced composition.',
+  },
+  {
+    number: '02',
+    title: 'Ceramics & Collected Objects',
+    description: 'Style the tabletop with a small handmade ceramic bowl, a favourite book or a single sculptural object. Keep the arrangement simple to let the carved silhouette take centre stage.',
+  },
+  {
+    number: '03',
+    title: 'Natural Mediterranean Layers',
+    description: 'Pair the warm wood grain with linen, woven rugs, travertine and soft plaster walls. These understated materials enhance its organic character without competing with its distinctive form.',
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hakon Sculptural Wood Side Table | KASODI</title>
+
+    <meta
+      name="description"
+      content="Discover the Hakon sculptural side table by Kave Home. Crafted from solid rain tree wood with a distinctive carved silhouette and natural wood grain, curated by KASODI."
+    />
+
+    <meta property="og:type" content="product" />
+    <meta
+      property="og:title"
+      content="Hakon Sculptural Wood Side Table | KASODI"
+    />
+    <meta
+      property="og:description"
+      content="A sculptural side table carved from solid rain tree wood, where natural character meets contemporary design."
+    />
+    <meta
+      property="og:image"
+      content="https://kasodi.com/images/furniture/kave-home-hakon-sculptural-wood-side-table.png"
+    />
+    <meta
+      property="og:url"
+      content="https://kasodi.com/home/furniture/hakon-sculptural-wood-side-table/"
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <nav class="hakon-breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>·</span>
+        <a href="/home/">Home Collection</a>
+        <span>·</span>
+        <a href="/home/furniture/">Furniture</a>
+        <span>·</span>
+        <span>Hakon Sculptural Wood Side Table</span>
+      </nav>
+
+      <section class="hakon-hero">
+        <div class="hakon-image">
+          <img
+            src={product.image}
+            alt="Hakon sculptural solid wood side table by Kave Home in a warm Mediterranean interior"
+          />
+        </div>
+
+        <div class="hakon-information">
+          <p class="hakon-eyebrow">HOME · FURNITURE</p>
+
+          <h1>{product.name}</h1>
+          <p class="hakon-brand">{product.brand}</p>
+
+          <div class="hakon-intro">
+            <p>
+              A small piece with remarkable presence. Carved from
+              solid rain tree wood, Hakon transforms a practical
+              side table into an expressive sculptural object.
+              Its flowing curves and open centre create a
+              beautiful interplay of shape, texture and light.
+            </p>
+
+            <p>
+              The natural wood grain gives each piece its own
+              individual character, bringing warmth and organic
+              beauty to thoughtfully curated living spaces.
+            </p>
+          </div>
+
+          <div class="hakon-details">
+            {details.map(([label, value]) => (
+              <div class="hakon-detail">
+                <span>{label}</span>
+                <strong>{value}</strong>
+              </div>
+            ))}
+          </div>
+
+          <a
+            class="hakon-button"
+            href={product.url}
+            target="_blank"
+            rel="nofollow sponsored noopener noreferrer"
+          >
+            FIND IT HERE →
+          </a>
+
+          <p class="hakon-disclosure">
+            Affiliate link · KASODI may earn a commission at no extra cost to you.
+          </p>
+        </div>
+      </section>
+
+      <section class="hakon-note">
+        <div class="hakon-note-inner">
+          <p class="hakon-eyebrow">KASODI NOTE</p>
+
+          <div>
+            <h2>Why we love it</h2>
+
+            <p>
+              Hakon is a wonderful example of furniture that
+              feels almost like a piece of art. Its distinctive
+              carved interior and softly twisting silhouette
+              create visual interest from every angle.
+            </p>
+
+            <p>
+              We particularly love the way the natural grain
+              follows the sculptural curves. Made from a solid
+              block of rain tree wood, each table has its own
+              variations in colour, grain and character.
+            </p>
+
+            <p>
+              Compact yet expressive, Hakon is equally at home
+              beside a favourite armchair, in a quiet reading
+              corner or as a standalone accent in a warm,
+              contemporary interior.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hakon-care">
+        <div class="hakon-content">
+          <p class="hakon-eyebrow">MATERIALS & CARE</p>
+
+          <h2>Natural wood, individual character</h2>
+
+          <p>
+            Hakon is made from solid rain tree wood, carved
+            to create its distinctive sculptural silhouette.
+            The wood originates from Indonesia, and natural
+            differences in grain, colour and shape make each
+            piece unique.
+          </p>
+
+          <p>
+            As the wood naturally evolves over time, cracks
+            may appear. These are part of the material's
+            natural character, rather than an indication
+            that every piece will remain visually identical.
+          </p>
+
+          <p>
+            Clean with a damp cloth and a mild cleaning product,
+            then dry immediately. Use coasters to protect the
+            surface from moisture. Avoid direct sunlight,
+            nearby heat sources, abrasive cleaners, bleach
+            and solvents.
+          </p>
+
+          <p>
+            <strong>Good to know:</strong> Suitable for indoor
+            spaces and covered outdoor areas. Protect the
+            table from prolonged exposure to rain and
+            direct weather conditions.
+          </p>
+        </div>
+      </section>
+
+      <section class="hakon-styling">
+        <p class="hakon-eyebrow">KASODI STYLING</p>
+        <h2>Style it with</h2>
+
+        <div class="hakon-styling-grid">
+          {styling.map((item) => (
+            <article class="hakon-styling-item">
+              <span class="hakon-number">{item.number}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="hakon-explore">
+        <p class="hakon-eyebrow">FURNITURE</p>
+        <h2>Continue Exploring</h2>
+
+        <div class="hakon-explore-grid">
+          <a href="/home/furniture/granite-terracotta-armchair/">
+            <span>FURNITURE</span>
+            <h3>Granite Terracotta Armchair</h3>
+            <p>
+              Expressive curves and beautifully textured
+              upholstery in a warm terracotta tone.
+            </p>
+            <small>DISCOVER →</small>
+          </a>
+
+          <a href="/home/furniture/granite-beige-2-seater-sofa/">
+            <span>FURNITURE</span>
+            <h3>Granite Beige 2-Seater Sofa</h3>
+            <p>
+              Soft sculptural seating in warm neutral tones.
+            </p>
+            <small>DISCOVER →</small>
+          </a>
+
+          <a href="/home/furniture/aduma-oak-shelving-unit/">
+            <span>FURNITURE</span>
+            <h3>Aduma Sculptural Oak Shelving Unit</h3>
+            <p>
+              Architectural curves and natural oak tones
+              for considered storage.
+            </p>
+            <small>DISCOVER →</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="hakon-final">
+        <p class="hakon-eyebrow">KAVE HOME · HAKON COLLECTION</p>
+
+        <h2>A small table with sculptural soul.</h2>
+
+        <a
+          href={product.url}
+          target="_blank"
+          rel="nofollow sponsored noopener noreferrer"
+          class="hakon-final-button"
+        >
+          FIND IT HERE →
+        </a>
+
+        <p class="hakon-disclosure">
+          Affiliate link · KASODI may earn a commission at no extra cost to you.
+        </p>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .hakon-breadcrumbs {
+    width: 90%;
+    max-width: 1380px;
+    margin: 36px auto 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 10px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #a17858;
+  }
+
+  .hakon-breadcrumbs a,
+  .hakon-breadcrumbs span {
+    font-size: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+  }
+
+  .hakon-breadcrumbs a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .hakon-hero {
+    width: 90%;
+    max-width: 1380px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 78px;
+    align-items: stretch;
+    padding: 8px 0 0;
+  }
+
+  .hakon-image {
+    position: relative;
+    min-height: 850px;
+    overflow: hidden;
+  }
+
+  .hakon-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hakon-information {
+    padding: 8px 0 38px;
+  }
+
+  .hakon-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: #a87550;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  .hakon-information h1,
+  .hakon-note h2,
+  .hakon-care h2,
+  .hakon-styling h2,
+  .hakon-explore h2,
+  .hakon-final h2 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    color: #332d28;
+  }
+
+  .hakon-information h1 {
+    font-size: clamp(40px, 4.5vw, 72px);
+    line-height: 1.08;
+    margin: 0 0 22px;
+  }
+
+  .hakon-brand {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: #987453;
+    margin-bottom: 38px;
+  }
+
+  .hakon-intro {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #625449;
+    margin-bottom: 32px;
+  }
+
+  .hakon-intro p + p {
+    margin-top: 12px;
+  }
+
+  .hakon-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 23px 22px;
+    border-top: 1px solid #ddd5ca;
+    padding-top: 28px;
+    margin-bottom: 36px;
+  }
+
+  .hakon-detail span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #a37d60;
+    margin-bottom: 7px;
+  }
+
+  .hakon-detail strong {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #332d28;
+  }
+
+  .hakon-button,
+  .hakon-final-button {
+    display: inline-block;
+    padding: 19px 28px;
+    background: #332b25;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+  }
+
+  .hakon-disclosure {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #a38d7d;
+    margin-top: 14px;
+  }
+
+  .hakon-note {
+    background: #eee8df;
+    padding: 92px 5%;
+  }
+
+  .hakon-note-inner {
+    max-width: 1380px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 20px;
+  }
+
+  .hakon-note h2,
+  .hakon-care h2,
+  .hakon-styling h2,
+  .hakon-explore h2 {
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.15;
+    margin: 0 0 28px;
+  }
+
+  .hakon-note-inner > div {
+    max-width: 820px;
+  }
+
+  .hakon-note-inner > div p,
+  .hakon-content > p:not(.hakon-eyebrow) {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #655448;
+    margin-bottom: 18px;
+  }
+
+  .hakon-care {
+    padding: 90px 5%;
+  }
+
+  .hakon-content {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .hakon-styling,
+  .hakon-explore {
+    width: 90%;
+    max-width: 1380px;
+    margin: auto;
+    padding: 70px 0 90px;
+  }
+
+  .hakon-styling-grid,
+  .hakon-explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    margin-top: 58px;
+  }
+
+  .hakon-styling-item {
+    border-top: 1px solid #ddd4c9;
+    padding-top: 28px;
+  }
+
+  .hakon-number,
+  .hakon-explore-grid a span {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: #a67b58;
+  }
+
+  .hakon-styling-item h3,
+  .hakon-explore-grid h3 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 26px 0 15px;
+    color: #332d28;
+  }
+
+  .hakon-styling-item p,
+  .hakon-explore-grid p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #655448;
+  }
+
+  .hakon-explore-grid a {
+    text-decoration: none;
+    color: inherit;
+    border-top: 1px solid #ddd4c9;
+    padding-top: 25px;
+  }
+
+  .hakon-explore-grid small {
+    display: inline-block;
+    margin-top: 25px;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 5px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .hakon-final {
+    background: #332b25;
+    text-align: center;
+    padding: 100px 5%;
+  }
+
+  .hakon-final h2 {
+    color: #fffaf4;
+    max-width: 850px;
+    margin: 0 auto 35px;
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1.15;
+  }
+
+  .hakon-final-button {
+    background: #514032;
+  }
+
+  .hakon-final .hakon-disclosure {
+    color: #c6b6a7;
+  }
+
+  @media (max-width: 768px) {
+    .hakon-hero,
+    .hakon-note-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .hakon-image {
+      min-height: 0;
+      aspect-ratio: 4 / 5;
+    }
+
+    .hakon-information {
+      padding-bottom: 40px;
+    }
+
+    .hakon-note,
+    .hakon-care {
+      padding: 60px 5%;
+    }
+
+    .hakon-styling-grid,
+    .hakon-explore-grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .hakon-styling,
+    .hakon-explore {
+      padding: 55px 0;
+    }
+  }
+</style>

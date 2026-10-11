@@ -986,7 +986,7 @@ nav a:hover {
 
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   gap: 9px;
 
   font-size: 10px;
@@ -1009,11 +1009,36 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 78px;
-  align-items: center;
+  align-items: start;
 
   padding: 42px 0 70;
 }
+.granite-armchair-hero {
+  padding-bottom: 0;
+  align-items: stretch;
+}
 
+.granite-armchair-hero .product-detail-image {
+  position: relative;
+  min-height: 800px;
+}
+
+.granite-armchair-hero .product-detail-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .granite-armchair-hero .product-detail-image {
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+}
 .product-detail-image {
   overflow: hidden;
   background: #eee9e1;
@@ -3071,4 +3096,22 @@ nav a:hover {
     font-size: 28px;
   }
 
+}
+
+/* Granite Terracotta Armchair — image layout */
+
+.granite-armchair-image {
+  height: 680px;
+  max-height: 680px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.granite-armchair-image img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  display: block;
 }

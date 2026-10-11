@@ -1,0 +1,559 @@
+
+---
+import '../../../styles/global.css';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+const product = {
+  name: 'Aduma Sculptural Oak Shelving Unit',
+  brand: 'Kave Home',
+  image: '/images/furniture/kave-home-aduma-oak-shelving-unit.png',
+  url: 'https://kavehome.com/es/en/p/aduma-natural-coloured-finish-oak-veneer-shelving-unit-fsc-100-100-x-187-cm?utm_affcid=11111111&utm_medium=affiliate&utm_source=kasodi&utm_affaid=kasodi&utm_affcid=11111111',
+};
+
+const details = [
+  ['Material', 'Oak veneer · MDF · Oak wood'],
+  ['Dimensions', '100 × 40 × 187.5 cm'],
+  ['Colour', 'Natural oak'],
+  ['Finish', 'Water-based finish'],
+  ['Design', 'Architectural · Sculptural'],
+  ['Certification', 'FSC 100%'],
+  ['Weight', '75 kg'],
+  ['Installation', 'Wall fixing required'],
+];
+
+const styling = [
+  {
+    number: '01',
+    title: 'Collected Ceramics',
+    description: 'Display a few sculptural vases, handmade bowls and tactile objects in warm neutral tones. Let the open spaces become part of the composition.',
+  },
+  {
+    number: '02',
+    title: 'A Considered Library',
+    description: 'Combine carefully selected books with small decorative objects. Vary the orientation and height of each arrangement to create an effortless editorial feel.',
+  },
+  {
+    number: '03',
+    title: 'Natural Harmony',
+    description: 'Pair the oak finish with linen upholstery, travertine, woven textures and soft olive-green accents for a warm Mediterranean atmosphere.',
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aduma Sculptural Oak Shelving Unit | KASODI</title>
+
+    <meta
+      name="description"
+      content="Discover the Aduma shelving unit by Kave Home. Sculptural oak-veneered storage with architectural curves, open shelves and a natural finish, curated by KASODI."
+    />
+
+    <meta property="og:type" content="product" />
+    <meta
+      property="og:title"
+      content="Aduma Sculptural Oak Shelving Unit | KASODI"
+    />
+    <meta
+      property="og:description"
+      content="Architectural curves, natural oak tones and considered storage."
+    />
+    <meta
+      property="og:image"
+      content="https://kasodi.com/images/furniture/kave-home-aduma-oak-shelving-unit.png"
+    />
+    <meta
+      property="og:url"
+      content="https://kasodi.com/home/furniture/aduma-oak-shelving-unit/"
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main>
+      <nav class="aduma-breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>·</span>
+        <a href="/home/">Home Collection</a>
+        <span>·</span>
+        <a href="/home/furniture/">Furniture</a>
+        <span>·</span>
+        <span>Aduma Oak Shelving Unit</span>
+      </nav>
+
+      <section class="aduma-hero">
+        <div class="aduma-image">
+          <img
+            src={product.image}
+            alt="Aduma oak shelving unit by Kave Home styled with ceramics and books in a warm Mediterranean interior"
+          />
+        </div>
+
+        <div class="aduma-information">
+          <p class="aduma-eyebrow">HOME · FURNITURE</p>
+
+          <h1>{product.name}</h1>
+          <p class="aduma-brand">{product.brand}</p>
+
+          <div class="aduma-intro">
+            <p>
+              A sculptural approach to everyday storage. With its
+              architectural curves, geometric openings and beautifully
+              layered shelves, Aduma transforms a functional piece of
+              furniture into a distinctive interior statement.
+            </p>
+            <p>
+              The natural oak finish brings warmth and texture, while
+              the open silhouette creates a sense of lightness and
+              balance in contemporary living spaces.
+            </p>
+          </div>
+
+          <div class="aduma-details">
+            {details.map(([label, value]) => (
+              <div class="aduma-detail">
+                <span>{label}</span>
+                <strong>{value}</strong>
+              </div>
+            ))}
+          </div>
+
+          <a
+            class="aduma-button"
+            href={product.url}
+            target="_blank"
+            rel="nofollow sponsored noopener noreferrer"
+          >
+            FIND IT HERE →
+          </a>
+
+          <p class="aduma-disclosure">
+            Affiliate link · KASODI may earn a commission at no extra cost to you.
+          </p>
+        </div>
+      </section>
+
+      <section class="aduma-note">
+        <div class="aduma-note-inner">
+          <p class="aduma-eyebrow">KASODI NOTE</p>
+          <div>
+            <h2>Why we love it</h2>
+            <p>
+              Aduma is more than a shelving unit. Its rhythmic arrangement
+              of overlapping shelves and rounded architectural forms gives
+              the piece a distinctive presence, even when styled with
+              just a handful of carefully chosen objects.
+            </p>
+            <p>
+              We particularly love the contrast between the structured
+              oak surfaces and the generous open spaces. The result
+              feels both contemporary and timeless — a natural fit
+              for interiors that favour character over excess.
+            </p>
+            <p>
+              Its warm wood tones work beautifully with ceramics,
+              natural textiles, stone and softly textured walls.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="aduma-care">
+        <div class="aduma-content">
+          <p class="aduma-eyebrow">MATERIALS & CARE</p>
+          <h2>Considered design, everyday function</h2>
+
+          <p>
+            Aduma combines MDF, oak wood and oak veneer in a
+            natural-coloured, water-based finish. The product carries
+            FSC 100% certification and features adjustable feet
+            to help accommodate uneven floors.
+          </p>
+
+          <p>
+            Clean with a damp cloth and mild cleaning product,
+            then dry immediately. Avoid direct heat, prolonged
+            sunlight, abrasive cleaners, bleach and solvents.
+          </p>
+
+          <p>
+            <strong>Important:</strong> This shelving unit must be
+            securely fixed to the wall using appropriate fixings
+            for the wall type. Follow the manufacturer's assembly
+            instructions.
+          </p>
+        </div>
+      </section>
+
+      <section class="aduma-styling">
+        <p class="aduma-eyebrow">KASODI STYLING</p>
+        <h2>Style it with</h2>
+
+        <div class="aduma-styling-grid">
+          {styling.map((item) => (
+            <article class="aduma-styling-item">
+              <span class="aduma-number">{item.number}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="aduma-explore">
+        <p class="aduma-eyebrow">FURNITURE</p>
+        <h2>Continue Exploring</h2>
+
+        <div class="aduma-explore-grid">
+          <a href="/home/furniture/granite-beige-2-seater-sofa/">
+            <span>FURNITURE</span>
+            <h3>Granite Beige 2-Seater Sofa</h3>
+            <p>Soft sculptural seating in warm neutral tones.</p>
+            <small>DISCOVER →</small>
+          </a>
+
+          <a href="/home/furniture/granite-terracotta-armchair/">
+            <span>FURNITURE</span>
+            <h3>Granite Terracotta Armchair</h3>
+            <p>Expressive curves and beautifully textured upholstery.</p>
+            <small>DISCOVER →</small>
+          </a>
+
+          <a href="/home/furniture/">
+            <span>KASODI</span>
+            <h3>Explore Furniture</h3>
+            <p>Distinctive pieces for thoughtfully curated spaces.</p>
+            <small>DISCOVER →</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="aduma-final">
+        <p class="aduma-eyebrow">KAVE HOME · ADUMA COLLECTION</p>
+        <h2>Storage with architectural character.</h2>
+
+        <a
+          href={product.url}
+          target="_blank"
+          rel="nofollow sponsored noopener noreferrer"
+          class="aduma-final-button"
+        >
+          FIND IT HERE →
+        </a>
+
+        <p class="aduma-disclosure">
+          Affiliate link · KASODI may earn a commission at no extra cost to you.
+        </p>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .aduma-breadcrumbs {
+  width: 90%;
+  max-width: 1380px;
+  margin: 36px auto 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #a17858;
+}
+
+.aduma-breadcrumbs a,
+.aduma-breadcrumbs span {
+  font-size: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+  .aduma-breadcrumbs a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .aduma-hero {
+    width: 90%;
+    max-width: 1380px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 78px;
+    align-items: stretch;
+    padding: 8px 0 0;
+  }
+
+  .aduma-image {
+    position: relative;
+    min-height: 850px;
+    overflow: hidden;
+  }
+
+  .aduma-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .aduma-information {
+    padding: 8px 0 38px;
+  }
+
+  .aduma-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: #a87550;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  .aduma-information h1,
+  .aduma-note h2,
+  .aduma-care h2,
+  .aduma-styling h2,
+  .aduma-explore h2,
+  .aduma-final h2 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    color: #332d28;
+  }
+
+  .aduma-information h1 {
+    font-size: clamp(40px, 4.5vw, 72px);
+    line-height: 1.08;
+    margin: 0 0 22px;
+  }
+
+  .aduma-brand {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: #987453;
+    margin-bottom: 38px;
+  }
+
+  .aduma-intro {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #625449;
+    margin-bottom: 32px;
+  }
+
+  .aduma-intro p + p {
+    margin-top: 12px;
+  }
+
+  .aduma-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 23px 22px;
+    border-top: 1px solid #ddd5ca;
+    padding-top: 28px;
+    margin-bottom: 36px;
+  }
+
+  .aduma-detail span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #a37d60;
+    margin-bottom: 7px;
+  }
+
+  .aduma-detail strong {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #332d28;
+  }
+
+  .aduma-button,
+  .aduma-final-button {
+    display: inline-block;
+    padding: 19px 28px;
+    background: #332b25;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+  }
+
+  .aduma-disclosure {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #a38d7d;
+    margin-top: 14px;
+  }
+
+  .aduma-note {
+    background: #eee8df;
+    padding: 92px 5%;
+  }
+
+  .aduma-note-inner {
+    max-width: 1380px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 20px;
+  }
+
+  .aduma-note h2,
+  .aduma-care h2,
+  .aduma-styling h2,
+  .aduma-explore h2 {
+    font-size: clamp(38px, 4vw, 58px);
+    line-height: 1.15;
+    margin: 0 0 28px;
+  }
+
+  .aduma-note-inner > div {
+    max-width: 820px;
+  }
+
+  .aduma-note-inner > div p,
+  .aduma-content > p:not(.aduma-eyebrow) {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #655448;
+    margin-bottom: 18px;
+  }
+
+  .aduma-care {
+    padding: 90px 5%;
+  }
+
+  .aduma-content {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .aduma-styling,
+  .aduma-explore {
+    width: 90%;
+    max-width: 1380px;
+    margin: auto;
+    padding: 70px 0 90px;
+  }
+
+  .aduma-styling-grid,
+  .aduma-explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    margin-top: 58px;
+  }
+
+  .aduma-styling-item {
+    border-top: 1px solid #ddd4c9;
+    padding-top: 28px;
+  }
+
+  .aduma-number,
+  .aduma-explore-grid a span {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: #a67b58;
+  }
+
+  .aduma-styling-item h3,
+  .aduma-explore-grid h3 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 26px 0 15px;
+    color: #332d28;
+  }
+
+  .aduma-styling-item p,
+  .aduma-explore-grid p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #655448;
+  }
+
+  .aduma-explore-grid a {
+    text-decoration: none;
+    color: inherit;
+    border-top: 1px solid #ddd4c9;
+    padding-top: 25px;
+  }
+
+  .aduma-explore-grid small {
+    display: inline-block;
+    margin-top: 25px;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 5px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+
+  .aduma-final {
+    background: #332b25;
+    text-align: center;
+    padding: 100px 5%;
+  }
+
+  .aduma-final h2 {
+    color: #fffaf4;
+    max-width: 850px;
+    margin: 0 auto 35px;
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1.15;
+  }
+
+  .aduma-final-button {
+    background: #514032;
+  }
+
+  .aduma-final .aduma-disclosure {
+    color: #c6b6a7;
+  }
+
+  @media (max-width: 768px) {
+    .aduma-hero,
+    .aduma-note-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .aduma-image {
+      min-height: 0;
+      aspect-ratio: 4 / 5;
+    }
+
+    .aduma-information {
+      padding-bottom: 40px;
+    }
+
+    .aduma-note,
+    .aduma-care {
+      padding: 60px 5%;
+    }
+
+    .aduma-styling-grid,
+    .aduma-explore-grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .aduma-styling,
+    .aduma-explore {
+      padding: 55px 0;
+    }
+  }
+</style>
