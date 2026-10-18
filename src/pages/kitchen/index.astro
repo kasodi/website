@@ -1,31 +1,67 @@
+
 ---
 import WorldLanding from '../../components/WorldLanding.astro';
-const groups=[
-{id:'tableware',name:'Tableware',image:'/images/categories/category-tableware.png',description:'Plates, bowls, cups and serving pieces selected to bring character to everyday meals and gatherings.',products:[
-{name:'Blue Floral Dessert Plates',brand:'fanquare',category:'Tableware',image:'/images/new-finds/fanquare-blue-floral-dessert-plates.png',href:'/new-finds/fanquare-blue-floral-dessert-plates'},
-{name:'Pink Floral Tea Cup & Saucer',brand:'KASODI Find',category:'Tableware',image:'/images/tableware/pink-floral-tea-cup-saucer.png',href:'/tableware/pink-floral-tea-cup-saucer'},
-{name:'French Garden Fleurence Dinner Plate',brand:'Villeroy & Boch',category:'Tableware',image:'/images/tableware/villeroy-boch-french-garden-fleurence-dinner-plate.png',href:'/tableware/villeroy-boch-french-garden-fleurence-dinner-plate'},
-{name:'French Garden Fleurence Sugar Bowl',brand:'Villeroy & Boch',category:'Tableware',image:'/images/tableware/villeroy-boch-french-garden-fleurence-sugar-bowl.png',href:'/tableware/french-garden-fleurence-sugar-bowl'},
-{name:'Blue Floral Porcelain Tea Set',brand:'KASODI Find',category:'Tableware',image:'/images/tableware/blue-floral-porcelain-tea-set.png',href:'/tableware/blue-floral-porcelain-tea-set'},
-{name:'Vintage Multicolour Dinnerware Set',brand:'KASODI Find',category:'Tableware',image:'/images/tableware/vintage-multicolour-dinnerware-set.png',href:'/tableware/vintage-multicolour-dinnerware-set'},
-{name:'Vintage Gold Cake Serving Set',brand:'KASODI Find',category:'Serveware',image:'/images/tableware/vintage-gold-cake-serving-set.png',href:'/tableware/vintage-gold-cake-serving-set'},
-{name:'Botanical Vintage Pitcher',brand:'Ethereal Eves',category:'Serveware',image:'/images/kasodi-edit/kasodi-edit-floral-ceramic-pitcher.png',href:'/kasodi-edit/botanical-vintage-pitcher'},
-{name:'Blue Floral Ceramic Pitcher',brand:'KASODI Find',category:'Serveware',image:'/images/home-decor/blue-floral-ceramic-pitcher.png',href:'/home-decor/blue-floral-ceramic-pitcher'},
-{name:'Cream Tassel Table Runner',brand:'KASODI Find',category:'Table Linen',image:'/images/textiles-cozy/cream-tassel-table-runner.png',href:'/textiles-cozy/cream-tassel-table-runner'}]},
-{id:'glassware',name:'Glassware',image:'/images/kasodi-edit/kasodi-edit-villeroy-boch-boston-green-glass.png',description:'Coloured glass, wine glasses and decanters chosen to make even an ordinary table feel more considered.',products:[
-{name:'Boston Green Wine Glass',brand:'Villeroy & Boch',category:'Glassware',image:'/images/kasodi-edit/kasodi-edit-villeroy-boch-boston-green-glass.png',href:'/kasodi-edit/boston-green-wine-glass'},
-{name:'Vintage Green Champagne Glasses',brand:'JOEYAN',category:'Glassware',image:'/images/new-finds/joeyan-green-champagne-glasses.png',href:'/new-finds/joeyan-green-champagne-glasses'},
-{name:'Alori Amber Champagne Glass',brand:'KASODI Find',category:'Glassware',image:'/images/tableware/kave-home-alori-amber-cava-glass.png',href:'/tableware/alori-amber-champagne-glass'},
-{name:'Lady Diamond Wine Glasses',brand:'Cristal d’Arques',category:'Glassware',image:'/images/tableware/cristal-darques-lady-diamond-wine-glasses.png',href:'/tableware/cristal-darques-lady-diamond-wine-glasses'},
-{name:'Talora Carved Glass Decanter',brand:'Kave Home',category:'Glassware',image:'/images/tableware/kave-home-talora-carved-glass-decanter.png',href:'/tableware/talora-carved-glass-decanter'}]},
-{id:'kitchen-essentials',name:'Kitchen Essentials',image:'/images/categories/category-kitchen.png',description:'Useful pieces with material warmth — serving and preparing without losing the beauty of the room.',products:[
-{name:'Cindea Green Marble Mortar & Pestle',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-cindea-green-marble-mortar-pestle.png',href:'/kitchen/cindea-green-marble-mortar-pestle'},
-{name:'Convia Reactive Glaze Baking Dish',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-convia-reactive-glaze-baking-dish.png',href:'/kitchen/convia-reactive-glaze-baking-dish'},
-{name:'Rommu Acacia Serving Tray',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-rommu-acacia-serving-tray.png',href:'/kitchen/rommu-acacia-serving-tray'},
-{name:'Nukha Acacia Toast Rack',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-nukha-acacia-toast-rack.png',href:'/kitchen/nukha-acacia-toast-rack'},
-{name:'Nukha Acacia Wood Nutcracker',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-nukha-acacia-wood-nutcracker.png',href:'/kitchen/nukha-acacia-wood-nutcracker'},
-{name:'Sataya Acacia Holed Spatula',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-sataya-acacia-holed-spatula.png',href:'/kitchen/sataya-acacia-holed-spatula'}]}
+
+const groups = [
+  {
+    id: 'tableware',
+    name: 'Tableware',
+    image: '/images/categories/category-tableware.png',
+    description: 'Plates, bowls, cups and serving pieces selected to bring character to everyday meals and gatherings.',
+    products: [
+      {name:'Blue Floral Dessert Plates',brand:'fanquare',category:'Tableware',image:'/images/new-finds/fanquare-blue-floral-dessert-plates.png',href:'/kitchen/tableware/fanquare-blue-floral-dessert-plates'},
+      {name:'Pink Floral Tea Cup & Saucer',brand:'KASODI Find',category:'Tableware',image:'/images/tableware/pink-floral-tea-cup-saucer.png',href:'/kitchen/tableware/pink-floral-tea-cup-saucer'},
+      {name:'French Garden Fleurence Dinner Plate',brand:'Villeroy & Boch',category:'Tableware',image:'/images/tableware/villeroy-boch-french-garden-fleurence-dinner-plate.png',href:'/kitchen/tableware/villeroy-boch-french-garden-fleurence-dinner-plate'},
+      {name:'French Garden Fleurence Sugar Bowl',brand:'Villeroy & Boch',category:'Tableware',image:'/images/tableware/villeroy-boch-french-garden-fleurence-sugar-bowl.png',href:'/kitchen/tableware/french-garden-fleurence-sugar-bowl'},
+      {name:'Blue Floral Porcelain Tea Set',brand:'KASODI Find',category:'Tableware',image:'/images/tableware/blue-floral-porcelain-tea-set.png',href:'/kitchen/tableware/blue-floral-porcelain-tea-set'},
+      {name:'Vintage Multicolour Dinnerware Set',brand:'KASODI Find',category:'Tableware',image:'/images/tableware/vintage-multicolour-dinnerware-set.png',href:'/kitchen/tableware/vintage-multicolour-dinnerware-set'},
+      {name:'Vintage Gold Cake Serving Set',brand:'KASODI Find',category:'Serveware',image:'/images/tableware/vintage-gold-cake-serving-set.png',href:'/kitchen/tableware/vintage-gold-cake-serving-set'},
+      {name:'Botanical Vintage Pitcher',brand:'Ethereal Eves',category:'Serveware',image:'/images/kasodi-edit/kasodi-edit-floral-ceramic-pitcher.png',href:'/kasodi-edit/botanical-vintage-pitcher'},
+      {name:'Blue Floral Ceramic Pitcher',brand:'KASODI Find',category:'Serveware',image:'/images/home-decor/blue-floral-ceramic-pitcher.png',href:'/home-decor/blue-floral-ceramic-pitcher'},
+      {name:'Cream Tassel Table Runner',brand:'KASODI Find',category:'Table Linen',image:'/images/textiles-cozy/cream-tassel-table-runner.png',href:'/textiles-cozy/cream-tassel-table-runner'}
+    ]
+  },
+  {
+    id: 'glassware',
+    name: 'Glassware',
+    image: '/images/kasodi-edit/kasodi-edit-villeroy-boch-boston-green-glass.png',
+    description: 'Coloured glass, wine glasses and decanters chosen to make even an ordinary table feel more considered.',
+    products: [
+      {name:'Boston Green Wine Glass',brand:'Villeroy & Boch',category:'Glassware',image:'/images/kasodi-edit/kasodi-edit-villeroy-boch-boston-green-glass.png',href:'/kitchen/glassware/boston-green-wine-glass'},
+      {name:'Vintage Green Champagne Glasses',brand:'JOEYAN',category:'Glassware',image:'/images/new-finds/joeyan-green-champagne-glasses.png',href:'/kitchen/glassware/joeyan-green-champagne-glasses'},
+      {name:'Alori Amber Champagne Glass',brand:'KASODI Find',category:'Glassware',image:'/images/tableware/kave-home-alori-amber-cava-glass.png',href:'/kitchen/glassware/alori-amber-champagne-glass'},
+      {name:'Lady Diamond Wine Glasses',brand:'Cristal d’Arques',category:'Glassware',image:'/images/tableware/cristal-darques-lady-diamond-wine-glasses.png',href:'/kitchen/glassware/cristal-darques-lady-diamond-wine-glasses'},
+      {name:'Talora Carved Glass Decanter',brand:'Kave Home',category:'Glassware',image:'/images/tableware/kave-home-talora-carved-glass-decanter.png',href:'/kitchen/glassware/talora-carved-glass-decanter'}
+    ]
+  },
+  {
+    id: 'kitchen-essentials',
+    name: 'Kitchen Essentials',
+    image: '/images/categories/category-kitchen.png',
+    description: 'Useful pieces with material warmth — serving and preparing without losing the beauty of the room.',
+    products: [
+      {name:'Cindea Green Marble Mortar & Pestle',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-cindea-green-marble-mortar-pestle.png',href:'/kitchen/cindea-green-marble-mortar-pestle'},
+      {name:'Convia Reactive Glaze Baking Dish',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-convia-reactive-glaze-baking-dish.png',href:'/kitchen/convia-reactive-glaze-baking-dish'},
+      {name:'Rommu Acacia Serving Tray',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-rommu-acacia-serving-tray.png',href:'/kitchen/rommu-acacia-serving-tray'},
+      {name:'Nukha Acacia Toast Rack',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-nukha-acacia-toast-rack.png',href:'/kitchen/nukha-acacia-toast-rack'},
+      {name:'Nukha Acacia Wood Nutcracker',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-nukha-acacia-wood-nutcracker.png',href:'/kitchen/nukha-acacia-wood-nutcracker'},
+      {name:'Sataya Acacia Holed Spatula',brand:'Kave Home',category:'Kitchen',image:'/images/kitchen/kave-home-sataya-acacia-holed-spatula.png',href:'/kitchen/sataya-acacia-holed-spatula'}
+    ]
+  }
 ];
-const journal={title: 'How to Create a Mediterranean Table', text: 'Natural textures, layered ceramics and simple details for a relaxed and elegant table.', image: '/images/categories/category-tableware.png', href: '/journal/how-to-create-a-mediterranean-table'};
+
+const journal = {
+  title: 'How to Create a Mediterranean Table',
+  text: 'Natural textures, layered ceramics and simple details for a relaxed and elegant table.',
+  image: '/images/categories/category-tableware.png',
+  href: '/journal/how-to-create-a-mediterranean-table'
+};
 ---
-<WorldLanding title='Kitchen' intro='Tableware, kitchen essentials and the art of gathering.' hero='/images/categories/category-kitchen.png' {groups} {journal}/>
+
+<WorldLanding
+  title='Kitchen'
+  intro='Tableware, kitchen essentials and the art of gathering.'
+  hero='/images/categories/category-kitchen.png'
+  {groups}
+  {journal}
+/>
