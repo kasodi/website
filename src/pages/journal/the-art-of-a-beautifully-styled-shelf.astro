@@ -1,0 +1,763 @@
+
+---
+import "../../styles/global.css";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+const products = {
+  bookends: {
+    name: "Serela White Marble Bookends",
+    brand: "Kave Home",
+    category: "DECORATIVE OBJECTS",
+    href: "/interesting-finds/serela-white-marble-bookends",
+    image: "/images/interesting-finds/kave-home-serela-white-marble-bookends.webp"
+  },
+  jewelryBox: {
+    name: "Vintage Botanical Jewelry Box",
+    brand: "Tila Home",
+    category: "DECORATIVE OBJECTS",
+    href: "/new-finds/vintage-botanical-jewelry-box",
+    image: "/images/new-finds/vintage-botanical-jewelry-box.webp"
+  },
+  candleHolders: {
+    name: "Walnut Candle Holder Set",
+    brand: "Sabai'ly",
+    category: "CANDLES & FRAGRANCE",
+    href: "/candles-fragrance/walnut-candle-holder-set",
+    image: "/images/candles-fragrance/sabaily-walnut-candle-holder-set.webp"
+  },
+  photoFrame: {
+    name: "Vintage Butterfly Photo Frame",
+    brand: "KASODI FIND",
+    category: "DECORATIVE OBJECTS",
+    href: "/new-finds/vintage-butterfly-photo-frame",
+    image: "/images/new-finds/vintage-butterfly-photo-frame.webp"
+  }
+};
+
+const lookProducts = [
+  products.bookends,
+  products.jewelryBox,
+  products.photoFrame
+];
+---
+
+<html lang="en">
+  <head>
+    <!-- Google Consent Mode -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 2000
+      });
+
+      gtag("set", "ads_data_redaction", true);
+      gtag("set", "url_passthrough", true);
+    </script>
+
+    <!-- Start cookieyes banner -->
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://cdn-cookieyes.com/client_data/e9c032e34948c08e8ad6b9973971db36/script.js"
+    ></script>
+    <!-- End cookieyes banner -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LT2BEMKHKC"
+    ></script>
+
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LT2BEMKHKC');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/kasodi-favicon.png"
+    />
+
+    <title>The Art of a Beautifully Styled Shelf | KASODI</title>
+
+    <meta
+      name="description"
+      content="Discover seven thoughtful shelf styling ideas from KASODI. Create a collected and quietly beautiful display with ceramics, books, natural textures and meaningful objects."
+    />
+
+    <link
+      rel="canonical"
+      href="https://kasodi.com/journal/the-art-of-a-beautifully-styled-shelf/"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="KASODI" />
+
+    <meta
+      property="og:title"
+      content="The Art of a Beautifully Styled Shelf | KASODI"
+    />
+
+    <meta
+      property="og:description"
+      content="How to create a collected, balanced and quietly beautiful display with everyday objects."
+    />
+
+    <meta
+      property="og:url"
+      content="https://kasodi.com/journal/the-art-of-a-beautifully-styled-shelf/"
+    />
+
+    <meta
+      property="og:image"
+      content="https://kasodi.com/images/journal/the-art-of-a-beautifully-styled-shelf-hero.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Warm Mediterranean shelves styled with ceramics, books, decorative objects and natural textures"
+    />
+
+    <!-- Social -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="The Art of a Beautifully Styled Shelf | KASODI"
+    />
+
+    <meta
+      name="twitter:description"
+      content="How to create a collected, balanced and quietly beautiful display with everyday objects."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://kasodi.com/images/journal/the-art-of-a-beautifully-styled-shelf-hero.png"
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="journal-story-page">
+
+      <!-- BREADCRUMB -->
+
+      <div class="product-breadcrumb">
+        <a href="/">Home</a>
+        <span>&middot;</span>
+        <a href="/#journal">Journal</a>
+        <span>&middot;</span>
+        <span>The Art of a Beautifully Styled Shelf</span>
+      </div>
+
+      <!-- HERO -->
+
+      <section class="journal-story-hero">
+        <p class="product-detail-eyebrow">
+          KASODI GUIDE
+        </p>
+
+        <h1>
+          The Art of a<br />
+          Beautifully Styled Shelf
+        </h1>
+
+        <p class="journal-story-intro">
+          How to create a collected, balanced and quietly beautiful
+          display with everyday objects.
+        </p>
+      </section>
+
+      <!-- HERO IMAGE -->
+
+<section class="journal-story-cover shelf-story-cover">
+  <img
+    src="/images/journal/the-art-of-a-beautifully-styled-shelf-hero.png"
+    alt="Beautifully styled Mediterranean shelves with books, marble bookends, ceramics, candles and decorative objects"
+  />
+</section>
+      <!-- 01 -->
+
+      <section class="journal-story-row journal-story-divider">
+
+        <div class="journal-story-copy">
+          <p class="journal-story-number">01</p>
+
+          <h2>Begin with a Thoughtful Edit</h2>
+
+          <p>
+            A beautifully styled shelf is rarely about having more.
+            It is about choosing what deserves a place, allowing objects
+            to breathe and creating a composition that feels natural
+            rather than arranged.
+          </p>
+
+          <p>
+            A favourite ceramic vase, a small stack of books, a treasured
+            object from your travels &mdash; these simple details can turn
+            an ordinary shelf into something personal.
+          </p>
+
+          <p>
+            Before styling, remove everything from your shelf and look
+            at the space with fresh eyes.
+          </p>
+
+          <p>
+            Choose a small collection of pieces that feel meaningful or
+            visually interesting. Think sculptural ceramics, beautiful
+            books, natural wood, woven textures and a few objects with
+            a story.
+          </p>
+
+          <p>
+            Not everything needs to be displayed at once. A more
+            considered selection often creates a stronger impression
+            than a shelf filled from edge to edge.
+          </p>
+        </div>
+
+        <div class="journal-inline-product">
+          <a href={products.bookends.href}>
+            <img
+              src={products.bookends.image}
+              alt="Serela White Marble Bookends by Kave Home"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+            <p class="journal-story-product-category">
+              {products.bookends.category}
+            </p>
+
+            <h3>{products.bookends.name}</h3>
+
+            <p class="journal-story-product-brand">
+              {products.bookends.brand}
+            </p>
+
+            <a
+              href={products.bookends.href}
+              class="journal-story-discover"
+            >
+              Discover &rarr;
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 02 -->
+
+      <section class="journal-story-row journal-story-row-product journal-story-divider">
+
+        <div class="journal-inline-product">
+          <a href={products.jewelryBox.href}>
+            <img
+              src={products.jewelryBox.image}
+              alt="Vintage Botanical Jewelry Box"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+            <p class="journal-story-product-category">
+              {products.jewelryBox.category}
+            </p>
+
+            <h3>{products.jewelryBox.name}</h3>
+
+            <p class="journal-story-product-brand">
+              {products.jewelryBox.brand}
+            </p>
+
+            <a
+              href={products.jewelryBox.href}
+              class="journal-story-discover"
+            >
+              Discover &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="journal-story-copy">
+          <p class="journal-story-number">02</p>
+
+          <h2>Play with Height and Proportion</h2>
+
+          <p>
+            A shelf becomes more interesting when objects have
+            different heights and shapes.
+          </p>
+
+          <p>
+            Place a tall vase beside a short stack of books.
+            Balance a rounded bowl with a slender candleholder.
+            Let a small sculptural object sit slightly forward,
+            creating depth.
+          </p>
+
+          <p>
+            Avoid arranging everything in a straight line or repeating
+            the same height across the entire shelf.
+          </p>
+
+          <p>
+            Instead, imagine your objects forming a gentle,
+            irregular rhythm.
+          </p>
+
+          <p>
+            The result should feel relaxed, balanced and quietly
+            intentional.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- 03 -->
+
+      <section class="journal-story-row journal-story-row-product-reverse journal-story-divider">
+
+        <div class="journal-story-copy">
+          <p class="journal-story-number">03</p>
+
+          <h2>Layer Natural Textures</h2>
+
+          <p>
+            Texture brings warmth to even the simplest arrangement.
+          </p>
+
+          <p>
+            Combine matte ceramics with smooth glass, warm wood with
+            woven rattan, or a weathered stone object with the soft
+            pages of a book.
+          </p>
+
+          <p>
+            These contrasts are especially beautiful in neutral
+            interiors, where subtle variations in material become
+            part of the visual interest.
+          </p>
+
+          <p>
+            You do not need a large collection. Even three thoughtfully
+            chosen objects in different textures can create a beautiful
+            composition.
+          </p>
+        </div>
+
+        <div class="journal-inline-product">
+          <a href={products.candleHolders.href}>
+            <img
+              src={products.candleHolders.image}
+              alt="Walnut Candle Holder Set"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+            <p class="journal-story-product-category">
+              {products.candleHolders.category}
+            </p>
+
+            <h3>{products.candleHolders.name}</h3>
+
+            <p class="journal-story-product-brand">
+              {products.candleHolders.brand}
+            </p>
+
+            <a
+              href={products.candleHolders.href}
+              class="journal-story-discover"
+            >
+              Discover &rarr;
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- 04 -->
+
+      <section class="journal-story-row journal-story-divider">
+
+        <div class="journal-story-copy">
+          <p class="journal-story-number">04</p>
+
+          <h2>Give Books a Place in the Composition</h2>
+
+          <p>
+            Books are among the most versatile objects for shelf styling.
+          </p>
+
+          <p>
+            Arrange a few vertically between decorative pieces, or stack
+            two or three horizontally to create a base for a small bowl
+            or sculptural accent.
+          </p>
+
+          <p>
+            Choose books you genuinely enjoy rather than selecting
+            them only for their covers.
+          </p>
+
+          <p>
+            A shelf feels more personal when its contents reflect the
+            people who live with it.
+          </p>
+        </div>
+
+        <aside class="journal-story-note">
+          <p class="product-detail-eyebrow">
+            KASODI NOTE
+          </p>
+
+          <h3>
+            Choose fewer objects, but give each one a reason to be there.
+          </h3>
+        </aside>
+
+      </section>
+
+      <!-- 05 -->
+
+      <section class="journal-story-row journal-story-row-product journal-story-divider">
+
+        <div class="journal-inline-product">
+          <a href={products.photoFrame.href}>
+            <img
+              src={products.photoFrame.image}
+              alt="Vintage Butterfly Photo Frame"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+            <p class="journal-story-product-category">
+              {products.photoFrame.category}
+            </p>
+
+            <h3>{products.photoFrame.name}</h3>
+
+            <p class="journal-story-product-brand">
+              {products.photoFrame.brand}
+            </p>
+
+            <a
+              href={products.photoFrame.href}
+              class="journal-story-discover"
+            >
+              Discover &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="journal-story-copy">
+          <p class="journal-story-number">05</p>
+
+          <h2>Introduce Something Organic</h2>
+
+          <p>
+            A small branch, a trailing plant or a few stems of olive
+            foliage can soften the structured lines of shelving.
+          </p>
+
+          <p>
+            Organic shapes introduce movement and connect the interior
+            to the natural world.
+          </p>
+
+          <p>
+            For a Mediterranean-inspired feeling, try a simple ceramic
+            vessel with olive branches or seasonal greenery.
+          </p>
+
+          <p>
+            There is no need for an elaborate arrangement.
+            A single beautiful branch can be enough.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- 06 -->
+
+      <section class="journal-story-row journal-story-divider">
+
+        <div class="journal-story-copy">
+          <p class="journal-story-number">06</p>
+
+          <h2>Leave Room for the Eye to Rest</h2>
+
+          <p>
+            One of the most overlooked elements of shelf styling
+            is empty space.
+          </p>
+
+          <p>
+            Resist the temptation to fill every corner. Leave gaps
+            between groups of objects and allow some sections to
+            remain intentionally quiet.
+          </p>
+
+          <p>
+            This negative space gives the arrangement a sense of
+            lightness and makes individual pieces more noticeable.
+          </p>
+
+          <p>
+            A beautifully styled shelf should feel like a collection
+            of moments, not a crowded display.
+          </p>
+        </div>
+
+        <aside class="journal-story-note">
+          <p class="product-detail-eyebrow">
+            KASODI NOTE
+          </p>
+
+          <h3>
+            Beautiful objects need room to breathe.
+          </h3>
+        </aside>
+
+      </section>
+
+      <!-- 07 -->
+
+      <section class="journal-story-row journal-story-row-product-reverse journal-story-divider">
+
+        <div class="journal-story-copy">
+          <p class="journal-story-number">07</p>
+
+          <h2>Let Your Shelf Evolve Naturally</h2>
+
+          <p>
+            The most interesting shelves rarely look as though
+            they were completed in a single afternoon.
+          </p>
+
+          <p>They evolve over time.</p>
+
+          <p>
+            A new book finds its place beside an old ceramic bowl.
+            A seasonal branch replaces a dried arrangement.
+            A treasured object moves from one room to another.
+          </p>
+
+          <p>
+            Allow your shelf to change with your home, your interests
+            and the seasons.
+          </p>
+
+          <p>
+            There is beauty in an interior that feels collected
+            rather than perfectly coordinated.
+          </p>
+        </div>
+
+        <div class="journal-inline-product">
+          <a href={products.jewelryBox.href}>
+            <img
+              src={products.jewelryBox.image}
+              alt="Vintage Botanical Jewelry Box"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+            <p class="journal-story-product-category">
+              {products.jewelryBox.category}
+            </p>
+
+            <h3>{products.jewelryBox.name}</h3>
+
+            <p class="journal-story-product-brand">
+              {products.jewelryBox.brand}
+            </p>
+
+            <a
+              href={products.jewelryBox.href}
+              class="journal-story-discover"
+            >
+              Discover &rarr;
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- CLOSING -->
+
+      <section class="journal-story-closing">
+
+        <div class="journal-story-ending">
+          <p class="product-detail-eyebrow">
+            CONSIDERED DETAILS
+          </p>
+
+          <h2>The Beauty of Considered Details</h2>
+
+          <p>
+            Ultimately, the art of styling a shelf is not about
+            following a strict formula.
+          </p>
+
+          <p>
+            It is about noticing how objects relate to one another
+            &mdash; how a curve balances a straight line, how a
+            textured surface catches the light, how an empty space
+            can make a small detail feel special.
+          </p>
+
+          <p>
+            Begin with what you already love. Add slowly, edit
+            thoughtfully and leave space for your home to tell
+            its own story.
+          </p>
+        </div>
+
+        <aside class="journal-story-note">
+          <p class="product-detail-eyebrow">
+            KASODI NOTE
+          </p>
+
+          <h3>
+            A beautiful home is not defined by how much it contains,
+            but by how thoughtfully it comes together.
+          </h3>
+        </aside>
+
+      </section>
+
+      <!-- KASODI EDIT -->
+
+      <section class="journal-look-edit">
+
+        <div class="journal-look-heading">
+          <p class="product-detail-eyebrow">
+            KASODI EDIT
+          </p>
+
+          <h2>Pieces for a Beautifully Styled Shelf</h2>
+
+          <p>
+            Thoughtfully selected details to bring warmth,
+            character and personality to your shelves.
+          </p>
+        </div>
+
+        <div class="journal-look-grid">
+          {lookProducts.map((product) => (
+            <article class="journal-look-card">
+
+              <a
+                href={product.href}
+                class="journal-look-image"
+              >
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="journal-look-info">
+                <p class="journal-story-product-category">
+                  {product.category}
+                </p>
+
+                <h3>{product.name}</h3>
+
+                <p class="journal-story-product-brand">
+                  {product.brand}
+                </p>
+
+                <a
+                  href={product.href}
+                  class="journal-story-discover"
+                >
+                  Discover &rarr;
+                </a>
+              </div>
+
+            </article>
+          ))}
+        </div>
+
+      </section>
+
+      <!-- FINAL -->
+
+      <section class="journal-article-final">
+        <p class="product-detail-eyebrow">
+          THE KASODI APPROACH
+        </p>
+
+        <h2>
+          Let your home tell its own story.
+        </h2>
+
+        <p>
+          Begin with what you love. Combine meaningful objects,
+          natural textures and thoughtful proportions, and leave
+          space for your collection to evolve over time.
+        </p>
+
+      </section>
+
+    </main>
+
+    <Footer />
+    <style>
+  .shelf-story-cover {
+    width: calc(100% - 48px);
+    max-width: 1380px;
+    height: 460px;
+    margin: 0 auto 60px;
+    overflow: hidden;
+  }
+
+  .shelf-story-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .shelf-story-cover {
+      width: calc(100% - 32px);
+      height: 280px;
+      margin-bottom: 36px;
+    }
+  }
+</style>
+  </body>
+</html>
