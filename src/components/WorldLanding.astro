@@ -25,6 +25,10 @@ const typedGroups = groups as Group[];
     <title>{title} | KASODI</title>
     <meta name="description" content={intro} />
     <link
+  rel="canonical"
+  href={`https://kasodi.com${Astro.url.pathname}`}
+/>
+    <link
       rel="icon"
       type="image/png"
       href="/images/kasodi-favicon.png?v=2"
