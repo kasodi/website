@@ -1,0 +1,926 @@
+---
+import "../../styles/global.css";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+const pageTitle = "A Calm Bathroom with Natural Details | KASODI";
+
+const pageDescription =
+  "Discover five simple ways to create a calm, spa-like bathroom with natural stone, soft textiles, thoughtful storage, warm metals and gentle lighting.";
+
+const pageUrl =
+  "https://kasodi.com/journal/a-calm-bathroom-with-natural-details/";
+
+const heroImage =
+  "/images/journal/a-calm-bathroom-with-natural-details-hero.png";
+
+const interiorImage =
+  "/images/journal/a-calm-bathroom-with-natural-details-interior.png";
+
+const ritualsImage =
+  "/images/journal/a-calm-bathroom-with-natural-details-rituals.png";
+
+const soapDish = {
+  name: "Amber Glass Soap Dish",
+  brand: "Kuishi",
+  category: "BATHROOM ACCESSORIES",
+  href: "/bathroom/amber-glass-soap-dish/",
+  image: "/images/bathroom/kuishi-amber-glass-soap-dish.webp",
+  alt: "Amber Glass Soap Dish by Kuishi",
+};
+
+const apothecaryJars = {
+  name: "Amber Glass Apothecary Jars",
+  brand: "Kuishi",
+  category: "BATHROOM STORAGE",
+  href: "/bathroom/amber-glass-apothecary-jars/",
+  image: "/images/bathroom/kuishi-amber-glass-apothecary-jars.webp",
+  alt: "Amber Glass Apothecary Jars by Kuishi",
+};
+
+const ceramicSet = {
+  name: "Aya Nord Ceramic Bathroom Set",
+  brand: "Aya Nord",
+  category: "BATHROOM ACCESSORIES",
+  href: "/bathroom/ava-nord-ceramic-bathroom-set/",
+  image: "/images/bathroom/ava-nord-ceramic-bathroom-set-cream.webp",
+  alt: "Cream ceramic bathroom accessories by Aya Nord",
+};
+
+const organizer = {
+  name: "Glass & Gold Cosmetic Organizer",
+  brand: "Harlian GXY",
+  category: "BATHROOM ORGANISATION",
+  href: "/bathroom/harliangxy-glass-gold-cosmetic-organizer/",
+  image: "/images/bathroom/harliangxy-glass-gold-cosmetic-organizer.webp",
+  alt: "Glass and gold cosmetic organizer",
+};
+
+const curatedProducts = [
+  soapDish,
+  apothecaryJars,
+  ceramicSet,
+  organizer,
+];
+---
+
+<html lang="en">
+  <head>
+    <!-- Google Consent Mode -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 2000
+      });
+
+      gtag("set", "ads_data_redaction", true);
+      gtag("set", "url_passthrough", true);
+    </script>
+
+    <!-- CookieYes -->
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://cdn-cookieyes.com/client_data/e9c032e34948c08e8ad6b9973971db36/script.js"
+    ></script>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LT2BEMKHKC"
+    ></script>
+
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "G-LT2BEMKHKC");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/kasodi-favicon.png"
+    />
+
+    <title>{pageTitle}</title>
+
+    <meta
+      name="description"
+      content={pageDescription}
+    />
+
+    <link rel="canonical" href={pageUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="KASODI" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={pageUrl} />
+
+    <meta
+      property="og:image"
+      content={`https://kasodi.com${heroImage}`}
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Warm Mediterranean bathroom with natural stone, amber glass and gentle sunlight"
+    />
+<!-- Additional Open Graph -->
+<meta property="og:locale" content="en_US" />
+<meta property="og:image:type" content="image/png" />
+
+<!-- Pinterest -->
+<meta name="pinterest-rich-pin" content="true" />
+
+<!-- Search Engines -->
+<meta name="robots" content="index, follow" />
+
+    <!-- Social -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+
+    <meta
+      name="twitter:image"
+      content={`https://kasodi.com${heroImage}`}
+    />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="journal-story-page">
+
+      <!-- BREADCRUMB -->
+
+      <div class="product-breadcrumb">
+        <a href="/">Home</a>
+        <span>·</span>
+        <a href="/#journal">Journal</a>
+        <span>·</span>
+        <span>A Calm Bathroom with Natural Details</span>
+      </div>
+
+
+      <!-- HERO -->
+
+      <section class="journal-story-hero">
+
+        <p class="product-detail-eyebrow">
+          KASODI JOURNAL · BATHROOM
+        </p>
+
+        <h1>
+          A Calm Bathroom<br />
+          with Natural Details
+        </h1>
+
+        <p class="journal-story-intro">
+          Simple ideas for a spa-like and timeless space.
+        </p>
+
+      </section>
+
+
+      <!-- HERO IMAGE -->
+
+      <section class="journal-story-cover">
+
+        <img
+          src={heroImage}
+          alt="A calm Mediterranean bathroom with natural stone, warm sunlight, amber glass and soft linen"
+          fetchpriority="high"
+        />
+
+      </section>
+
+
+      <!-- INTRODUCTION -->
+
+      <section class="journal-story-closing">
+
+        <div class="journal-story-ending">
+
+          <p class="product-detail-eyebrow">
+            THE ART OF CALM LIVING
+          </p>
+
+          <h2>
+            A Quiet Retreat for Everyday Life
+          </h2>
+
+          <p>
+            A bathroom can be more than a practical part of the home.
+            It can become a quiet retreat — a place to slow down,
+            enjoy a simple daily ritual, and find a moment of calm.
+          </p>
+
+          <p>
+            Creating this atmosphere does not require a complete
+            renovation or an elaborate design. Often, the most
+            beautiful spaces are shaped by thoughtful choices:
+            natural materials, soft textures, warm lighting,
+            and everyday objects that feel both useful and considered.
+          </p>
+
+          <p>
+            Inspired by the understated elegance of Mediterranean
+            living, a calm bathroom embraces simplicity without
+            feeling empty. It celebrates texture rather than
+            decoration, warmth rather than perfection, and small
+            details that make everyday routines feel special.
+          </p>
+
+        </div>
+
+        <aside class="journal-story-note">
+
+          <p class="product-detail-eyebrow">
+            KASODI NOTE
+          </p>
+
+          <h3>
+            A beautiful bathroom begins with the feeling it creates.
+          </h3>
+
+        </aside>
+
+      </section>
+
+
+      <!-- 01 NATURAL STONE & CERAMICS -->
+
+      <section class="journal-story-row journal-story-row-product-reverse journal-story-divider">
+
+        <div class="journal-story-copy">
+
+          <p class="journal-story-number">
+            01
+          </p>
+
+          <h2>
+            Begin with Natural Stone &amp; Ceramics
+          </h2>
+
+          <p>
+            Natural materials have a quiet beauty that never
+            feels forced. The subtle variations of limestone,
+            the gentle warmth of travertine, and the organic
+            shapes of handmade ceramics can instantly make
+            a bathroom feel more grounded and inviting.
+          </p>
+
+          <p>
+            You do not need stone walls or an expensive marble
+            countertop to introduce these elements. A small
+            ceramic dish, a natural stone tray, or a beautifully
+            textured container can bring the same sense of
+            authenticity to an everyday space.
+          </p>
+
+          <p>
+            Choose pieces with soft, imperfect finishes rather
+            than overly polished surfaces. Cream, sand, warm
+            beige, and muted earth tones create a timeless
+            foundation that works beautifully with both
+            contemporary and traditional interiors.
+          </p>
+
+          <p>
+            Even the smallest objects can contribute to the
+            overall atmosphere. A simple amber glass soap dish,
+            for example, introduces a warm, translucent detail
+            that complements natural stone, wood, and
+            neutral ceramics.
+          </p>
+
+        </div>
+
+
+        <div class="journal-inline-product">
+
+          <a href={soapDish.href}>
+            <img
+              src={soapDish.image}
+              alt={soapDish.alt}
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+
+            <p class="journal-story-product-category">
+              {soapDish.category}
+            </p>
+
+            <h3>
+              {soapDish.name}
+            </h3>
+
+            <p class="journal-story-product-brand">
+              {soapDish.brand}
+            </p>
+
+            <a
+              href={soapDish.href}
+              class="journal-story-discover"
+            >
+              Discover →
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 02 SOFT TEXTILES -->
+
+      <section class="journal-story-row journal-story-row-product journal-story-divider">
+
+        <div class="journal-inline-product">
+
+          <a href={ceramicSet.href}>
+            <img
+              src={ceramicSet.image}
+              alt={ceramicSet.alt}
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+
+            <p class="journal-story-product-category">
+              {ceramicSet.category}
+            </p>
+
+            <h3>
+              {ceramicSet.name}
+            </h3>
+
+            <p class="journal-story-product-brand">
+              {ceramicSet.brand}
+            </p>
+
+            <a
+              href={ceramicSet.href}
+              class="journal-story-discover"
+            >
+              Discover →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="journal-story-copy">
+
+          <p class="journal-story-number">
+            02
+          </p>
+
+          <h2>
+            Introduce Soft Textiles &amp; Gentle Layers
+          </h2>
+
+          <p>
+            A beautiful bathroom should feel as comfortable
+            as it looks. Soft textiles help balance the harder
+            surfaces typically found in bathrooms, making the
+            space feel warmer, more welcoming, and less clinical.
+          </p>
+
+          <p>
+            Begin with high-quality cotton or linen towels
+            in a restrained palette of ivory, oatmeal,
+            warm white, or soft taupe. Their natural textures
+            create visual interest without introducing
+            unnecessary colour.
+          </p>
+
+          <p>
+            Rather than filling every shelf, display just a
+            few carefully folded towels or hang them neatly
+            where they can become part of the room's composition.
+          </p>
+
+          <p>
+            A simple bath mat, a textured linen curtain, or
+            a soft cotton robe can add another layer of comfort.
+            When colours and textures work together, even
+            ordinary bathroom essentials can create the
+            feeling of a thoughtfully designed retreat.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 03 THOUGHTFUL STORAGE -->
+
+      <section class="journal-story-row journal-story-row-product-reverse journal-story-divider">
+
+        <div class="journal-story-copy">
+
+          <p class="journal-story-number">
+            03
+          </p>
+
+          <h2>
+            Make Storage Part of the Design
+          </h2>
+
+          <p>
+            A calm space begins with a sense of order.
+            In the bathroom, where everyday products can
+            easily accumulate, thoughtful storage is one
+            of the simplest ways to create a more
+            peaceful atmosphere.
+          </p>
+
+          <p>
+            Instead of hiding everything behind closed
+            doors, consider making a few practical objects
+            part of the design.
+          </p>
+
+          <p>
+            Woven baskets are particularly beautiful in
+            natural interiors. Their organic texture adds
+            warmth while offering a practical place for
+            rolled towels, spare toiletries, or other
+            everyday essentials.
+          </p>
+
+          <p>
+            For smaller items, glass containers provide a
+            more refined alternative to mismatched packaging.
+            Amber glass is especially appealing: its warm
+            colour adds depth to neutral surroundings and
+            works beautifully alongside stone, ceramic,
+            and wood.
+          </p>
+
+          <p>
+            The aim is not to create a perfectly arranged
+            display. It is to make the things you use every
+            day feel intentional, accessible, and beautiful.
+          </p>
+
+        </div>
+
+
+        <div class="journal-inline-product">
+
+          <a href={apothecaryJars.href}>
+            <img
+              src={apothecaryJars.image}
+              alt={apothecaryJars.alt}
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+
+            <p class="journal-story-product-category">
+              {apothecaryJars.category}
+            </p>
+
+            <h3>
+              {apothecaryJars.name}
+            </h3>
+
+            <p class="journal-story-product-brand">
+              {apothecaryJars.brand}
+            </p>
+
+            <a
+              href={apothecaryJars.href}
+              class="journal-story-discover"
+            >
+              Discover →
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 04 WARM METALLIC ACCENTS -->
+
+      <section class="journal-story-row journal-story-row-product journal-story-divider">
+
+        <div class="journal-inline-product">
+
+          <a href={organizer.href}>
+            <img
+              src={organizer.image}
+              alt={organizer.alt}
+              loading="lazy"
+            />
+          </a>
+
+          <div class="journal-inline-product-info">
+
+            <p class="journal-story-product-category">
+              {organizer.category}
+            </p>
+
+            <h3>
+              {organizer.name}
+            </h3>
+
+            <p class="journal-story-product-brand">
+              {organizer.brand}
+            </p>
+
+            <a
+              href={organizer.href}
+              class="journal-story-discover"
+            >
+              Discover →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="journal-story-copy">
+
+          <p class="journal-story-number">
+            04
+          </p>
+
+          <h2>
+            Add Warm Metallic Accents
+          </h2>
+
+          <p>
+            Sometimes, the smallest finishing touches
+            make the greatest difference. Metallic details
+            can introduce subtle contrast and character,
+            particularly in bathrooms dominated by pale
+            stone, ceramic, or neutral tiles.
+          </p>
+
+          <p>
+            Brushed brass, aged bronze, and softly muted
+            gold finishes bring warmth without overwhelming
+            the space.
+          </p>
+
+          <p>
+            A towel hook, a small mirror frame, a soap
+            dispenser detail, or a simple tray can be
+            enough to introduce this effect.
+          </p>
+
+          <p>
+            Avoid combining too many different metallic
+            finishes. Instead, choose one dominant tone
+            and repeat it gently throughout the room.
+          </p>
+
+          <p>
+            Warm metals pair especially well with natural
+            materials. Brushed brass against limestone
+            feels sophisticated yet relaxed, while bronze
+            alongside amber glass creates a deeper,
+            more intimate atmosphere.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 05 GENTLE LIGHTING -->
+
+      <section class="journal-story-row journal-story-divider">
+
+        <div class="journal-story-copy">
+
+          <p class="journal-story-number">
+            05
+          </p>
+
+          <h2>
+            Create Atmosphere with Gentle Lighting
+          </h2>
+
+          <p>
+            Lighting has the power to transform the way
+            a room feels. A bathroom filled with harsh
+            overhead light may be practical, but it rarely
+            creates the atmosphere of a peaceful retreat.
+          </p>
+
+          <p>
+            Whenever possible, make the most of natural
+            daylight. Soft morning sunlight falling across
+            stone, ceramic, and glass reveals their
+            textures and gives the room a sense of
+            warmth and life.
+          </p>
+
+          <p>
+            For the evening, consider layered lighting.
+            Warm wall lights, a softly illuminated mirror,
+            or a small decorative lamp designed for safe
+            bathroom use can create a gentler mood while
+            keeping essential areas properly lit.
+          </p>
+
+          <p>
+            Candles can also introduce a beautiful sense
+            of ritual when placed safely away from towels,
+            curtains, and other flammable materials.
+          </p>
+
+          <p>
+            A subtle fragrance, a favourite hand soap,
+            or a small branch of greenery can complete
+            the experience. These details may seem
+            insignificant on their own, but together
+            they create a space that encourages you
+            to slow down.
+          </p>
+
+        </div>
+
+
+        <div class="journal-story-mood">
+
+          <img
+            src={ritualsImage}
+            alt="Soft cotton towels, amber glass, candlelight and natural stone in a Mediterranean bathroom"
+            loading="lazy"
+          />
+
+        </div>
+
+      </section>
+
+
+      <!-- EDITORIAL INTERIOR -->
+
+      <section class="journal-story-cover">
+
+        <img
+          src={interiorImage}
+          alt="Natural bathroom styling with woven baskets, amber glass jars, ceramic accessories and soft neutral towels"
+          loading="lazy"
+        />
+
+      </section>
+
+
+      <!-- CLOSING -->
+
+      <section class="journal-story-closing">
+
+        <div class="journal-story-ending">
+
+          <p class="product-detail-eyebrow">
+            THE BEAUTY OF KEEPING THINGS SIMPLE
+          </p>
+
+          <h2>
+            A Little Less, A Little Better
+          </h2>
+
+          <p>
+            Creating a calm bathroom is not about achieving
+            perfection. It is about choosing fewer things
+            with greater care.
+          </p>
+
+          <p>
+            A beautifully made ceramic dish. A stack of soft
+            cotton towels. A woven basket that keeps everyday
+            essentials organised. The gentle glow of warm
+            light against natural stone.
+          </p>
+
+          <p>
+            These small details can transform even a modest
+            bathroom into a space that feels considered
+            and inviting.
+          </p>
+
+          <p>
+            You do not need to change everything at once.
+            Begin with one corner, one shelf, or one
+            everyday ritual.
+          </p>
+
+          <p>
+            Remove what feels unnecessary, introduce
+            materials that bring you comfort, and allow
+            the space to evolve naturally.
+          </p>
+
+        </div>
+
+
+        <aside class="journal-story-note">
+
+          <p class="product-detail-eyebrow">
+            KASODI NOTE
+          </p>
+
+          <h3>
+            Quiet luxury is not defined by how much a room
+            contains, but by how thoughtfully everything
+            comes together.
+          </h3>
+
+        </aside>
+
+      </section>
+
+
+      <!-- EVERYDAY RITUALS -->
+
+      <section class="journal-story-closing">
+
+        <div class="journal-story-ending">
+
+          <p class="product-detail-eyebrow">
+            EVERYDAY RITUALS
+          </p>
+
+          <h2>
+            Make Room for Small Moments
+          </h2>
+
+          <p>
+            A favourite hand soap. Fresh towels waiting
+            on a shelf. The warmth of morning sunlight
+            across a ceramic basin.
+          </p>
+
+          <p>
+            These moments are small, but they are also
+            the moments when a home becomes personal.
+          </p>
+
+          <p>
+            Choosing beautiful, useful objects is not
+            about creating a perfect interior. It is
+            about making the everyday feel a little
+            more considered.
+          </p>
+
+          <p>
+            Perhaps that is the real beauty of a calm
+            bathroom: a space that gives us permission
+            to slow down, even for a moment.
+          </p>
+
+        </div>
+
+
+        <aside class="journal-story-note">
+
+          <p class="product-detail-eyebrow">
+            THE KASODI APPROACH
+          </p>
+
+          <h3>
+            Small everyday rituals can become the most
+            beautiful moments of the day.
+          </h3>
+
+        </aside>
+
+      </section>
+
+
+      <!-- PIECES FOR A CALM BATHROOM -->
+
+      <section class="journal-look-edit">
+
+        <div class="journal-look-heading">
+
+          <p class="product-detail-eyebrow">
+            KASODI EDIT
+          </p>
+
+          <h2>
+            Pieces for a Calm Bathroom
+          </h2>
+
+          <p>
+            Thoughtfully selected accessories that bring
+            warmth, texture, and timeless simplicity
+            to everyday rituals.
+          </p>
+
+        </div>
+
+
+        <div class="journal-look-grid">
+
+          {curatedProducts.slice(0, 3).map((product) => (
+
+            <article class="journal-look-card">
+
+              <a
+                href={product.href}
+                class="journal-look-image"
+              >
+                <img
+                  src={product.image}
+                  alt={product.alt}
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="journal-look-info">
+
+                <p class="journal-story-product-category">
+                  {product.category}
+                </p>
+
+                <h3>
+                  {product.name}
+                </h3>
+
+                <p class="journal-story-product-brand">
+                  {product.brand}
+                </p>
+
+                <a
+                  href={product.href}
+                  class="journal-story-discover"
+                >
+                  Discover →
+                </a>
+
+              </div>
+
+            </article>
+
+          ))}
+
+        </div>
+
+      </section>
+
+
+      <!-- FINAL -->
+
+      <section class="journal-article-final">
+
+        <p class="product-detail-eyebrow">
+          THE KASODI APPROACH
+        </p>
+
+        <h2>
+          Find beauty in the quiet details.
+        </h2>
+
+        <p>
+          Natural textures, warm light, thoughtful storage,
+          and everyday objects chosen with care — the
+          simplest details often make a space feel
+          the most beautiful.
+        </p>
+
+      </section>
+
+    </main>
+
+    <Footer />
+
+  </body>
+</html>
