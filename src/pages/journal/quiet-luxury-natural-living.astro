@@ -1,0 +1,371 @@
+---
+import "../../styles/global.css";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+const imageDirectory = "/images/journal/quiet-luxury-natural-living";
+
+const products = {
+  hakon: {
+    name: "Hakon Sculptural Wood Side Table",
+    category: "Furniture",
+    brand: "Kave Home",
+    href: "/home/furniture/hakon-sculptural-wood-side-table/",
+    image: "/images/furniture/kave-home-hakon-sculptural-wood-side-table.webp",
+    alt: "Sculptural wood side table with a carved, open base",
+  },
+  drava: {
+    name: "Drava Burgundy Ceramic Table Lamp",
+    category: "Lighting",
+    brand: "Kave Home",
+    href: "/home-decor/drava-burgundy-ceramic-table-lamp/",
+    image: "/images/home-decor/kave-home-drava-burgundy-ceramic-table-lamp.webp",
+    alt: "Table lamp with a burgundy ceramic base and a light fabric shade",
+  },
+  vase: {
+    name: "Vintage Textured Ceramic Vase",
+    href: "/home-decor/vintage-textured-ceramic-vase/",
+  },
+  linen: {
+    name: "White Linen Pillowcase with Coconut Buttons",
+    category: "Textiles",
+    href: "/bedroom/white-linen-pillowcase-coconut-buttons/",
+    image: "/images/bedroom/white-linen-pillowcase-coconut-buttons.png",
+    alt: "White linen pillowcase fastened with coconut buttons",
+  },
+};
+
+const pieces = [products.hakon, products.drava, products.linen];
+---
+
+<!doctype html>
+<html lang="en">
+  <head><!-- Google Consent Mode -->
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "denied",
+    personalization_storage: "denied",
+    security_storage: "granted",
+    wait_for_update: 2000
+  });
+
+  gtag("set", "ads_data_redaction", true);
+  gtag("set", "url_passthrough", true);
+</script>
+
+<!-- Start cookieyes banner -->
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/e9c032e34948c08e8ad6b9973971db36/script.js"></script>
+<!-- End cookieyes banner -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LT2BEMKHKC"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LT2BEMKHKC');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/kasodi-favicon.png"
+    />
+
+    <title>The Art of Quiet Luxury: Natural Materials, Timeless Textures &amp; Intentional Living | KASODI</title>
+
+    <meta
+      name="description"
+      content="Explore natural materials, warm neutrals, layered textures and everyday rituals for a home that feels quietly considered."
+    />
+      <link rel="canonical" href="https://kasodi.com/journal/quiet-luxury-natural-living/" />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="journal-story-page">
+      <nav class="product-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">·</span>
+        <a href="/journal/">Journal</a>
+        <span aria-hidden="true">·</span>
+        <span aria-current="page">The Art of Quiet Luxury</span>
+      </nav>
+
+      <section class="journal-story-hero">
+        <p class="product-detail-eyebrow">Interiors &amp; Style</p>
+        <h1>The Art of Quiet Luxury: Natural Materials, Timeless Textures &amp; Intentional Living</h1>
+        <p class="journal-story-intro">
+          Morning light on a stone table, linen that softens with every wash, a lamp switched on before dusk.
+          A room begins to feel like home through details you come to know by touch and by habit.
+        </p>
+      </section>
+
+      <div class="journal-story-cover">
+        <img
+          src={imageDirectory + "/quiet-luxury-living-hero.webp"}
+          alt="Sunlit living room with a linen sofa, a stone coffee table and olive branches in a ceramic jug"
+          width="1672"
+          height="941"
+          fetchpriority="high"
+        />
+      </div>
+
+      <section class="journal-story-row journal-story-divider">
+        <div class="journal-story-copy">
+          <p class="journal-story-number">01</p>
+          <h2>Start with Natural Materials</h2>
+          <p>
+            Begin with the surfaces you touch most often. A timber table shows its grain where the light falls
+            across it. A glazed bowl has a slight ripple under the thumb. Stone feels cool against a warm mug.
+            Those small differences give a room something to notice over time.
+          </p>
+          <p>
+            Consider how each material will live with you. An oiled timber top can be refreshed when it looks
+            dry. A porous stone surface may need more care around coffee and wine. Pick finishes whose upkeep
+            fits the way you use the room.
+          </p>
+        </div>
+        <div class="journal-story-mood">
+          <img
+            src={imageDirectory + "/natural-materials-ceramics-stone-wood.webp"}
+            alt="Speckled ceramics, a wooden board and a linen cloth on a pale stone surface"
+            width="1536"
+            height="1024"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="journal-story-row journal-story-divider">
+        <div class="journal-story-copy">
+          <p class="journal-story-number">02</p>
+          <h2>Build a Palette Around Warm Neutrals</h2>
+          <p>
+            Take your cue from a surface that already belongs in the room. Oak floorboards might suggest
+            oatmeal linen and a chalky wall colour. A darker wood might sit comfortably with mushroom,
+            warm white and a small touch of tobacco brown.
+          </p>
+          <p>
+            Put paint and fabric samples beside each other in daylight and again with the lamps on. A cream
+            that looks soft at noon can turn yellow in the evening. Keep a little variation between the
+            largest surfaces so a quiet palette still has depth.
+          </p>
+        </div>
+        <div class="journal-story-mood">
+          <img
+            src={imageDirectory + "/warm-neutral-bedroom-textures.webp"}
+            alt="Bedroom layered with cream bedding and a taupe throw beside a wooden table and burgundy lamp"
+            width="1536"
+            height="1024"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="journal-story-row journal-story-divider journal-story-row-text">
+        <div class="journal-story-copy">
+          <p class="journal-story-number">03</p>
+          <h2>Let Texture Do Some of the Work</h2>
+          <p>
+            Give adjoining surfaces a different feel. A tightly woven sofa can take a loose wool throw.
+            A matte wall gives a glazed vessel a little more presence. On a bed, the creases of a{" "}<a href={products.linen.href}>white linen pillowcase with coconut buttons</a>{" "}soften the
+            clean line of a folded coverlet.
+          </p>
+          <p>
+            Look at the room from the doorway before adding another layer. Leave some broad surfaces
+            clear so that a woven edge or a rough glaze can catch your eye.
+          </p>
+        </div>
+      </section>
+
+      <section class="journal-story-row journal-story-divider">
+        <div class="journal-story-copy">
+          <p class="journal-story-number">04</p>
+          <h2>Choose Objects with a Purpose</h2>
+          <p>
+            Give the things you reach for a place close at hand. The{" "}<a href={products.hakon.href}>{products.hakon.name}</a>{" "}can sit beside a reading chair, where its top has room for a book and a cup. A{" "}<a href={products.vase.href}>vintage textured ceramic vase</a>{" "}can hold a few stems from the
+            garden and still look at home on the shelf between cuttings.
+          </p>
+          <p>
+            Try clearing a shelf and returning the pieces you reach for or enjoy seeing. A bowl or
+            a framed photograph can have a little room around it, even on a shelf that earns its keep.
+          </p>
+        </div>
+        <div class="journal-story-mood">
+          <img
+            src={imageDirectory + "/intentional-objects-shelf-styling.webp"}
+            alt="Wooden shelf with books, a ribbed vase of leafy branches, a ceramic bowl and a framed landscape"
+            width="1672"
+            height="941"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="journal-story-row journal-story-divider">
+        <div class="journal-story-copy">
+          <p class="journal-story-number">05</p>
+          <h2>Use Light to Shape the Room</h2>
+          <p>
+            Spend a morning noticing where the daylight lands. Pulling a chair towards the window can
+            give it a reason to be used, and a sheer curtain can soften glare while leaving the room bright.
+            In a dining room, light moving across plaster or stone can be decoration enough.
+          </p>
+          <p>
+            After dusk, place light near the places you settle. The{" "}<a href={products.drava.href}>{products.drava.name}</a>{" "}brings a deeper note to a warm palette, and its shade creates a pool of light where you might
+            sit with a book.
+          </p>
+        </div>
+        <div class="journal-story-mood">
+          <img
+            src={imageDirectory + "/mediterranean-natural-light-dining.webp"}
+            alt="Sunlight falling across a stone floor beneath a plaster arch leading to a dining table"
+            width="1329"
+            height="1183"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="journal-story-row journal-story-divider">
+        <div class="journal-story-copy">
+          <p class="journal-story-number">06</p>
+          <h2>Make Space for Everyday Rituals</h2>
+          <p>
+            Think about a moment you look forward to at home. If it is the first cup of coffee, leave a
+            place to set it down by the window. If it is reading after dinner, bring a lamp close enough
+            to switch on from the chair and keep a blanket within reach.
+          </p>
+          <p>
+            A corner arranged around one familiar pleasure can change how you use the whole room.
+            Set it up for an ordinary Tuesday, when you are likely to be carrying a cup in one hand
+            and reaching for the light with the other.
+          </p>
+        </div>
+        <div class="journal-story-mood">
+          <img
+            src={imageDirectory + "/intentional-living-cozy-corner.webp"}
+            alt="Upholstered reading chair with a knitted throw, beside a lamp and a window"
+            width="1536"
+            height="1024"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="journal-story-row journal-story-divider journal-story-row-text">
+        <div class="journal-story-copy">
+          <p class="journal-story-number">07</p>
+          <h2>Bring in Greenery Without Overcrowding</h2>
+          <p>
+            A branch in a heavy vase can bring movement to a shelf. Near a bright window, one larger plant
+            may be all the room needs. Give its silhouette a little breathing room and leave enough space
+            around the pot to water it easily.
+          </p>
+          <p>
+            Let the light in the room guide what you bring home. In a dim passage, a few cut stems can mark
+            the season. Where a plant can thrive, use a saucer that catches water and leave room for the
+            leaves to spread.
+          </p>
+        </div>
+      </section>
+
+      <section class="journal-story-closing">
+        <div class="journal-story-ending">
+          <p class="journal-story-number">08</p>
+          <h2>Buy Less, Choose More Carefully</h2>
+          <p>
+            Live with an empty corner for a while. You may find that it gives you an easier path around the
+            table, or that what you really want there is a light. When something does belong, measure the
+            space and think through how it will wear, how you will clean it and where it could go if the room changes.
+          </p>
+          <p>
+            Apply the same attention to what you already own. A chair moved into better light or a vase
+            brought down from a high shelf can find a place in your day again.
+          </p>
+        </div>
+        <aside class="journal-story-note">
+          <p class="product-detail-eyebrow">KASODI Note</p>
+          <h3>Notice what you reach for every day. It tells you a great deal about what belongs in the room.</h3>
+        </aside>
+      </section>
+
+      <section class="journal-look-edit">
+        <div class="journal-look-heading">
+          <p class="product-detail-eyebrow">KASODI Edit</p>
+          <h2>Pieces for the Look</h2>
+          <p>Wood beside a favourite chair, a low light for the evening and linen for the bed.</p>
+        </div>
+
+        <div class="journal-look-grid">
+          {pieces.map((piece) => (
+            <article class="journal-look-card">
+              <a href={piece.href} class="journal-look-image">
+                <img src={piece.image} alt={piece.alt} loading="lazy" />
+              </a>
+              <div class="journal-look-info">
+                <p class="journal-story-product-category">{piece.category}</p>
+                <h3>{piece.name}</h3>
+                {"brand" in piece && <p class="journal-story-product-brand">{piece.brand}</p>}
+                <a href={piece.href} class="journal-story-discover" aria-label={`Discover ${piece.name}`}>
+                  Discover →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="journal-article-final">
+        <p class="product-detail-eyebrow">The KASODI Approach</p>
+        <h2>Leave room for the way you live.</h2>
+        <p>Start with a material you like to touch, a place you like to sit or an object you use every day. Let the room grow from there.</p>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .journal-story-copy > p:not(.journal-story-number),
+  .journal-story-ending > p:not(.journal-story-number) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .journal-story-row-text {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .journal-story-row-text .journal-story-copy {
+    width: 100%;
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .journal-story-copy p a {
+    color: var(--brown);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+
+  .journal-story-copy p a:hover {
+    color: var(--dark);
+  }
+</style>
