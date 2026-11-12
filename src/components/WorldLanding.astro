@@ -250,9 +250,11 @@ const typedGroups = groups as Group[];
   gap: 28px;
 }
 
-.group-grid:has(> :nth-child(3):last-child) {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
+  @media (width > 800px) {
+    .group-grid:has(> :nth-child(3):last-child) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
 
   .group-card {
     color: #29251f;
@@ -572,37 +574,67 @@ const typedGroups = groups as Group[];
 
 /* MOBILE */
 
-@media (max-width: 520px) {
+@media (max-width: 650px) {
 
   .hero-copy {
-    padding: 55px 7%;
+    padding: 36px 6%;
   }
 
   .hero-copy h1 {
-    font-size: 50px;
+    font-size: clamp(40px, 9vw, 50px);
+    margin: 14px 0;
   }
 
   .world-hero > img {
-    height: 360px;
+    height: clamp(220px, 62vw, 360px);
+  }
+
+  .discover,
+  .journal {
+    padding: 40px 6%;
+  }
+
+  .section-head {
+    margin-bottom: 24px;
   }
 
   .section-head h2 {
-    font-size: 40px;
+    font-size: clamp(32px, 7vw, 40px);
+    line-height: 1.05;
   }
 
   .group-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .group-card img {
+    display: block;
   }
 
   .group-card > div {
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+    height: auto;
+    padding: 12px 0 16px;
   }
 
   .group-card h3 {
-    font-size: 27px;
+    font-size: clamp(24px, 5vw, 28px);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
   }
 
+  .journal {
+    gap: 24px;
+  }
+
+  .journal h2 {
+    font-size: clamp(32px, 7vw, 40px);
+  }
+}
+
+@media (max-width: 520px) {
   .product-grid {
     grid-template-columns: 1fr 1fr;
     gap: 14px;
@@ -612,13 +644,6 @@ const typedGroups = groups as Group[];
     font-size: 20px;
   }
 
-  .journal {
-    gap: 30px;
-  }
-
-  .journal h2 {
-    font-size: 40px;
-  }
 }
 
 </style>
