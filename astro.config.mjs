@@ -19,5 +19,14 @@ export default defineConfig({
 
   '/tableware/talora-carved-glass-decanter/':
     '/kitchen/glassware/talora-carved-glass-decanter/',
+
+  '/new-finds/vintage-botanical-duvet-cover-set/':
+    '/bedroom/vintage-botanical-duvet-cover-set/',
+
+  '/kasodi-edit/embroidered-garden-cushions/':
+    '/bedroom/embroidered-garden-cushions/',
+
+  '/kasodi-edit/sculptural-ivory-candles/':
+    '/candles-fragrance/sculptural-ivory-candles/',
 }
 });
