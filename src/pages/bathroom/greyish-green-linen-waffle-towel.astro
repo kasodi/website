@@ -73,7 +73,7 @@ const related = [
       <section class="towel-hero">
         <div class="towel-image">
           <img
-            src={image}
+            src={image.replace(/\.png$/, ".webp")}
             alt="Greyish green waffle-textured linen and cotton towel with softly folded layers"
             width="1024"
             height="1024"
@@ -270,7 +270,7 @@ const related = [
             <a href={item.href} class="towel-explore-card">
               <div class="towel-explore-image">
                 <img
-                  src={item.image}
+                  src={item.image.replace(/\.png$/, ".webp")}
                   alt={item.title}
                   loading="lazy"
                 />

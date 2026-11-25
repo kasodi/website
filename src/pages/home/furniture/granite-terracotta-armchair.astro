@@ -125,7 +125,7 @@ const socialImage = `https://kasodi.com${product.image}`;
 
         <figure class="product-detail-image product-photo-with-credit">
   <img
-    src={product.image}
+    src={product.image.replace(/\.png$/, ".webp")}
     alt="Granite Terracotta Armchair by Kave Home with terracotta chenille upholstery and natural ash wood legs"
     style="width: 100%; display: block;"
   />

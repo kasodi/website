@@ -248,7 +248,7 @@ const socialImage = `https://kasodi.com${product.image}`;
 
         <figure class="product-detail-image product-photo-with-credit">
   <img
-    src={product.image}
+    src={product.image.replace(/\.png$/, ".webp")}
     alt="Granite Beige 2-Seater Sofa by Kave Home with beige chenille upholstery and natural ash wood frame"
     style="width: 100%; display: block;"
   />

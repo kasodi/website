@@ -209,7 +209,7 @@ const curatedProducts = [
       <section class="journal-story-cover">
 
         <img
-          src={heroImage}
+          src={heroImage.replace(/\.png$/, ".webp")}
           alt="A calm Mediterranean bathroom with natural stone, warm sunlight, amber glass and soft linen"
           fetchpriority="high"
         />
@@ -680,7 +680,7 @@ const curatedProducts = [
         <div class="journal-story-mood">
 
           <img
-            src={ritualsImage}
+            src={ritualsImage.replace(/\.png$/, ".webp")}
             alt="Soft cotton towels, amber glass, candlelight and natural stone in a Mediterranean bathroom"
             loading="lazy"
           />
@@ -695,7 +695,7 @@ const curatedProducts = [
       <section class="journal-story-cover">
 
         <img
-          src={interiorImage}
+          src={interiorImage.replace(/\.png$/, ".webp")}
           alt="Natural bathroom styling with woven baskets, amber glass jars, ceramic accessories and soft neutral towels"
           loading="lazy"
         />
