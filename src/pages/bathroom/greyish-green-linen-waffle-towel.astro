@@ -1,0 +1,632 @@
+
+---
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import "../../styles/global.css";
+
+const title = "Greyish Green Linen Waffle Towel";
+const brand = "Linen Couture";
+const affiliateUrl = "https://collabs.shop/gmfnhb";
+
+const image =
+  "/images/bathroom/greyish-green-linen-waffle-towel.png";
+
+const pageUrl =
+  "https://kasodi.com/bathroom/greyish-green-linen-waffle-towel/";
+
+const description =
+  "Discover the Greyish Green Linen Waffle Towel by Linen Couture. A beautifully textured blend of European linen and cotton, thoughtfully selected for a calm, timeless bathroom.";
+
+const related = [
+  {
+    title: "Bathroom Essentials",
+    subtitle: "Thoughtful details for everyday rituals",
+    href: "/bathroom/",
+    image: "/images/journal/a-calm-bathroom-with-natural-details-hero.png",
+  },
+  {
+    title: "A Calm Bathroom with Natural Details",
+    subtitle: "Simple ideas for a spa-like space",
+    href: "/journal/a-calm-bathroom-with-natural-details/",
+    image: "/images/journal/a-calm-bathroom-with-natural-details-interior.png",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title} | KASODI</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={pageUrl} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`${title} | KASODI`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta
+      property="og:image"
+      content={`https://kasodi.com${image}`}
+    />
+    <meta property="og:site_name" content="KASODI" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="towel-page">
+
+      <!-- BREADCRUMBS -->
+      <nav class="towel-breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <a href="/bathroom/">Bathroom Essentials</a>
+        <span>/</span>
+        <span>{title}</span>
+      </nav>
+
+      <!-- PRODUCT HERO -->
+      <section class="towel-hero">
+        <div class="towel-image">
+          <img
+            src={image}
+            alt="Greyish green waffle-textured linen and cotton towel with softly folded layers"
+            width="1024"
+            height="1024"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div class="towel-information">
+          <span class="towel-eyebrow">THE KASODI EDIT · BATHROOM</span>
+
+          <h1>{title}</h1>
+
+          <div class="towel-line"></div>
+
+          <p class="towel-brand">By {brand}</p>
+
+          <p class="towel-intro">
+            A beautiful balance of natural texture, softness,
+            and everyday simplicity.
+          </p>
+
+          <p>
+            Crafted from a blend of European linen and cotton,
+            this waffle-textured towel brings understated
+            character to the bathroom.
+          </p>
+
+          <p>
+            Its rich greyish-green tone and softly structured
+            weave make it a thoughtful addition to a calm,
+            considered interior.
+          </p>
+
+          <a
+            href={affiliateUrl}
+            class="towel-button"
+            target="_blank"
+            rel="sponsored nofollow noopener noreferrer"
+          >
+            Find It Here <span aria-hidden="true">→</span>
+          </a>
+
+          <p class="towel-disclosure">
+            Affiliate disclosure: KASODI may earn a commission
+            when you purchase through this link, at no
+            additional cost to you.
+          </p>
+        </div>
+      </section>
+
+      <!-- PRODUCT DETAILS -->
+      <section class="towel-details">
+        <div class="towel-section-heading">
+          <span>THE DETAILS</span>
+          <h2>Natural Texture, Everyday Comfort</h2>
+        </div>
+
+        <div class="towel-details-grid">
+          <div>
+            <h3>Material</h3>
+            <p>54% European linen, 46% cotton.</p>
+          </div>
+
+          <div>
+            <h3>Colour</h3>
+            <p>Greyish Green.</p>
+          </div>
+
+          <div>
+            <h3>Texture</h3>
+            <p>Soft, airy waffle weave.</p>
+          </div>
+
+          <div>
+            <h3>Size</h3>
+            <p>Bath towel: 100 × 140 cm.</p>
+          </div>
+
+          <div>
+            <h3>Certification</h3>
+            <p>OEKO-TEX Standard 100.</p>
+          </div>
+
+          <div>
+            <h3>Thoughtful Detail</h3>
+            <p>Convenient hanging loop.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY WE LOVE IT -->
+      <section class="towel-story">
+        <div class="towel-story-inner">
+          <span class="towel-eyebrow">WHY WE LOVE IT</span>
+          <h2>Quiet Beauty in the Everyday</h2>
+
+          <p>
+            There is something especially inviting about
+            natural textiles that feel as beautiful as they look.
+          </p>
+
+          <p>
+            The distinctive waffle weave introduces depth and
+            texture, while the combination of linen and cotton
+            offers a soft, breathable feel.
+          </p>
+
+          <p>
+            We love the muted green shade for its understated
+            richness. Paired with warm stone, natural wood,
+            amber glass, or neutral ceramics, it adds a gentle
+            touch of colour without disturbing the peaceful
+            atmosphere of the room.
+          </p>
+
+          <p>
+            A practical essential, thoughtfully chosen —
+            exactly the kind of everyday detail we love at KASODI.
+          </p>
+        </div>
+      </section>
+
+      <!-- CARE -->
+      <section class="towel-care">
+        <div class="towel-section-heading">
+          <span>CARE & LONGEVITY</span>
+          <h2>Made for Everyday Rituals</h2>
+        </div>
+
+        <div class="towel-care-content">
+          <p>
+            Natural linen becomes even more inviting when
+            cared for thoughtfully.
+          </p>
+
+          <ul>
+            <li>Wash before first use.</li>
+            <li>
+              Machine wash in cold water or at a maximum
+              temperature of 40°C.
+            </li>
+            <li>Wash with similar colours.</li>
+            <li>Avoid washing with synthetic fabrics.</li>
+            <li>
+              Line dry when possible, or tumble dry
+              on low heat.
+            </li>
+            <li>
+              Embrace the natural texture and relaxed
+              character of linen.
+            </li>
+          </ul>
+
+          <p class="towel-care-note">
+            Always refer to the manufacturer's care
+            instructions for complete guidance.
+          </p>
+        </div>
+      </section>
+
+      <!-- STYLE IT WITH -->
+      <section class="towel-style">
+        <div class="towel-section-heading">
+          <span>THE KASODI WAY</span>
+          <h2>Style It with Natural Details</h2>
+        </div>
+
+        <p>
+          Pair this greyish-green towel with creamy ceramics,
+          warm wood, and softly textured stone. Amber glass
+          accessories and woven storage add warmth, while
+          gentle lighting completes the feeling of a quiet,
+          spa-inspired retreat.
+        </p>
+
+        <a
+          href="/journal/a-calm-bathroom-with-natural-details/"
+          class="towel-text-link"
+        >
+          Discover Our Bathroom Styling Guide →
+        </a>
+      </section>
+
+      <!-- CONTINUE EXPLORING -->
+      <section class="towel-explore">
+        <div class="towel-section-heading">
+          <span>CURATED FOR YOU</span>
+          <h2>Continue Exploring</h2>
+        </div>
+
+        <div class="towel-explore-grid">
+          {related.map((item) => (
+            <a href={item.href} class="towel-explore-card">
+              <div class="towel-explore-image">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                />
+              </div>
+
+              <h3>{item.title}</h3>
+              <p>{item.subtitle}</p>
+              <span>Explore →</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="towel-final">
+        <span>QUIET LUXURY · CURATED LIVING</span>
+        <h2>Beautiful Details for Everyday Living</h2>
+        <p>
+          Discover thoughtfully selected pieces that bring
+          natural texture, comfort, and quiet elegance home.
+        </p>
+
+        <a href="/bathroom/" class="towel-button">
+          Explore Bathroom Essentials →
+        </a>
+      </section>
+
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .towel-page {
+    color: #353a2d;
+    background: #fffdf9;
+  }
+
+  .towel-breadcrumbs {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 34px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    letter-spacing: .07em;
+    color: #77796e;
+  }
+
+  .towel-breadcrumbs a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .towel-hero {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 20px 28px 100px;
+    display: grid;
+    grid-template-columns: 1.08fr 1fr;
+    gap: 85px;
+    align-items: center;
+  }
+
+  .towel-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .towel-information h1,
+  .towel-section-heading h2,
+  .towel-story h2,
+  .towel-final h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+  }
+
+  .towel-eyebrow,
+  .towel-section-heading > span,
+  .towel-final > span {
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: #858576;
+  }
+
+  .towel-information h1 {
+    font-size: clamp(38px, 4vw, 60px);
+    line-height: 1.12;
+    margin: 24px 0;
+  }
+
+  .towel-line {
+    width: 60px;
+    height: 1px;
+    background: #a7a28e;
+    margin: 30px 0;
+  }
+
+  .towel-brand {
+    font-size: 12px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+  }
+
+  .towel-information p,
+  .towel-story p,
+  .towel-care p,
+  .towel-style p,
+  .towel-final p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #66685f;
+  }
+
+  .towel-information .towel-intro {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #3e4434;
+  }
+
+  .towel-button {
+    display: inline-block;
+    background: #444d36;
+    color: #fff !important;
+    padding: 17px 32px;
+    margin-top: 25px;
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background .2s ease;
+  }
+
+  .towel-button:hover {
+    background: #697457;
+  }
+
+  .towel-information .towel-disclosure {
+    font-size: 11px;
+    line-height: 1.7;
+    margin-top: 18px;
+    color: #929287;
+  }
+
+  .towel-details,
+  .towel-care,
+  .towel-style,
+  .towel-explore {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 28px;
+  }
+
+  .towel-section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .towel-section-heading h2 {
+    font-size: clamp(30px, 3vw, 44px);
+    margin: 18px 0 0;
+  }
+
+  .towel-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+
+  .towel-details-grid > div {
+    border-top: 1px solid #e5e1d7;
+    padding-top: 20px;
+  }
+
+  .towel-details-grid h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-weight: 500;
+  }
+
+  .towel-details-grid p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #77796e;
+  }
+
+  .towel-story {
+    background: #f4f1e9;
+    padding: 105px 28px;
+    text-align: center;
+  }
+
+  .towel-story-inner {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  .towel-story h2 {
+    font-size: clamp(32px, 3vw, 46px);
+    margin: 22px 0 30px;
+  }
+
+  .towel-care-content {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .towel-care ul {
+    padding-left: 22px;
+    color: #66685f;
+    font-size: 15px;
+    line-height: 2.2;
+  }
+
+  .towel-care-note {
+    font-style: italic;
+    font-size: 13px !important;
+  }
+
+  .towel-style {
+    text-align: center;
+    border-top: 1px solid #e5e1d7;
+  }
+
+  .towel-style > p {
+    max-width: 730px;
+    margin: 0 auto 28px;
+  }
+
+  .towel-text-link {
+    color: #505a40;
+    text-decoration: none;
+    border-bottom: 1px solid #a7a28e;
+    padding-bottom: 5px;
+    font-size: 13px;
+    letter-spacing: .05em;
+  }
+
+  .towel-explore-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px;
+  }
+
+  .towel-explore-card {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .towel-explore-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #f0eee8;
+  }
+
+  .towel-explore-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease;
+  }
+
+  .towel-explore-card:hover img {
+    transform: scale(1.035);
+  }
+
+  .towel-explore-card h3 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0 8px;
+  }
+
+  .towel-explore-card p {
+    color: #77796e;
+    font-size: 13px;
+  }
+
+  .towel-explore-card span {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+    letter-spacing: .1em;
+  }
+
+  .towel-final {
+    background: #f4f1e9;
+    padding: 95px 28px 110px;
+    text-align: center;
+  }
+
+  .towel-final h2 {
+    font-size: clamp(32px, 3vw, 44px);
+    margin: 20px 0;
+  }
+
+  .towel-final p {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 800px) {
+    .towel-hero {
+      grid-template-columns: 1fr;
+      gap: 35px;
+      padding-bottom: 65px;
+    }
+
+    .towel-details-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .towel-explore-grid {
+      gap: 18px;
+    }
+
+    .towel-story {
+      padding: 75px 24px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .towel-breadcrumbs {
+      padding: 22px 18px;
+      gap: 8px;
+    }
+
+    .towel-hero {
+      padding: 10px 18px 55px;
+    }
+
+    .towel-details,
+    .towel-care,
+    .towel-style,
+    .towel-explore {
+      padding: 65px 18px;
+    }
+
+    .towel-details-grid,
+    .towel-explore-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .towel-information h1 {
+      font-size: 39px;
+    }
+
+    .towel-final {
+      padding: 75px 18px;
+    }
+  }
+</style>

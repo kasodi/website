@@ -1,3 +1,4 @@
+
 ---
 import "../../styles/global.css";
 import Footer from "../../components/Footer.astro";
@@ -5,48 +6,99 @@ import Header from "../../components/Header.astro";
 ---
 
 <html lang="en">
-  <head>
-    <!-- Google Consent Mode -->
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
 
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'analytics_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied'
-      });
-    </script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CookieYes banner -->
-    <script
-      id="cookieyes"
-      type="text/javascript"
-      src="https://cdn-cookieyes.com/client_data/YOUR_COOKIEYES_ID/script.js"
-    ></script>
+  <!-- Google Consent Mode -->
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-    <!-- Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"
-    ></script>
+    gtag("consent", "default", {
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      analytics_storage: "denied",
+      functionality_storage: "denied",
+      personalization_storage: "denied",
+      security_storage: "granted",
+      wait_for_update: 2000
+    });
 
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'YOUR_GA_ID');
-    </script>
+    gtag("set", "ads_data_redaction", true);
+    gtag("set", "url_passthrough", true);
+  </script>
 
-    <title>Drava Burgundy Ceramic Table Lamp | KASODI</title>
+  <!-- Start cookieyes banner -->
+  <script
+    id="cookieyes"
+    type="text/javascript"
+    src="https://cdn-cookieyes.com/client_data/e9c032e34948c08e8ad6b9973971db36/script.js"
+  ></script>
+  <!-- End cookieyes banner -->
 
-    <meta
-      name="description"
-      content="Discover the Drava burgundy ceramic table lamp by Kave Home, selected by KASODI for its richly glazed textured base, warm colour and softly diffused light."
-    />
-      <link rel="canonical" href="https://kasodi.com/home-decor/drava-burgundy-ceramic-table-lamp/" />
-  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LT2BEMKHKC"
+  ></script>
+
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LT2BEMKHKC');
+  </script>
+
+  <title>Drava Burgundy Ceramic Table Lamp | KASODI</title>
+
+  <meta
+    name="description"
+    content="Discover the Drava burgundy ceramic table lamp by Kave Home, selected by KASODI for its richly glazed textured base, warm colour and softly diffused light."
+  />
+
+  <link
+    rel="canonical"
+    href="https://kasodi.com/home-decor/drava-burgundy-ceramic-table-lamp/"
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KASODI" />
+
+  <meta
+    property="og:title"
+    content="Drava Burgundy Ceramic Table Lamp | KASODI"
+  />
+
+  <meta
+    property="og:description"
+    content="Discover Drava by Kave Home, a burgundy ceramic table lamp with a richly glazed textured base and softly diffused light. A refined accent for warm, considered interiors."
+  />
+
+  <meta
+    property="og:url"
+    content="https://kasodi.com/home-decor/drava-burgundy-ceramic-table-lamp/"
+  />
+
+  <meta
+    property="og:image"
+    content="https://kasodi.com/images/home-decor/kave-home-drava-burgundy-ceramic-table-lamp.webp"
+  />
+
+  <meta
+    property="og:image:alt"
+    content="Drava burgundy ceramic table lamp by Kave Home"
+  />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+
 
   <body>
     <Header />
@@ -65,12 +117,15 @@ import Header from "../../components/Header.astro";
       <!-- PRODUCT HERO -->
       <section class="product-detail-hero">
 
-        <div class="product-detail-image">
-          <img
-            src="/images/home-decor/kave-home-drava-burgundy-ceramic-table-lamp.webp"
-            alt="Drava burgundy ceramic table lamp by Kave Home"
-          />
-        </div>
+        <figure class="product-detail-image product-photo-with-credit">
+  <img
+    src="/images/home-decor/kave-home-drava-burgundy-ceramic-table-lamp.webp"
+    alt="Drava burgundy ceramic table lamp by Kave Home"
+  />
+  <figcaption class="product-photo-credit">
+    AI-generated visual &middot; Product: Kave Home
+  </figcaption>
+</figure>
 
         <div class="product-detail-content">
 
@@ -127,7 +182,7 @@ import Header from "../../components/Header.astro";
 
           <div class="affiliate-action">
             <a
-              href="https://kavehome.com/es/en/p/drava-table-lamp-in-burgundy-ceramic-with-cotton-shade?utm_affaid=kasodi"
+              href="https://kavehome.com/es/en/p/drava-table-lamp-in-burgundy-ceramic-with-cotton-shade?utm_affcid=11111111&utm_medium=affiliate&utm_source=kasodi&utm_affaid=kasodi&utm_affcid=11111111"
               target="_blank"
               rel="nofollow sponsored"
               class="product-shop-button"
@@ -265,23 +320,23 @@ import Header from "../../components/Header.astro";
 
 
           <a
-            href="/kitchen/tableware/botanical-vintage-pitcher"
-            class="continue-card"
-          >
-            <div class="continue-card-image">
-              <img
-                src="/images/kasodi-edit/kasodi-edit-floral-ceramic-pitcher.webp"
-                alt="Botanical Vintage Pitcher"
-              />
-            </div>
+  href="/home-decor/raze-beige-marble-linen-table-lamp"
+  class="continue-card"
+>
+  <div class="continue-card-image">
+    <img
+  src="/images/home-decor/raze-continue-exploring.png"
+  alt="Raze Beige Marble & Linen Table Lamp"
+/>
+  </div>
 
-            <div class="continue-card-info">
-              <span>HOME DECOR</span>
-              <h3>Botanical Vintage Pitcher</h3>
-              <p>Ethereal Eves</p>
-              <strong>Discover &rarr;</strong>
-            </div>
-          </a>
+  <div class="continue-card-info">
+    <span>LIGHTING</span>
+    <h3>Raze Beige Marble &amp; Linen Table Lamp</h3>
+    <p>Kave Home</p>
+    <strong>Discover &rarr;</strong>
+  </div>
+</a>
 
 
           <a
@@ -318,7 +373,7 @@ import Header from "../../components/Header.astro";
         <h2>A warm glow with a richer shade of colour.</h2>
 
         <a
-          href="https://kavehome.com/es/en/p/drava-table-lamp-in-burgundy-ceramic-with-cotton-shade?utm_affaid=kasodi"
+          href="https://kavehome.com/es/en/p/drava-table-lamp-in-burgundy-ceramic-with-cotton-shade?utm_affcid=11111111&utm_medium=affiliate&utm_source=kasodi&utm_affaid=kasodi&utm_affcid=11111111"
           target="_blank"
           rel="nofollow sponsored"
           class="product-shop-button"
